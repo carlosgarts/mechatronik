@@ -1,5 +1,6 @@
 <template>
   <div class="section">
+    <div class="gradient"></div>
     <video autoplay muted loop id="back--video">
         <source src="../../assets/videos/intro.mp4" type="video/webm">
     </video>
@@ -49,6 +50,7 @@ export default {
   //top: 0px;
   position: relative;
   height: 80%;
+  z-index: 5;
   h1 {
     transition: 0.5s;
     color: white;
@@ -116,5 +118,16 @@ export default {
   min-width: 100%;
   min-height: 100%;
   z-index: -2;
+}
+
+.gradient {
+height: 100vh;
+width: 100%;
+position: absolute;
+left: 0px;
+top: 0px;
+z-index: 3;
+//background: linear-gradient(104.98deg, rgba(101, 163, 117, 0.6) 20.58%, rgba(196, 196, 196, 0.35) 100%);
+background: linear-gradient(104.98deg, rgba(0, 0, 0, 0.5) 20.58%, rgba(0, 0, 0, 0.5) 100%);
 }
 </style>
