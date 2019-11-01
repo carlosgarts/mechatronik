@@ -1,56 +1,12 @@
 <template>
   <div class="section">
     <div id="slider--intro">
-      <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE">
-        <slide id="slide--1" class="slide">
+      <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE" :autoplay="true" :autoplayTimeout="5000" :autoplayHoverPause="false" :loop="true">
+        <slide v-bind:id="information.id"  class="slide" v-for="information in informations" v-bind:key="information.id">
           <div class="tbb">
-            <h2>Nuestra <strong>experiencia</strong></h2>
+            <h2 v-html="information.title"></h2>
           </div>
-          <p>
-            Desarrollamos proyectos llave en mano enfocados en la automatización de sus procesos de manufactura, somos una empresa dedicada al diseño e integración de soluciones orientadas a la Industria 4.0.
-            <br> <br>
-            Nuestro enfoque se adapta a las necesidades específicas de cada cliente y el sector donde se desempeña su negocio.
-            <br> <br>
-            Contamos con un amplio conjunto de servicios especializados, amplia experiencia en la ingeniería de automatización y gran capacidad diferencial para integrar nuevas tecnologías, lo que nos permite implantar mejoras de gran valor y acelerar los resultados con un impacto visible en el negocio.
-          </p>
-        </slide>
-        <slide id="slide--2" class="slide">
-          <div class="tbb">
-          <h2>Soluciones <strong>de Ingenieria</strong></h2>
-          </div>
-          <p>
-            La coordinación interdisciplinaria y en su mayoría global de los
-            participantes en el proyecto es especialmente posible si los
-            conocimientos existentes se comparten y coordinan a propósito.
-            Para esto confiamos en herramientas comprobadas de planificación y análisis.
-            Se coordinan la planificación de procesos y diseño, análisis y
-            simulación de componentes, programación y análisis MTM. (Methods Time Measurement)
-          </p>
-        </slide>
-        <slide id="slide--3" class="slide">
-          <div class="tbb">
-          <h2>Servicios a <strong>la medida</strong></h2>
-          </div>
-          <p>
-            Nuestros servicios a la medida siempre cumplen con la tecnología
-            más avanzada y ofrece una excelente relación costo-beneficio Al mismo tiempo,
-            utilizando diversas herramientas de cálculo, determinamos costos,
-            viabilidad y planificación del proyecto. Para esto confiamos en
-            herramientas comprobadas de planificación y análisis. Se coordinan la
-            planificación de procesos y diseño, análisis y simulación de componentes,
-            programación y análisis MTM.
-          </p>
-        </slide>
-        <slide id="slide--4" class="slide">
-          <div class="tbb">
-          <h2>Portafolio <strong>de productos</strong></h2>
-          </div>
-          <p>
-            Ya sea para un posicionamiento preciso y repetible, velocidad constante y
-            alto movimiento dinámico, largas trayectorias de desplazamiento o
-            cambios rápidos de velocidad – Tenemos una cartera de servos, reductores planetarios,
-            actuadores lineales y más para la solución optima para cada tarea de control de movimiento
-          </p>
+          <p v-html="information.content"></p>
         </slide>
       </carousel>
     </div>
@@ -59,6 +15,32 @@
 
 <script>
 export default {
+  data: function () {
+    return {
+      informations: {
+        0: {
+          id: "slide--1",
+          title:"Nuestra <strong>experiencia</strong>",
+          content: "Desarrollamos proyectos llave en mano enfocados en la automatización de sus procesos de manufactura, somos una empresa dedicada al diseño e integración de soluciones orientadas a la Industria 4.0. <br> <br> Nuestro enfoque se adapta a las necesidades específicas de cada cliente y el sector donde se desempeña su negocio. <br> <br> Contamos con un amplio conjunto de servicios especializados, amplia experiencia en la ingeniería de automatización y gran capacidad diferencial para integrar nuevas tecnologías, lo que nos permite implantar mejoras de gran valor y acelerar los resultados con un impacto visible en el negocio."
+        },
+        1: {
+          id: "slide--2",
+          title:"Soluciones <strong>de Ingenieria</strong>",
+          content: "La coordinación interdisciplinaria y en su mayoría global de los participantes en el proyecto es especialmente posible si los conocimientos existentes se comparten y coordinan a propósito. Para esto confiamos en herramientas comprobadas de planificación y análisis. Se coordinan la planificación de procesos y diseño, análisis y simulación de componentes, programación y análisis MTM. (Methods Time Measurement)"
+        },
+        2: {
+          id: "slide--3",
+          title:"Servicios a <strong>la medida</strong>",
+          content: "Nuestros servicios a la medida siempre cumplen con la tecnología más avanzada y ofrece una excelente relación costo-beneficio Al mismo tiempo, utilizando diversas herramientas de cálculo, determinamos costos, viabilidad y planificación del proyecto. Para esto confiamos en herramientas comprobadas de planificación y análisis. Se coordinan la planificación de procesos y diseño, análisis y simulación de componentes, programación y análisis MTM."
+        },
+        3: {
+          id: "slide--4",
+          title:"Portafolio <strong>de productos</strong>",
+          content: "Ya sea para un posicionamiento preciso y repetible, velocidad constante y alto movimiento dinámico, largas trayectorias de desplazamiento o cambios rápidos de velocidad – Tenemos una cartera de servos, reductores planetarios, actuadores lineales y más para la solución optima para cada tarea de control de movimiento"
+        }
+      }
+    }
+  }
 }
 </script>
 

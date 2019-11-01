@@ -33,10 +33,10 @@
       <h4>PRODUCTOS</h4>
       <nuxt-link to="/categorias" class="link-tit">Categorias</nuxt-link>
         <p class="link-sub" v-if="categorias == undefined">Empty</p>
-        <nuxt-link v-else :to="'/categorias/'+ categoria.id" v-for="categoria in categorias"><p class="link-sub">{{categoria.titulo}}</p></nuxt-link>
+        <nuxt-link v-else :to="'/categorias/'+ categoria.id" v-for="categoria in categorias" v-bind:key="categoria.id"><p class="link-sub">{{categoria.titulo}}</p></nuxt-link>
       <nuxt-link to="/marcas" class="link-tit">Marcas</nuxt-link>
         <p class="link-sub" v-if="marcas == undefined">Empty</p>
-        <nuxt-link v-else :to="'/marcas/'+ marca.id" v-for="marca in marcas"><p class="link-sub">{{marca.titulo}}</p></nuxt-link>
+        <nuxt-link v-else :to="'/marcas/'+ marca.id" v-for="marca in marcas" v-bind:key="marca.id"><p class="link-sub">{{marca.titulo}}</p></nuxt-link>
     </div>
   </div>
    <nuxt-link to="/">INICIO</nuxt-link>

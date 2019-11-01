@@ -10,7 +10,7 @@
               <p>{{producto.descripcion}}</p>
             </div>
             <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE">
-              <slide class="slide" v-for="foto in fotos">
+              <slide class="slide" v-for="foto in fotos" v-bind:key="producto.id">
                 <img :src="foto" alt="product picture">
               </slide>
             </carousel>

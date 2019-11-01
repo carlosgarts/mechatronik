@@ -24,10 +24,10 @@ import cifras from '~/layouts/home/cifras.vue'
 import processIntro from '~/layouts/home/process.vue'
 import mail from '~/layouts/home/mail.vue'
 
-if (process.client) {
-  var nav = document.getElementById('tester');
-  console.log('nav is ' + nav);
-}
+// if (process.client) {
+//   var nav = document.getElementById('tester');
+//   console.log('nav is ' + nav);
+// }
 
 export default {
   components: {
