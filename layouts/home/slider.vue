@@ -1,6 +1,7 @@
 <template>
   <div class="section">
     <div id="slider--intro">
+      <client-only>
       <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE" :autoplay="true" :autoplayTimeout="5000" :autoplayHoverPause="false" :loop="true">
         <slide v-bind:id="information.id"  class="slide" v-for="information in informations" v-bind:key="information.id">
           <div class="tbb">
@@ -9,6 +10,7 @@
           <p v-html="information.content"></p>
         </slide>
       </carousel>
+    </client-only>
     </div>
   </div>
 </template>
