@@ -4,7 +4,7 @@
     <video autoplay muted loop id="back--video">
         <source src="../../assets/videos/intro.mp4" type="video/webm">
     </video>
-    <div id="intro">
+    <div id="intro" class="animated fadeIn">
       <div class="main--slogan">
         <h1>Transformando el proceso y desarrollo de productos </h1>
         <h3>con soluciones integradas de alto rendimiento para el <br> diseño, somulación y fabricación.</h3>

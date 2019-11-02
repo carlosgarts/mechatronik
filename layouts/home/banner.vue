@@ -1,6 +1,6 @@
 <template>
     <div class="banner">
-      <h1>"OUR SOLUTIONS FOR YOUR VISION" | mechatronik</h1>
+      <h1 v-scroll-reveal.reset >"OUR SOLUTIONS FOR YOUR VISION" | mechatronik</h1>
     </div>
 </template>
 

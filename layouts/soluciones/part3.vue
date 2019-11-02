@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div id="soluciones--3">
-      <div class="bar--picture">
+      <div class="bar--picture" v-scroll-reveal.reset>
         <div class="tbb">
           <h2>CONSULTORÍA</h2>
         </div>

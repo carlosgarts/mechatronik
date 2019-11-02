@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div id="mision--vision">
-      <div class="content">
+      <div class="content" v-scroll-reveal.reset>
         <div class="info">
           <div class="mision">
             <h1>Misión </h1>

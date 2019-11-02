@@ -7,14 +7,14 @@
         </div>
       </div>
       <div class="beneficios">
-        <h4>Beneficios y próximos pasos en <br> Comisionamiento Virtual</h4>
+        <h4 v-scroll-reveal.reset>Beneficios y próximos pasos en <br> Comisionamiento Virtual</h4>
       </div>
-      <img class="beneficios--linea"src="@/assets/svg/proceso1.svg" alt="wrokline">
+      <img class="beneficios--linea"src="@/assets/svg/proceso1.svg" v-scroll-reveal.reset alt="wrokline">
 
       <div class="aplicaciones">
         <div class="frames">
             <div class="frame" id="frame1">
-              <div class="content">
+              <div class="content" v-scroll-reveal.reset>
                 <h5>Algunas <br> aplicaciones</h5>
                 <ul>
                   <li>
@@ -46,7 +46,7 @@
 
       <div class="resources">
         <div class="comision">
-          <h4>De la simulación al <br> comisionamiento virtual</h4>
+          <h4 >De la simulación al <br> comisionamiento virtual</h4>
           <img src="@/assets/svg/proceso2.svg" alt="wrokline">
         </div>
 

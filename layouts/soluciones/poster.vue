@@ -4,7 +4,7 @@
       <img class="adapt-img" src="@/assets/images/Soluciones/diseño-y-fabricacion.jpg" alt="ingenieria">
       <div class="frames">
         <div class="frame">
-          <div id="cont2" class="content">
+          <div id="cont2" class="content" v-scroll-reveal.reset>
             <div class="tbb">
               <h2>Experiencia <strong>Industrial</strong> </h2>
             </div>
@@ -30,7 +30,7 @@
       </div>
 
       <div id="soluciones--2">
-        <div class="fabricacion">
+        <div class="fabricacion" v-scroll-reveal.reset>
           <div class="frame">
             <div class="content">
               <div class="title">
@@ -68,7 +68,7 @@
           <div class="side-tag"> <span>&#9472&#9472&#9472</span> Soluciones</div>
         </div>
       </div>
-      <div class="quote">
+      <div class="quote" v-scroll-reveal.reset>
         <div id="t1" class="thick">“</div>
         <p>Desarrollamos proyectos llave en mano enfocados en la automatización de sus procesos de manufactura.</p>
         <div id="t2" class="thick">”</div>

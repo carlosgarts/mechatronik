@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div id="about">
-      <div class="text">
+      <div class="text animated fadeIn">
         <div class="tbb">
         <h2>Acerca <strong>de Mechatronik</strong></h2>
         </div>
