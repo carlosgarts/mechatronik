@@ -11,9 +11,7 @@
                <img class="prod-logo" :src="currentSlide.logo" alt="neugart">
                <h4>Brand <strong>Overview</strong></h4>
              </div>
-             <p>
-               {{currentSlide.descripcion}} ssdvv dfe sdfs eeeeferer  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
+             <p v-html="currentSlide.descripcion"></p>
              <a href="#" class="buttom-link" v-scroll-to="'#product--lister'">Ver productos</a>
            </div>
            <div class="side-tag"> <span>&#9472&#9472&#9472</span> {{currentSlide.titulo}}</div>

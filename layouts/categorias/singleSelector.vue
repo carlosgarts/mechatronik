@@ -10,9 +10,7 @@
                <div class="marca">
                  <h4>{{categorias.titulo}}</h4>
                </div>
-               <p>
-                 {{categorias.descripcion}}
-               </p>
+               <p v-html="categorias.descripcion"></p>
                <a href="#" class="buttom-link" v-scroll-to="'#product--lister'">Ver productos</a>
              </div>
              <div class="side-tag"> <span>&#9472&#9472&#9472</span> Marcas</div>

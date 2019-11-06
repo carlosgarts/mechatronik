@@ -7,7 +7,7 @@
             <div class="info">
               <h1>{{producto.nombre}}</h1>
               <h4>{{producto.modelo}}</h4>
-              <p>{{producto.descripcion}}</p>
+              <p v-html="producto.descripcion"></p>
             </div>
             <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE">
               <slide class="slide" v-for="foto in fotos" v-bind:key="producto.id">
@@ -31,7 +31,7 @@
 
         <button class="accordion" v-bind:class="{ active: acAp }" v-on:click="acAp = !acAp">Aplicaciones </button>
         <div class="panel" v-bind:class="{ active: acAp }">
-          <p>{{producto.aplicaciones}}</p>
+          <p v-html="producto.aplicaciones"></p>
         </div>
 
         <button class="accordion" v-bind:class="{ active: acBro }" v-on:click="acBro = !acBro">Información técnica</button>

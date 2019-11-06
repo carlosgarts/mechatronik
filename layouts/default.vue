@@ -17,9 +17,21 @@ export default {
 
 <style lang="scss">
 @import "../assets/css/animate.scss";
+
+@font-face {
+  font-family: Raleway;
+  src: url('../assets/fonts/Raleway.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('../assets/fonts/Raleway-Bold.ttf');
+  font-weight: Bold;
+}
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: Raleway, Roboto, Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

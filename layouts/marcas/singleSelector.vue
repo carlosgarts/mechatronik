@@ -16,9 +16,7 @@
                  <img class="prod-logo" :src="marcas.logo" alt="neugart">
                  <h4>Brand <strong>Overview</strong></h4>
                </div>
-               <p>
-                 {{marcas.descripcion}}
-               </p>
+               <p v-html="marcas.descripcion"></p>
                <a href="#" class="buttom-link" v-scroll-to="'#product--lister'">Ver productos</a>
              </div>
              <div class="side-tag"> <span>&#9472&#9472&#9472</span> {{marcas.titulo}}</div>
