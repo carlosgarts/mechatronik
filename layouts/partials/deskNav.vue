@@ -54,8 +54,8 @@ export default {
     },
     beforeMount: async function() {
         try {
-          var Category = await this.$axios.get('http://mechatronik-group.com:4000/api/categorias');
-          var Brand = await this.$axios.get('http://mechatronik-group.com:4000/api/marcas');
+          var Category = await this.$axios.get('http://system.mechatronik-group.com/api/categorias');
+          var Brand = await this.$axios.get('http://system.mechatronik-group.com/api/marcas');
           this.categorias = Category.data.categorias;
           this.marcas = Brand.data.marcas;
         } catch (e) {

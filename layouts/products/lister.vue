@@ -84,10 +84,10 @@ export default {
         const id = this.idQuery;
         var consulta;
         if (this.porMarca == true) {
-          consulta = 'http://mechatronik-group.com:4000/api/pormarca/';
+          consulta = 'http://system.mechatronik-group.com/api/pormarca/';
         }
         else {
-          consulta = 'http://mechatronik-group.com:4000/api/porcategoria/';
+          consulta = 'http://system.mechatronik-group.com/api/porcategoria/';
         }
         consulta = consulta.concat(id);
         var Productos = await this.$axios.get(consulta);
@@ -104,10 +104,10 @@ export default {
         const id = this.idQuery;
         var consulta;
         if (this.porMarca == 'si') {
-          consulta = 'http://mechatronik-group.com:4000/api/pormarca/';
+          consulta = 'http://system.mechatronik-group.com/api/pormarca/';
         }
         else {
-          consulta = 'http://mechatronik-group.com:4000/api/porcategoria/';
+          consulta = 'http://system.mechatronik-group.com/api/porcategoria/';
         }
         consulta = consulta.concat(id);
         var Productos = await this.$axios.get(consulta);
