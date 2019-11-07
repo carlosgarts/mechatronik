@@ -44,7 +44,7 @@ export default {
   mounted: async function() {
       try {
         const id = this.$route.params.id;
-        var consulta = 'http://system.mechatronik-group.com/api/categorias/',
+        var consulta = 'https://system.mechatronik-group.com/api/categorias/',
         consulta = consulta.concat(id);
         var Category = await this.$axios.get(consulta);
         this.categorias = Category.data.categorias[0];

@@ -66,7 +66,7 @@ export default {
         var parts;
         var jobj;
         var i = 0;
-        consulta = 'http://system.mechatronik-group.com/api/producto/';
+        consulta = 'https://system.mechatronik-group.com/api/producto/';
         consulta = consulta.concat(id);
         var Producto = await this.$axios.get(consulta);
         this.producto = Producto.data.productos[0];

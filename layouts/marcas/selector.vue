@@ -62,7 +62,7 @@ export default {
   },
   beforeMount: async function() {
       try {
-        var Marca = await this.$axios.get('http://system.mechatronik-group.com/api/marcas');
+        var Marca = await this.$axios.get('https://system.mechatronik-group.com/api/marcas');
         this.marcas = Marca.data.marcas;
         this.isLoading = false;
       } catch (e) {
