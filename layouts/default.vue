@@ -26,7 +26,7 @@ export default {
 
 @font-face {
   font-family: Raleway;
-  src: url('../assets/fonts/Raleway-Bold.ttf');
+  src: url('../assets/fonts/Raleway-ExtraBold.ttf');
   font-weight: Bold;
 }
 

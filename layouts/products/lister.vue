@@ -7,7 +7,7 @@
         <div class="select-box">
             <div class="lister">
               <div class="prod-card" v-for="producto in paginatedData" :key="pageNumber" >
-                <img :src="producto.fotos.substr(0, producto.fotos.lastIndexOf(';'))" alt="product image">
+                <img :src="producto.fotos.split(';',1)" alt="product image">
                 <h3>{{producto.nombre}}</h3>
                 <p>{{producto.descripcion}}</p>
                 <nuxt-link :to="'/productos/'+ producto.id" class="buttom-link">Ver Producto &#10095;</nuxt-link>
