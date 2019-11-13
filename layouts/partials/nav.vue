@@ -3,7 +3,7 @@
   <div class="black-label">
     <a href="#">Blogs</a>
     <a href="#">Partners</a>
-    <a href="#">Contacto</a>
+    <a href="#" v-scroll-to="'#contact'">Contacto</a>
   </div>
   <mobileNav v-bind:class="{ home: ishome }"/>
   <deskNav v-bind:class="{ home: ishome }"/>

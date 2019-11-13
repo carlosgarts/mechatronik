@@ -10,9 +10,9 @@
     <cifras/>
     <processIntro/>
     <mail/>
-    <div id="test" class="credit">
+    <!-- <div id="test" class="credit">
       <a href="https://www.script-angels.com">Web Development by Carlos Gamez</a>
-    </div>
+    </div> -->
   </div>
 </template>
 

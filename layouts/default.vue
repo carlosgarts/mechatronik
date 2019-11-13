@@ -2,15 +2,18 @@
   <div>
     <Navigation/>
     <nuxt />
+    <mechafooter/>
   </div>
 </template>
 
 <script>
 import Navigation from '~/layouts/partials/nav.vue'
+import mechafooter from '~/layouts/partials/footer.vue'
 
 export default {
   components: {
-    Navigation
+    Navigation,
+    mechafooter
   }
 }
 </script>
