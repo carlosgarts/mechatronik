@@ -2,7 +2,7 @@
   <div>
     <Navigation/>
     <nuxt />
-    <mechafooter/>
+    <mechafooter class="foot" />
   </div>
 </template>
 

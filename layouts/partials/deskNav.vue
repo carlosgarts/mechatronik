@@ -3,26 +3,40 @@
    <nuxt-link to="/" id="desk-logo"><img class="logo" src="@/assets/images/identity/MECHATRONIK-WEB-LOGO-COLOR.png" alt="Mechatronik"> </nuxt-link>
    <!-- <a href="#">Español &#9660</a> -->
    <nuxt-link to="/compañia">COMPAÑIA</nuxt-link>
-   <nuxt-link to="/soluciones">SOLUCIONES</nuxt-link>
+   <!-- <nuxt-link to="/soluciones">SOLUCIONES</nuxt-link> -->
    <div class="dropdown">
-    <button class="dropbtn">SERVICIOS
+    <button class="dropbtn">SERVICIOS & SOLUCIONES
       <i class="fa fa-caret-down"></i>
     </button>
 <div class="dropdown-content">
-      <h4>SERVICIOS</h4>
-      <nuxt-link class="big-links mb" to="/servicios">
-        <h5 class="link-tit">Experiencia Industrial</h5>
-        <p class="link-sub">Diseño Mecánico</p>
-        <p class="link-sub">Diseño Eléctrico</p>
-        <p class="link-sub">Manufactura Aditiva</p>
-        <p class="link-sub">Ingenieria de Control</p>
-      </nuxt-link>
-      <nuxt-link class="big-links" to="/servicios">
-        <h5 class="link-tit">Algunas otras</h5>
-        <p class="link-sub">Outsourcing de Personal</p>
-        <p class="link-sub">Consultoría en Industria 4.0</p>
-        <p class="link-sub">Consultoría en Motion Control</p>
-      </nuxt-link>
+      <h4>SERVICIOS & SOLUCIONES</h4>
+      <div class="men-grid">
+        <div class="men-col">
+        <nuxt-link class="big-links" to="/soluciones-servicios">
+          <h5 class="link-tit">Acerca de</h5>
+          <p class="link-sub">Desarrollamos proyectos llave en mano enfocados en la automatización de sus procesos de manufactura.
+            Soluciones de sistema para aplicaciones de alto rendimiento.</p>
+          <img  class="menu-img" src="../../assets/images/Soluciones/fondo-1.jpg">
+        </nuxt-link>
+        </div>
+        <div class="men-col">
+        <nuxt-link class="big-links marg" to="/servicios">
+          <h5 class="link-tit">Servicios</h5>
+          <p class="link-sub link-item">Diseño Mecánico</p>
+          <p class="link-sub link-item">Diseño Eléctrico</p>
+          <p class="link-sub link-item">Manufactura Aditiva</p>
+          <p class="link-sub link-item">Ingenieria de Control</p>
+        </nuxt-link>
+        </div>
+        <div class="men-col">
+        <nuxt-link class="big-links" to="/soluciones">
+          <h5 class="link-tit">Soluciones</h5>
+          <p class="link-sub link-item">Outsourcing de Personal</p>
+          <p class="link-sub link-item">Consultoría en Industria 4.0</p>
+          <p class="link-sub link-item">Consultoría en Motion Control</p>
+        </nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
   <div class="dropdown">
@@ -31,12 +45,26 @@
     </button>
     <div class="dropdown-content">
       <h4>PRODUCTOS</h4>
-      <nuxt-link to="/categorias" class="link-tit">Categorias</nuxt-link>
-        <p class="link-sub" v-if="categorias == undefined">Empty</p>
-        <nuxt-link v-else :to="'/categorias/'+ categoria.id" v-for="categoria in categorias" v-bind:key="categoria.id"><p class="link-sub">{{categoria.titulo}}</p></nuxt-link>
-      <nuxt-link to="/marcas" class="link-tit">Marcas</nuxt-link>
-        <p class="link-sub" v-if="marcas == undefined">Empty</p>
-        <nuxt-link v-else :to="'/marcas/'+ marca.id" v-for="marca in marcas" v-bind:key="marca.id"><p class="link-sub">{{marca.titulo}}</p></nuxt-link>
+      <div class="men-grid">
+        <div class="men-col">
+        <a class="big-links" to="#">
+          <h5 class="link-tit">Nuestros Productos</h5>
+          <p class="link-sub">Nuestros porductos unen las mejores propiedades entre economia y rendimiento,
+            estamos dedicados a un excelente soporte al clientes, A través, de nuestro catálogo podras conseguir informacion a profundidad.</p>
+          <img  class="menu-img" src="../../assets/images/product-section/menu.jpg">
+        </a>
+        </div>
+        <div class="men-col flexi marg">
+          <nuxt-link to="/categorias" class="link-tit"><h5 class="link-tit">Categorias</h5></nuxt-link>
+            <p class="link-sub" v-if="categorias == undefined">Empty</p>
+            <nuxt-link class="link-item" v-else :to="'/categorias/'+ categoria.id" v-for="categoria in categorias" v-bind:key="categoria.id"><p class="link-sub">{{categoria.titulo}}</p></nuxt-link>
+        </div>
+        <div class="men-col flexi">
+          <nuxt-link to="/marcas" class="link-tit"><h5 class="link-tit">Marcas</h5></nuxt-link>
+            <p class="link-sub" v-if="marcas == undefined">Empty</p>
+            <nuxt-link class="link-item" v-else :to="'/marcas/'+ marca.id" v-for="marca in marcas" v-bind:key="marca.id"><p class="link-sub">{{marca.titulo}}</p></nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
    <nuxt-link to="/">INICIO</nuxt-link>
@@ -136,6 +164,7 @@ export default {
   overflow: hidden;
   height: 100%;
   .dropbtn {
+   transition: 0.5s;
    font-size: 14px;
    border: none;
    outline: none;
@@ -223,18 +252,6 @@ html[data-scroll='0'] {
  clear: both;
 }
 
-//////Menu language//////////////////////////////////////////////////////
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropbtn {
-  transition: 0.5s;
-}
-
 /* Dropdown button */
 .dropdown .dropbtn {
   font-size: 14px;
@@ -258,32 +275,45 @@ html[data-scroll='0'] {
   display: none;
   position: absolute;
   background-color: rgba(0,0,0,0.6);
-  min-width: 160px;
+  width: 100%;
+  left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  a {
-    float: none;
-    color: white;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    .link-sub {
-      font-family: Raleway;
-      font-style: normal;
-      font-weight: lighter;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      padding-left: 10px;
+  .men-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    .marg {
+      border-left: 1px solid #65A3AE;
+      border-right: 1px solid #65A3AE;
     }
-  }
-  a:hover {
-    background-color: #65A3AE;
-  }
-  .big-links {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    &.mb {
-      border-bottom: 1px solid #65A3AE;
+    .men-col {
+      display: flex;
+      flex-flow: column;
+      a {
+        float: none;
+        color: white;
+        text-decoration: none;
+        display: block;
+        height: auto;
+        text-align: left;
+      }
+      a:hover {
+        background-color: #65A3AE;
+      }
+      .link-item {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .big-links {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        &.mb {
+          border-bottom: 1px solid #65A3AE;
+        }
+      }
     }
   }
   h4 {
@@ -291,16 +321,22 @@ html[data-scroll='0'] {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 24px;
+    margin-left: 5%;
+    }
+
+  .menu-img {
+      width: 100%;
+      margin-bottom: 10px;
     }
 
     .link-tit {
       font-family: Raleway;
       font-style: normal;
       font-weight: bold;
-      font-size: 16px;
-      padding-top: 2;
-      padding-bottom: 2;
+      font-size: 18px;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
     .link-sub {
       font-family: Raleway;
@@ -308,8 +344,10 @@ html[data-scroll='0'] {
       font-weight: lighter;
       padding-top: 2px;
       padding-bottom: 2px;
-      padding-left: 25px;
+      text-align: justify;
       color: white;
+      font-size: 12px;
+      line-height: 1.35;
     }
 }
 

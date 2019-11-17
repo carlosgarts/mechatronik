@@ -22,7 +22,7 @@
     <div class="complement-section">
       <div class="product--accordion">
 
-        <button class="accordion" v-bind:class="{ active: acEs }" v-on:click="acEs = !acEs">Especificaciones técnicas</button>
+        <button class="accordion ac1" v-bind:class="{ active: acEs }" v-on:click="acEs = !acEs">Especificaciones técnicas</button>
         <div class="panel" v-bind:class="{ active: acEs }">
           <div class="especificacion" v-for="(n) in especificaciones.length">
             <label>{{especificaciones[n-1]}}:</label> {{detalles[n-1]}}
@@ -34,7 +34,7 @@
           <p v-html="producto.aplicaciones"></p>
         </div>
 
-        <button class="accordion" v-bind:class="{ active: acBro }" v-on:click="acBro = !acBro">Información técnica</button>
+        <button class="accordion ac3" v-bind:class="{ active: acBro }" v-on:click="acBro = !acBro">Información técnica</button>
         <div class="panel" v-bind:class="{ active: acBro }">
           <p> <a :href="producto.folleto" target="_blank">Descargar Manual</a> </p>
         </div>
@@ -217,7 +217,7 @@ export default {
 
 .product--accordion {
   width: 85%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -249,6 +249,16 @@ export default {
        content: "\23F6"; /* Unicode character for "minus" sign (-) */
      }
    }
+}
+
+.ac1 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.ac3 {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /* Style the accordion panel. Note: hidden by default */

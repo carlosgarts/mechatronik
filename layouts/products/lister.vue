@@ -147,6 +147,8 @@ p {
   word-break: break-all;
   height: 55px;
   overflow:hidden;
+  margin-top: 10px;
+  margin-bottom: 30px;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   mask-image: gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
@@ -158,7 +160,7 @@ p {
 }
 
 .product--list {
-  width: 80%;
+  width: 90%;
   position: relative;
   margin-bottom: 10%;
 }
@@ -171,13 +173,14 @@ p {
 }
 
 .prod-card {
-  width: 270px;
+  width: 280px;
   padding: 25px;
   background-color: white;
   margin: 16px;
   -webkit-box-shadow: 6px 6px 17px 2px rgba(140,140,140,1);
   -moz-box-shadow: 6px 6px 17px 2px rgba(140,140,140,1);
   box-shadow: 6px 6px 17px 2px rgba(140,140,140,1);
+  border-radius: 25px;
   img {
     width: 100%;
     height: 200px;
@@ -191,7 +194,9 @@ p {
   color: white;
   background-color: white;
   color: #65A3AE;
-  padding: 6px 15px;
+  padding: 7px 15px;
+  display: block;
+  width: 143px;
   border-radius: 18px;
   -webkit-box-shadow: 2px 6px 8px 1px rgba(140,140,140,0.4);
   -moz-box-shadow: 2px 6px 8px 1px rgba(140,140,140,0.4);
@@ -203,7 +208,6 @@ p {
 }
 
 .side-tag {
-  left: -5%;
   bottom: 25%;
   .smallArrow {
     margin-left: 10px;

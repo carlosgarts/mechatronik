@@ -3,7 +3,7 @@
     <div id="soluciones--1">
       <div class="title--bar">
         <div class="tbb">
-          <h2><strong>SOLUCIONES</strong></h2>
+          <h2><strong>SERVICIOS & SOLUCIONES</strong></h2>
         </div>
       </div>
       <div class="beneficios">

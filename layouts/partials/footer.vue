@@ -12,7 +12,7 @@
       <div class="column" id="contact">
         <h2>Contact Us</h2>
         <ul>
-          <li><img class="icon" src="@/assets/images/SVG/mail.svg">email: info@mechatronik.com</li>
+          <li><img class="icon" src="@/assets/images/SVG/mail.svg">email: info@mechatronik-group.com</li>
           <li><img class="icon" src="@/assets/images/SVG/call.svg">tel. +51 1 (81) 59 98 01 98</li>
           <li><img class="icon" src="@/assets/images/SVG/call.svg">cel. +52 1 (81) 20 40 28 15</li>
           <li><img class="icon" src="@/assets/images/SVG/location.svg"><div><a href="https://www.google.com/maps/place/IOS+OFFICES+Arboleda/@25.6495432,-100.3569827,20.5z/data=!4m5!3m4!1s0x8662bde757081d17:0x6a1251648727527f!8m2!3d25.6495863!4d-100.3568052">Mechatronik Group | Ave. Roble No. 660 Piso 3 Col. Valle del Campestre | San Pedro Garza Garcia, N.L. Mexico | CP. 66265</a></div> </li>
@@ -46,7 +46,9 @@ footer {
   font-size: 14px;
   line-height: 2.1;
   font-family: Raleway, Roboto, Arial, sans-serif;
-  margin-top: 5%;
+  //margin-top: 5%;
+  z-index: 5;
+  position: relative;
 }
 ul {
   padding-left: 0;
@@ -63,11 +65,14 @@ ul {
 .ft-grid {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  column-gap: 7.5%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
   @media (min-width: 600px) {
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .column {
     text-align: center;
@@ -89,7 +94,7 @@ ul {
 }
 
 .credits {
-  margin: 5%;
+  margin: 7.5%;
   margin-bottom: 0;
   padding-bottom: 25px;
   a {
