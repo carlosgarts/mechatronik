@@ -3,17 +3,51 @@
     <img class="show-img" src="@/assets/images/Inicio/newsletter.jpg" alt="mechatronik contactanos">
     <div class="content">
       <h4>GET<br>TO<br>KNOW<br>US<br>BETTER</h4>
-      <div class="controller">
-        <input class="email" type="text" name="email" placeholder="Enter your email" value="">
-        <button class="sender" type="button" name="send"> <img class="send-img" src="@/assets/images/arrow-right.png" alt=" > "> </button>
+      <div v-if="resultado == null">
+        <div class="controller">
+          <input class="email" type="email" name="email" v-model="interesado" placeholder="Enter your email" value="">
+          <button class="sender" type="button" name="send" v-on:click="sendMail(interesado)"> <img class="send-img" src="@/assets/images/arrow-right.png" alt=" > "> </button>
+        </div>
+        <div class="advice">Enter your email address to get started.</div>
       </div>
-      <div class="advice">Enter your email address to get started.</div>
+      <div v-else>
+        <div class="advice">{{resultado}}</div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  data: function() {
+    return {
+      interesado: '',
+      resultado: null
+    }
+  },
+  methods: {
+    sendMail: async function(interested) {
+      if (interested != '') {
+        try {
+          consulta = 'https://system.mechatronik-group.com/api/mail/';
+          consulta = consulta.concat(interested);
+          console.log(consulta);
+          var Sender = await this.$axios.get(consulta);
+          this.services = Sender.data.servicios;
+          this.isLoading = false;
+          if (Sender.data.result == 'success') {
+            this.resultado = "Your mail has been sent, thanks, we'll get back to you soon";
+          }
+          else {
+            this.resultado = "Something went wrong, try again later please."
+          }
+        } catch (e) {
+          this.isLoading = false;
+          console.log(e);
+        }
+      }
+    }
+  }
 }
 </script>
 
