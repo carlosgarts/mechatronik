@@ -2,11 +2,15 @@
   <footer>
     <div class="ft-grid">
       <div class="column">
-        <h2>Mechatronik Lösungen</h2>
+        <h2>Mechatronik</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Dedicados a una excelenteatención al clienteen productos, servicios y una solución para la industria.
+          Ya sea para un posicionamiento preciso y repetibe, velocidad constante y alto movimiento dinámico,
+          largas trayectoria de desplazamiento o cambios rápidos de velocidad. <br>
+          Tenemos una cartera de servos, reductores planetarios, actuadores lineales y más para la solución óptima
+          para cada tarea de control de movimiento. <br>
+          Contamos con un amplio conjunto de servicios y experiencia en la ingeniería de automatización
+          e integracion de nuevas tecnologías.
         </p>
       </div>
       <div class="column" id="contact">
@@ -15,7 +19,7 @@
           <li><img class="icon" src="@/assets/images/SVG/mail.svg">email: info@mechatronik-group.com</li>
           <li><img class="icon" src="@/assets/images/SVG/call.svg">tel. +51 1 (81) 59 98 01 98</li>
           <li><img class="icon" src="@/assets/images/SVG/call.svg">cel. +52 1 (81) 20 40 28 15</li>
-          <li><img class="icon" src="@/assets/images/SVG/location.svg"><div><a href="https://www.google.com/maps/place/IOS+OFFICES+Arboleda/@25.6495432,-100.3569827,20.5z/data=!4m5!3m4!1s0x8662bde757081d17:0x6a1251648727527f!8m2!3d25.6495863!4d-100.3568052">Mechatronik Group | Ave. Roble No. 660 Piso 3 Col. Valle del Campestre | San Pedro Garza Garcia, N.L. Mexico | CP. 66265</a></div> </li>
+          <li><img class="icon" src="@/assets/images/SVG/location.svg"><div><a href="https://goo.gl/maps/dqL6NEvXCiKuQKMa9">Mechatronik Group | Ave. Roble No. 660 Piso 3 Col. Valle del Campestre | San Pedro Garza Garcia, N.L. Mexico | CP. 66265</a></div> </li>
         </ul>
       </div>
       <div class="column">
@@ -40,10 +44,10 @@ export default {
 footer {
   color:#fff;
   text-align: center;
-  background-color: #000;
+  background-color: #3f3f3f;
   width: 100%;
   min-height: 300px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2.1;
   font-family: Raleway, Roboto, Arial, sans-serif;
   //margin-top: 5%;
@@ -97,6 +101,7 @@ ul {
   margin: 7.5%;
   margin-bottom: 0;
   padding-bottom: 25px;
+  margin-top: 40px;
   a {
     text-decoration: underline;
   }

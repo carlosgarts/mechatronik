@@ -22,7 +22,7 @@ export default {
 .title--bar {
   display: block;
   width: 100%;
-  background: url('../../assets/images/Soluciones/fondo-1.jpg') no-repeat;
+  background: url('../../assets/images/soluciones-servicios/serv1.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 100px;
@@ -33,6 +33,7 @@ export default {
   justify-content: center;
   @media (min-width: 1000px) {
     margin-top: 140px;
+    height: 50vh;
   }
   p {
     color: white;

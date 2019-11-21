@@ -26,7 +26,8 @@ export default {
 
 <style lang="scss" scoped>
 .section {
-  background-image: url('../../assets/images/Compañia/fondo-2.jpg');
+  // background-image: url('../../assets/images/Compañia/fondo-2.jpg');
+  background-color: #000;
 }
 #mision--vision {
   width: 100%;

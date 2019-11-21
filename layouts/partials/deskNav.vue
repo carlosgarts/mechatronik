@@ -16,7 +16,7 @@
           <h5 class="link-tit">Acerca de</h5>
           <p class="link-sub">Desarrollamos proyectos llave en mano enfocados en la automatización de sus procesos de manufactura.
             Soluciones de sistema para aplicaciones de alto rendimiento.</p>
-          <img  class="menu-img" src="../../assets/images/Soluciones/fondo-1.jpg">
+          <!-- <img  class="menu-img" src="../../assets/images/Soluciones/fondo-1.jpg"> -->
         </nuxt-link>
         </div>
         <div class="men-col">
@@ -51,7 +51,7 @@
           <h5 class="link-tit">Nuestros Productos</h5>
           <p class="link-sub">Nuestros porductos unen las mejores propiedades entre economia y rendimiento,
             estamos dedicados a un excelente soporte al clientes, A través, de nuestro catálogo podras conseguir informacion a profundidad.</p>
-          <img  class="menu-img" src="../../assets/images/product-section/menu.jpg">
+          <!-- <img  class="menu-img" src="../../assets/images/product-section/menu.jpg"> -->
         </a>
         </div>
         <div class="men-col flexi marg">

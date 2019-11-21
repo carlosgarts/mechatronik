@@ -7,7 +7,7 @@
     <div id="intro" class="animated fadeIn">
       <div class="main--slogan">
         <h1>Transformando el proceso y desarrollo de productos </h1>
-        <h3>con soluciones integradas de alto rendimiento para el <br> diseño, somulación y fabricación.</h3>
+        <h3>con soluciones integradas de alto rendimiento para el <br> diseño, simulación y fabricación.</h3>
       </div>
       <a class="goto-link" href="#" v-scroll-to="'#slider--intro'">
         <svg version="1.1" id="Layer_1" class="arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -54,7 +54,7 @@ export default {
   h1 {
     transition: 0.5s;
     color: white;
-    font-size: calc(28px + (70 - 28) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(28px + (60 - 28) * ((100vw - 300px) / (1600 - 300)));
   }
   h3 {
     font-family: Raleway;

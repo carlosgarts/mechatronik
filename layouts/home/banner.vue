@@ -19,7 +19,7 @@ export default {
     h1 {
       font-family: Raleway;
       font-style: normal;
-      font-weight: bold;
+      font-weight: normal;
       font-size: 35px;
       font-size: calc(18px + (45 - 18) * ((100vw - 300px) / (1600 - 300)));
       line-height: 96.4%;

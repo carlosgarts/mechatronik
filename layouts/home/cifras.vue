@@ -2,7 +2,7 @@
   <div class="short-section">
     <div id="cifras">
       <h1>¡OPTIMIZANDO EL FUNCIONAMIENTO DE SU EMPRESA!</h1>
-      <h3>HECHOS & CIFRAS</h3>
+      <!-- <h3>HECHOS & CIFRAS</h3> -->
       <div class="cards">
         <div class="card">
           <img class="icon" src="@/assets/images/SVG/Fundada.svg" alt="Fundada">
