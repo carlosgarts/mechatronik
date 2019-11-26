@@ -4,7 +4,9 @@
       <div class="tbb">
         <h2><strong>SERVICIOS</strong></h2>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>La tecnología de punta y la competencia en el campo de la ingeniería mecánica y el desarrollo de software permiten un proceso de servicio completo
+        teniendo en cuenta los requisitos específicos del cliente, a través de la planificación de sistemas completos e integraciones de sistema,
+        en Mechatronik-Lösungen los apoyamos desde el prototipo hasta la producción en masa.</p>
     </div>
   </div>
 </template>
