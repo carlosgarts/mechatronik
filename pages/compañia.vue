@@ -1,18 +1,19 @@
 <template>
   <div class="container">
-    <About/>
+    <companyHeader/>
     <Mision/>
   </div>
 </template>
 
 <script>
-import About from '~/layouts/company/about.vue'
+// import About from '~/layouts/company/about.vue'
+import companyHeader from '~/layouts/company/company-header.vue'
 import Mision from '~/layouts/company/mision.vue'
 
 export default {
   components: {
-    About,
-    Mision
+    Mision,
+    companyHeader
   }
 }
 </script>

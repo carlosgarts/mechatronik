@@ -4,7 +4,7 @@
       <div class="column">
         <h2>Mechatronik</h2>
         <p>
-          Dedicados a una excelenteatención al clienteen productos, servicios y una solución para la industria.
+          Dedicados a una excelente atención al cliente en productos, servicios y una solución para la industria.
           Ya sea para un posicionamiento preciso y repetibe, velocidad constante y alto movimiento dinámico,
           largas trayectoria de desplazamiento o cambios rápidos de velocidad. <br>
           Tenemos una cartera de servos, reductores planetarios, actuadores lineales y más para la solución óptima

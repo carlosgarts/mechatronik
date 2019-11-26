@@ -1,6 +1,7 @@
 <template>
   <div class="section">
     <div id="mision--vision">
+      <img class="parallax-background" v-rellax="{speed: -10, vertical: true, horizontal: false}" src="../../assets/images/Soluciones/bg-clear.png" alt="">
       <div class="content" v-scroll-reveal.reset>
         <div class="info">
           <div class="mision">
@@ -27,11 +28,17 @@ export default {
 <style lang="scss" scoped>
 .section {
   // background-image: url('../../assets/images/Compañia/fondo-2.jpg');
-  background-color: #000;
+  background-color: white;
 }
 #mision--vision {
   width: 100%;
+  position: relative;
   @media (min-width: 600px) {
+  }
+  .parallax-background {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
   }
   .content {
     width: 100%;
@@ -47,7 +54,7 @@ export default {
       font-style: normal;
       font-weight: bold;
       font-size: calc(30px + (70 - 30) * ((100vw - 300px) / (1600 - 300)));
-      color: white;
+      color: black;
       margin-top: 10px;
     }
     p {
@@ -57,7 +64,7 @@ export default {
       font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
       line-height: 1.4;
       text-align: center;
-      color: white;
+      color: black;
       width: 70%;
     }
     .info {
@@ -77,7 +84,7 @@ export default {
       height: auto;
       margin-bottom: 10vh;
       @media (min-width: 1000px) {
-        border-left: 2px solid white;
+        border-left: 2px solid black;
         margin-bottom: 0;
       }
       h1 {
