@@ -90,7 +90,6 @@ export default {
     display: inline-block;
     position: relative;
     text-align: left;
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: calc(50px + (70 - 50) * ((100vw - 300px) / (1600 - 300)));
@@ -105,7 +104,6 @@ export default {
   h4 {
     position: relative;
     text-align: left;
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
@@ -205,7 +203,6 @@ export default {
       font-size: 20px;
       margin-top: 5px;
       margin-bottom: 5px;
-      font-family: Raleway;
       font-style: normal;
       font-weight: bold;
       @media (min-width: 1000px) {
@@ -214,7 +211,6 @@ export default {
     }
     p {
       margin-top: 5px;
-      font-family: Raleway;
       font-style: normal;
       font-weight: 400;
       opacity: 0.5;

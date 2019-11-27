@@ -53,9 +53,9 @@
           </nuxt-link>
          </div>
          <div class="row nbb" @click="is_toggled = false">
-          <nuxt-link to="/servicios">
-             <h3>OTROS SERVICIOS</h3>
-               <p>Diseño Mecánico y otras</p>
+          <nuxt-link to="/compañia">
+             <h3>COMPAÑIA</h3>
+               <p>Quienes somos </p>
           </nuxt-link>
          </div>
      </div>
@@ -170,7 +170,7 @@ export default {
  color: #050505;
  height: 70px;
  //padding-right: 25px;
- font-family: Raleway;
+ font-family: Raleway, Roboto, Arial, sans-serif;
  -webkit-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
  -moz-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
  box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
@@ -191,7 +191,7 @@ export default {
   padding-left: 18px;
   padding-right: 18px;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: Raleway, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
  }
@@ -210,7 +210,7 @@ export default {
    background-color: inherit;
    font: inherit; /* Important for vertical align on mobile phones */
    margin: 0; /* Important for vertical align on mobile phones */
-   font-family: Raleway;
+   font-family: Raleway, Roboto, Arial, sans-serif;
    font-style: normal;
    font-weight: bold;
   }

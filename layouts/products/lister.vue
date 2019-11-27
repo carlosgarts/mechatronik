@@ -127,7 +127,6 @@ export default {
 
 h2 {
   font-size: 50px;
-  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   margin-left: 5%;
@@ -135,7 +134,6 @@ h2 {
 
 h3 {
   font-size: 25px;
-  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   word-break: break-all;

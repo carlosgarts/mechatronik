@@ -104,7 +104,6 @@ export default {
       display: inline-block;
       position: relative;
       text-align: left;
-      font-family: Raleway;
       font-style: normal;
       font-weight: bold;
       font-size: calc(32px + (70 - 32) * ((100vw - 300px) / (1600 - 300)));
@@ -143,7 +142,6 @@ export default {
     background-color: #65A3AE;
     padding: 20px;
     padding-left: 10%;
-    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     line-height: 23px;
