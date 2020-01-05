@@ -1,8 +1,8 @@
 <template>
 <div id="navigation">
   <div class="black-label">
-    <!-- <a href="#">Blogs</a>
-    <a href="#">Partners</a> -->
+    <a href="https://blog.mechatronik-group.com/">Blog</a>
+    <!-- <a href="#">Partners</a> -->
     <a href="#" v-scroll-to="'#contact'">Contacto</a>
   </div>
   <mobileNav v-bind:class="{ home: ishome }"/>
