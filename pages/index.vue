@@ -6,7 +6,7 @@
     <!-- {{item.scrollHeight}} -->
     <intro/>
     <bannerB/>
-    <sliderIntro/>
+    <blogWidget/>
     <cifras/>
     <processIntro/>
     <mail/>
@@ -19,6 +19,7 @@
 <script>
 import intro from '~/layouts/home/intro.vue'
 import bannerB from '~/layouts/home/banner.vue'
+import blogWidget from '~/layouts/blog/blog-widget.vue'
 import sliderIntro from '~/layouts/home/slider.vue'
 import cifras from '~/layouts/home/cifras.vue'
 import processIntro from '~/layouts/home/process.vue'
@@ -32,6 +33,7 @@ import mail from '~/layouts/home/mail.vue'
 export default {
   components: {
     intro,
+    blogWidget,
     sliderIntro,
     bannerB,
     cifras,

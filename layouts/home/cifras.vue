@@ -57,6 +57,7 @@ export default {
     font-weight: bold;
     margin-bottom: 0;
     font-size: 30px;
+    margin-top: 0;
   }
   h3{
     font-family: Raleway;

@@ -1,7 +1,7 @@
 <template>
 <div id="navigation">
   <div class="black-label">
-    <a href="https://blog.mechatronik-group.com/">Blog</a>
+    <nuxt-link to="/blog">Blog</nuxt-link>
     <!-- <a href="#">Partners</a> -->
     <a href="#" v-scroll-to="'#contact'">Contacto</a>
   </div>
