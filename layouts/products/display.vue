@@ -5,17 +5,16 @@
         <div class="frame">
           <div class="product">
             <div class="info">
-              <h1>{{producto.nombre}}</h1>
-              <h4>{{producto.modelo}}</h4>
-              <p v-html="producto.descripcion"></p>
+              <h1>{{producto.name}}</h1>
+              <h4 v-if="producto.acf != null">{{producto.acf.modelo}}</h4>
+              <p v-html="producto.description"></p>
             </div>
             <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE">
-              <slide class="slide" v-for="foto in fotos" v-bind:key="producto.id">
-                <img :src="foto" alt="product picture">
+              <slide class="slide" v-for="foto in producto.images" v-bind:key="producto.id">
+                <img :src="foto.src" alt="product picture">
               </slide>
             </carousel>
           </div>
-          <div class="side-tag"> <span>&#9472&#9472&#9472</span>Productos <span class="smallArrow">&#10095;</span> {{producto.marca}}</div>
         </div>
       </div>
     </div>
@@ -31,12 +30,12 @@
 
         <button class="accordion" v-bind:class="{ active: acAp }" v-on:click="acAp = !acAp">Aplicaciones </button>
         <div class="panel" v-bind:class="{ active: acAp }">
-          <p v-html="producto.aplicaciones"></p>
+          <p v-if="producto.acf != null" v-html="producto.acf.aplicaciones"></p>
         </div>
 
         <button class="accordion ac3" v-bind:class="{ active: acBro }" v-on:click="acBro = !acBro">Información técnica</button>
         <div class="panel" v-bind:class="{ active: acBro }">
-          <p> <a :href="producto.folleto" target="_blank">Descargar Manual</a> </p>
+          <p> <a v-if="producto.acf != null" :href="producto.acf.manual" target="_blank">Descargar Manual</a> </p>
         </div>
 
       </div>
@@ -50,7 +49,6 @@ export default {
   data: function () {
     return {
       producto: {},
-      fotos: [],
       especificaciones: [],
       detalles: [],
       acEs: false,
@@ -61,17 +59,16 @@ export default {
   },
   mounted: async function() {
       try {
-        const id = this.$route.params.id;
+        const slug = this.$route.params.slug;
         var consulta;
         var parts;
         var jobj;
         var i = 0;
-        consulta = 'https://system.mechatronik-group.com/api/producto/';
-        consulta = consulta.concat(id);
+        consulta = 'https://blog.mechatronik-group.com/wp-json/wc/v3/products?consumer_key=ck_e9c6d9731b8c0175383bd26c83a495508038d9bc&consumer_secret=cs_3e6da47350b9672250c45d708f7eb2ad15ce013f&slug=';
+        consulta = consulta.concat(slug);
         var Producto = await this.$axios.get(consulta);
-        this.producto = Producto.data.productos[0];
-        this.fotos = Producto.data.productos[0].fotos.split(';');
-        parts = this.producto.especificaciones.split(';');
+        this.producto = Producto.data[0];
+        parts = this.producto.acf.atributos.split(';');
         for(i=0; i < parts.length; i+=2){
           //jobj[parts[i]]=parts[i+1];
           this.especificaciones.push(parts[i]);
@@ -89,9 +86,9 @@ export default {
 <style lang="scss" scoped>
 
 .section {
-  margin-top: 110px;
+
   @media (min-width: 1000px) {
-    margin-top: 140px;
+
   }
 }
 

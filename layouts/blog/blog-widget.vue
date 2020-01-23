@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div id="blog-widget">
-      <h3>Blog <strong>News</strong></h3>
+      <h3>Blog & Novedades</h3>
       <div class="magazin">
         <div class="squares" v-for="post in posts">
           <nuxt-link :to="'/blog/'+ post.slug">
@@ -32,7 +32,7 @@ export default {
   },
   mounted: async function() {
       try {
-        var Blogis = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?per_page=4');
+        var Blogis = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?per_page=4&categories=17');
         this.posts = Blogis.data;
       } catch (e) {
         console.log(e);
@@ -194,6 +194,7 @@ export default {
     .cover {
       width: 100%;
       height: 100%;
+      max-height: 280px;
       overflow: hidden;
       img {
         width: 100%;
@@ -219,10 +220,9 @@ export default {
 
   #blog-widget {
     display: block;
-    // width: 100%;
-    margin: 30px;
+    margin: 25px 0;
     @media (min-width: 800px) {
-      margin: 60px;
+      margin: 50px 0;
     }
     @media (min-width: 1100px) {
 
@@ -230,10 +230,10 @@ export default {
     h3 {
       color: black;
       text-align: left;
-      font-family: Raleway;
+      letter-spacing: 0px;
       font-style: normal;
       font-weight: normal;
-      font-size: calc(35px + (55 - 35) * ((100vw - 300px) / (1600 - 300)));
+      font-size: calc(35px + (50 - 35) * ((100vw - 300px) / (1600 - 300)));
       margin-bottom: 30px;
     }
   }

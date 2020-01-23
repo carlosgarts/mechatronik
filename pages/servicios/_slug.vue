@@ -1,15 +1,15 @@
 <template>
   <div class="container">
-    <Selector/>
+      <ServiciosReader/>
   </div>
 </template>
 
 <script>
-import Selector from '~/layouts/marcas/singleSelector.vue'
+import ServiciosReader from '~/layouts/servicios/servicios-reader.vue'
 
 export default {
   components: {
-    Selector
+    ServiciosReader
   }
 }
 </script>

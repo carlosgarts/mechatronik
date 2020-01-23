@@ -135,13 +135,6 @@ export default {
   height: 100%;
 }
 
-#navigation {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
-  z-index: 50;
-}
-
 .logo {
   height: 50%;
 }
@@ -157,9 +150,6 @@ export default {
   overflow: hidden;
   width: 100%;
   background-color: white;
-  -webkit-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
-  -moz-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
-  box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
 }
 
 /* Navbar container */
@@ -185,7 +175,7 @@ export default {
   float: right;
   height: 100%;
   font-size: 16px;
-  color: white;
+  color: #050505;
   text-align: center;
   //padding: 14px 16px;
   padding-left: 18px;
@@ -251,17 +241,18 @@ html[data-scroll='0'] {
 .dropdown-content {
  display: flex;
  flex-flow: column;
-
+ border-top: 1px solid #CCCCCC;
  visibility: hidden;
  position: absolute;
- background: rgba(0, 0, 0, 0.8);
+ background: white;
  width: 100%;
- //height: 80vh;
+ height: 100vh;
  left: 0;
  z-index: 1;
  opacity: 0;
  transition: visibility 0s, opacity 0.2s linear;
  padding: 25px;
+ box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
 }
 
 #bun1, #meat, #bun2 {

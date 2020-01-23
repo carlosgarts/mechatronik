@@ -2,14 +2,14 @@
   <div class="section">
     <div class="gradient"></div>
     <video autoplay muted loop id="back--video">
-        <source src="../../assets/videos/intro.mp4" type="video/webm">
+        <source src="../../assets/videos/intro.mp4" type="video/mp4">
     </video>
     <div id="intro" class="animated fadeIn">
       <div class="main--slogan">
         <h1>Transformando el proceso y desarrollo de productos </h1>
         <h3>con soluciones integradas de alto rendimiento para el <br> diseño, simulación y fabricación.</h3>
       </div>
-      <a class="goto-link" href="#" v-scroll-to="'#slider--intro'">
+      <a class="goto-link" href="#" v-scroll-to="'#blog-widget'">
         <svg version="1.1" id="Layer_1" class="arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 108.1 65.1" style="enable-background:new 0 0 108.1 65.1;" xml:space="preserve">
         <style type="text/css">

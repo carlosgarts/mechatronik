@@ -36,7 +36,7 @@ export default {
   },
   mounted: async function() {
       try {
-        var Blogis = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts');
+        var Blogis = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?categories=17');
         this.posts = Blogis.data;
         this.isLoading = false;
       } catch (e) {

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <display/>
+    <display :Modo='1'/>
   </div>
 </template>
 

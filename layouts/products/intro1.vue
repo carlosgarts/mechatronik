@@ -49,7 +49,6 @@ export default {
   background-color: white;
   //flex-direction: column;
   display: block;
-  margin-top: 100px;
   @media (min-width: 1000px) {
     padding-bottom: 25vh;
   }

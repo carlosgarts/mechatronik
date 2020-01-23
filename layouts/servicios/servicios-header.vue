@@ -27,14 +27,12 @@ export default {
   background: url('../../assets/images/soluciones-servicios/sol1.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 100px;
   height: auto;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
   justify-content: center;
   @media (min-width: 1000px) {
-    margin-top: 140px;
     height: 50vh;
   }
   p {

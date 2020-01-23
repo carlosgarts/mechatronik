@@ -22,19 +22,19 @@ export default {
 @import "../assets/css/animate.scss";
 
 @font-face {
-  font-family: Raleway;
-  src: url('../assets/fonts/Raleway.ttf');
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: Raleway;
-  src: url('../assets/fonts/Raleway-ExtraBold.ttf');
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-ExtraBold.ttf');
   font-weight: Bold;
 }
 
 html {
-  font-family: Raleway, Roboto, Arial, sans-serif;
+  font-family: OpenSans, Roboto, Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

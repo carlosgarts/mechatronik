@@ -1,24 +1,22 @@
 <template>
-  <div class="container">
-    <Intro1/>
-    <Intro2/>
+  <div class="searcher-container">
+    <Searcher :Modo='1'/>
   </div>
 </template>
 
 <script>
-import Intro1 from '~/layouts/products/intro1.vue'
-import Intro2 from '~/layouts/products/intro2.vue'
+import Searcher from '~/layouts/products/searcher.vue'
 
 export default {
   components: {
-    Intro1,
-    Intro2
+    Searcher
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  .container {
-    background-color: #f0f6f7;
+  .searcher-container {
+    background-color: #FFFFFF;
+    width: 100%;
   }
 </style>

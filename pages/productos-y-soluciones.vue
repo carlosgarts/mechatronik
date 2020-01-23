@@ -47,7 +47,6 @@ export default {
 
 <style lang="scss" scoped>
   .container {
-    padding-top: 100px;
     background: #65A3AE;
     overflow: hidden;
   }

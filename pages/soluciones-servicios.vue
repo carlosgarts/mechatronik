@@ -25,11 +25,7 @@ export default {
 
 <style lang="scss" scoped>
   .container {
-    margin-top: 75px;
     background-color: #f0f6f7;
     overflow: visible;
-    @media (min-width: 1000px) {
-      margin-top: 100px;
-    }
   }
 </style>

@@ -14,7 +14,7 @@
         <div class="men-col">
         <nuxt-link class="big-links" to="/soluciones-servicios">
           <h5 class="link-tit">Acerca de</h5>
-          <p class="link-sub">Desarrollamos proyectos llave en mano enfocados en la automatización de sus procesos de manufactura.
+          <p class="link-sub link-desc">Desarrollamos proyectos llave en mano enfocados en la automatización de sus procesos de manufactura.
             Soluciones de sistema para aplicaciones de alto rendimiento.</p>
           <!-- <img  class="menu-img" src="../../assets/images/Soluciones/fondo-1.jpg"> -->
         </nuxt-link>
@@ -49,7 +49,7 @@
         <div class="men-col">
         <a class="big-links" to="#">
           <h5 class="link-tit">Nuestros Productos</h5>
-          <p class="link-sub">Nuestros porductos unen las mejores propiedades entre economia y rendimiento,
+          <p class="link-sub link-desc">Nuestros porductos unen las mejores propiedades entre economia y rendimiento,
             estamos dedicados a un excelente soporte al clientes, A través, de nuestro catálogo podras conseguir informacion a profundidad.</p>
           <!-- <img  class="menu-img" src="../../assets/images/product-section/menu.jpg"> -->
         </a>
@@ -57,12 +57,12 @@
         <div class="men-col flexi marg">
           <nuxt-link to="/categorias" class="link-tit"><h5 class="link-tit">Categorias</h5></nuxt-link>
             <p class="link-sub" v-if="categorias == undefined">Empty</p>
-            <nuxt-link class="link-item" v-else :to="'/categorias/'+ categoria.id" v-for="categoria in categorias" v-bind:key="categoria.id"><p class="link-sub">{{categoria.titulo}}</p></nuxt-link>
+            <nuxt-link class="link-item" v-else :to="'/categorias/'+ categoria.slug" v-for="categoria in categorias" v-bind:key="categoria.id"><p class="link-sub">{{categoria.name}}</p></nuxt-link>
         </div>
         <div class="men-col flexi">
           <nuxt-link to="/marcas" class="link-tit"><h5 class="link-tit">Marcas</h5></nuxt-link>
             <p class="link-sub" v-if="marcas == undefined">Empty</p>
-            <nuxt-link class="link-item" v-else :to="'/marcas/'+ marca.id" v-for="marca in marcas" v-bind:key="marca.id"><p class="link-sub">{{marca.titulo}}</p></nuxt-link>
+            <nuxt-link class="link-item" v-else :to="'/marcas/'+ marca.slug" v-for="marca in marcas" v-bind:key="marca.id"><p class="link-sub">{{marca.name}}</p></nuxt-link>
         </div>
       </div>
     </div>
@@ -82,10 +82,10 @@ export default {
     },
     beforeMount: async function() {
         try {
-          var Category = await this.$axios.get('https://system.mechatronik-group.com/api/categorias');
-          var Brand = await this.$axios.get('https://system.mechatronik-group.com/api/marcas');
-          this.categorias = Category.data.categorias;
-          this.marcas = Brand.data.marcas;
+          var Category = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories?consumer_key=ck_e9c6d9731b8c0175383bd26c83a495508038d9bc&consumer_secret=cs_3e6da47350b9672250c45d708f7eb2ad15ce013f');
+          var Brand = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wc/v3/products/tags?consumer_key=ck_e9c6d9731b8c0175383bd26c83a495508038d9bc&consumer_secret=cs_3e6da47350b9672250c45d708f7eb2ad15ce013f');
+          this.categorias = Category.data;
+          this.marcas = Brand.data;
         } catch (e) {
           this.isLoading = false;
           console.log(e);
@@ -95,13 +95,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-#navigation {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
-  z-index: 50;
-}
 
 .logo {
   height: 50%;
@@ -119,9 +112,6 @@ export default {
   overflow: hidden;
   width: 100%;
   background-color: white;
-  -webkit-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
-  -moz-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
-  box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
 }
 
 /* Navbar container */
@@ -131,7 +121,7 @@ export default {
  overflow: hidden;
  background-color: white;
  color: #050505;
- height: 100px;
+ height: 70px;
  padding-right: 25px;
  font-family: Raleway;
  -webkit-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
@@ -147,7 +137,6 @@ export default {
   align-items: center;
   float: right;
   height: 100%;
-  font-size: 14px;
   color: #050505;
   text-align: center;
   padding-left: 18px;
@@ -181,7 +170,12 @@ export default {
  }
 }
 //html:not([data-scroll='0']) {
+
 html[data-scroll='0'] {
+  .desk {
+    width: 100%;
+    height: 100px;
+  }
   .home {
     background-color: transparent;
     -webkit-box-shadow: none;
@@ -216,7 +210,7 @@ html[data-scroll='0'] {
   opacity: 1;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 31px;
 }
 
 
@@ -274,10 +268,11 @@ html[data-scroll='0'] {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0,0,0,0.6);
+  background-color: white;
   width: 100%;
   left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-top: 1px solid #CCCCCC;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
   z-index: 1;
   .men-grid {
     display: grid;
@@ -286,8 +281,8 @@ html[data-scroll='0'] {
     margin-left: 5%;
     margin-right: 5%;
     .marg {
-      border-left: 1px solid #65A3AE;
-      border-right: 1px solid #65A3AE;
+      border-left: 1px solid #87888a;
+      border-right: 1px solid #87888a;
     }
     .men-col {
       display: flex;
@@ -305,6 +300,9 @@ html[data-scroll='0'] {
       }
       .link-item {
         margin-left: 10px;
+        margin-right: 10px;
+      }
+      .link-desc {
         margin-right: 10px;
       }
       .big-links {
@@ -337,6 +335,7 @@ html[data-scroll='0'] {
       font-size: 18px;
       padding-top: 5px;
       padding-bottom: 5px;
+      color: #87888a;
     }
     .link-sub {
       font-family: Raleway;
@@ -345,7 +344,7 @@ html[data-scroll='0'] {
       padding-top: 2px;
       padding-bottom: 2px;
       text-align: justify;
-      color: white;
+      color: black;
       font-size: 12px;
       line-height: 1.35;
     }
