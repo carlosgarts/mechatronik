@@ -10,7 +10,7 @@
           <div class="product-displayer" v-if="categoriaNombre != null" :key="selectedCategory">
             <div class="category-text">
               <h2>{{categoriaNombre}}</h2>
-              <p>{{categoriaDescripcion}}.description}}</p>
+              <p>{{categoriaDescripcion}}</p>
             </div>
           </div>
           <div class="" v-else>
