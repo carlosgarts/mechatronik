@@ -34,7 +34,7 @@
 export default {
   data() {
     return {
-      selectedCategory: '1',
+      selectedCategory: '2',
       categories: []
     }
   },
