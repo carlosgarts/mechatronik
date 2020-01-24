@@ -47,12 +47,12 @@
       <h4>PRODUCTOS</h4>
       <div class="men-grid">
         <div class="men-col">
-        <a class="big-links" to="#">
-          <h5 class="link-tit">Nuestros Productos</h5>
+        <nuxt-link class="big-links" to="/productos">
+          <h5 class="link-tit">Todos Nuestros Productos</h5>
           <p class="link-sub link-desc">Nuestros porductos unen las mejores propiedades entre economia y rendimiento,
             estamos dedicados a un excelente soporte al clientes, A través, de nuestro catálogo podras conseguir informacion a profundidad.</p>
           <!-- <img  class="menu-img" src="../../assets/images/product-section/menu.jpg"> -->
-        </a>
+        </nuxt-link>
         </div>
         <div class="men-col flexi marg">
           <nuxt-link to="/categorias" class="link-tit"><h5 class="link-tit">Categorias</h5></nuxt-link>

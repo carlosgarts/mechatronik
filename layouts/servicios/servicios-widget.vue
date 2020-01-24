@@ -53,6 +53,7 @@ export default {
 
   .card {
     width: 95%;
+    height: 100%;
     margin: 0 2.5%;
     border: 1px solid #CCCCCC;
     .card-cover {

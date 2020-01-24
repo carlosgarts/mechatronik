@@ -9,11 +9,13 @@
               <h4 v-if="producto.acf != null">{{producto.acf.modelo}}</h4>
               <p v-html="producto.description"></p>
             </div>
-            <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE">
-              <slide class="slide" v-for="foto in producto.images" v-bind:key="producto.id">
-                <img :src="foto.src" alt="product picture">
-              </slide>
-            </carousel>
+            <div class="image-displayer">
+              <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE">
+                <slide class="slide" v-for="foto in producto.images" v-bind:key="producto.id">
+                  <img :src="foto.src" alt="product picture">
+                </slide>
+              </carousel>
+            </div>
           </div>
         </div>
       </div>
@@ -132,6 +134,9 @@ export default {
       margin-top: 10px;
       margin-bottom: 10px;
     }
+    p {
+      margin: 0;
+    }
   }
 }
 
@@ -150,6 +155,12 @@ export default {
   }
 }
 
+
+.image-displayer {
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+}
 
 .carrousel {
   height: 250px;

@@ -16,7 +16,7 @@
           <div class="category-text">
             <h4>{{categories[selectedCategory].name}}</h4>
             <p>{{categories[selectedCategory].description}}</p>
-            <a href="#">Ver mas productos  &#10095</a>
+            <nuxt-link :to="'/categorias/'+ categories[selectedCategory].slug">Ver mas productos  &#10095</nuxt-link>
           </div>
           <div class="category-cover" v-if="categories[selectedCategory].image != null">
             <img :src="categories[selectedCategory].image.src">
@@ -113,7 +113,16 @@ export default {
       text-align: justify;
     }
     a {
+      transition: 0.5s;
       color:#65A3AE;
+      text-decoration: none;
+      border: 1px solid #65A3AE;
+      padding: 9px 14px;
+      margin-bottom: 16px;
+    }
+    a:hover {
+      color:#FFFFFF;
+      background-color: #65A3AE;
       text-decoration: none;
       border: 1px solid #65A3AE;
       padding: 9px 14px;
@@ -143,9 +152,9 @@ export default {
         position: static;
         object-fit: contain;
         @media (min-width: 800px) {
-          height: auto;
+          //height: auto;
           position: relative;
-          top: -50px;
+          //top: 20px;
           object-fit: cover;
         }
       }

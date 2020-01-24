@@ -102,6 +102,13 @@ html {
   }
 }
 
+.nav-history {
+  a {
+    color: #65A3AE;
+    text-decoration: none;
+  }
+}
+
 .error {
   display: flex;
   height: calc(100vh - 100px);

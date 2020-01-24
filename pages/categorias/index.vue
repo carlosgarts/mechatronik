@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <Selector/>
+    <display/>
   </div>
 </template>
 
 <script>
-import Selector from '~/layouts/categorias/selector.vue'
+import display from '~/layouts/products/searcher.vue'
 
 export default {
   components: {

@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .section {
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .title--bar {
