@@ -138,8 +138,12 @@ export default {
   .squares:nth-child(2) {
     transition: 0.5s;
     width: 100%;
+    max-height: 280px;
     background-color: #65A3AE;
     color: white;
+    @media (min-width: 400px) {
+      max-height: 100%;
+    }
     @media (max-width: 800px) {
       grid-column: 1 / 3;
     }
@@ -167,6 +171,10 @@ export default {
 
   .squares:nth-child(3) {
     width: 100%;
+    max-height: 280px;
+    @media (min-width: 400px) {
+      max-height: 100%;
+    }
     @media (max-width: 800px) {
       grid-column: 3 / 5;
     }
