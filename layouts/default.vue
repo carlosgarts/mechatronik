@@ -23,13 +23,15 @@ export default {
 
 @font-face {
   font-family: OpenSans;
-  src:  url('../assets/fonts/OpenSans-Regular.woff') format('woff'), url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  src:  url('../assets/fonts/OpenSans-Regular.woff') format('woff'),
+        url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: OpenSans;
-  src: url('../assets/fonts/OpenSans-ExtraBold.woff') format('woff'), url('../assets/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  src: url('../assets/fonts/OpenSans-ExtraBold.woff') format('woff'),
+       url('../assets/fonts/OpenSans-ExtraBold.ttf') format('truetype');
   font-weight: Bold;
 }
 
