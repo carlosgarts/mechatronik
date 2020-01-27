@@ -20,20 +20,8 @@ export default {
 
 <style lang="scss">
 @import "../assets/css/animate.scss";
+@import "../assets/css/fonts.css";
 
-@font-face {
-  font-family: OpenSans;
-  src:  url('../assets/fonts/OpenSans-Regular.woff') format('woff'),
-        url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: OpenSans;
-  src: url('../assets/fonts/OpenSans-ExtraBold.woff') format('woff'),
-       url('../assets/fonts/OpenSans-ExtraBold.ttf') format('truetype');
-  font-weight: Bold;
-}
 
 html {
   font-family: OpenSans, Roboto, Arial, sans-serif;
