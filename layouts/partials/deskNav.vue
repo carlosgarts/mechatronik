@@ -123,7 +123,6 @@ export default {
  color: #050505;
  height: 70px;
  padding-right: 25px;
- font-family: Raleway;
  -webkit-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
  -moz-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
  box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
@@ -142,7 +141,6 @@ export default {
   padding-left: 18px;
   padding-right: 18px;
   text-decoration: none;
-  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
  }
@@ -163,7 +161,6 @@ export default {
    background-color: inherit;
    font: inherit; /* Important for vertical align on mobile phones */
    margin: 0; /* Important for vertical align on mobile phones */
-   font-family: Raleway;
    font-style: normal;
    font-weight: bold;
   }
@@ -316,7 +313,6 @@ html[data-scroll='0'] {
   }
   h4 {
     color: #65A3AE;
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -329,7 +325,6 @@ html[data-scroll='0'] {
     }
 
     .link-tit {
-      font-family: Raleway;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -338,7 +333,6 @@ html[data-scroll='0'] {
       color: #87888a;
     }
     .link-sub {
-      font-family: Raleway;
       font-style: normal;
       font-weight: lighter;
       padding-top: 2px;

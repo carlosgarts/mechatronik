@@ -160,7 +160,6 @@ export default {
  color: #050505;
  height: 70px;
  //padding-right: 25px;
- font-family: Raleway, Roboto, Arial, sans-serif;
  -webkit-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
  -moz-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
  box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
@@ -181,7 +180,7 @@ export default {
   padding-left: 18px;
   padding-right: 18px;
   text-decoration: none;
-  font-family: Raleway, Roboto, Arial, sans-serif;
+
   font-style: normal;
   font-weight: bold;
  }
@@ -200,7 +199,6 @@ export default {
    background-color: inherit;
    font: inherit; /* Important for vertical align on mobile phones */
    margin: 0; /* Important for vertical align on mobile phones */
-   font-family: Raleway, Roboto, Arial, sans-serif;
    font-style: normal;
    font-weight: bold;
   }

@@ -24,7 +24,7 @@ export default {
 
 
 html {
-  font-family: OpenSans, Roboto, Arial, sans-serif;
+  font-family: 'OpenSans', Fallback, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -154,8 +154,6 @@ h1, h3 {
 	display: block;
 	margin: 0px auto;
 	text-align: center;
-	font-family: 'Tahoma';
-	font-weight: lighter;
 	color: $grey;
 	letter-spacing: 1.5px;
 }
