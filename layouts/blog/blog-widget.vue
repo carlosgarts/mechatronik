@@ -50,12 +50,12 @@ export default {
   .magazin {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     height: 100%;
     @media (min-width: 800px) {
       grid-template-rows: 1fr 1fr;
+      grid-template-rows: 50% 50%;
     }
   }
 
@@ -85,7 +85,16 @@ export default {
       line-height: 1.3;
       h4 {
         margin: 0;
-        font-size: 21px;
+        font-size: 16px;
+        @media (min-width: 800px) {
+          font-size: 21px;
+        }
+      }
+      p {
+        font-size: 13px;
+        @media (min-width: 800px) {
+          font-size: 21px;
+        }
       }
     }
 

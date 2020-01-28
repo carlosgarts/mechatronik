@@ -52,12 +52,19 @@ export default {
   height: 80%;
   z-index: 5;
   h1 {
+    margin-left: 5%;
+    margin-right: 5%;
     transition: 0.5s;
     color: white;
-    font-size: calc(28px + (60 - 28) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300)));
+    @media (min-height: 500px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   h3 {
-    font-family: Raleway;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     font-style: normal;
     font-weight: bold;
     transition: 0.5s;
