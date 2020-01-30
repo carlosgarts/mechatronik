@@ -76,20 +76,19 @@ export default {
   }
 
   .titulo {
-    margin-top: 150px;
     height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     @media (min-width: 1000px) {
-      margin-top: 140px;
+
     }
     h2 {
       color: white;
       text-align: center;
+      text-shadow: 5px 5px 1px gray;
       font-size: calc(32px + (55 - 32) * ((100vw - 300px) / (1600 - 300)));
       max-width: 80%;
     }

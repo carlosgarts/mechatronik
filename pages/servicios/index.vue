@@ -1,21 +1,21 @@
 <template>
   <div class="container">
-    <SolucionesHeader/>
+    <ServiciosHeader/>
     <Servicios/>
-    <SolucionesFooter/>
+    <ServiciosFooter/>
   </div>
 </template>
 
 <script>
-import SolucionesHeader from '~/layouts/servicios/servicios-header.vue'
+import ServiciosHeader from '~/layouts/servicios/servicios-header.vue'
 import Servicios from '~/layouts/servicios/servicios.vue'
-import SolucionesFooter from '~/layouts/servicios/servicios-footer.vue'
+import ServiciosFooter from '~/layouts/servicios/servicios-footer.vue'
 
 export default {
   components: {
-    SolucionesHeader,
+    ServiciosHeader,
     Servicios,
-    SolucionesFooter
+    ServiciosFooter
   }
 }
 </script>

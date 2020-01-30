@@ -20,21 +20,18 @@
         </nuxt-link>
         </div>
         <div class="men-col">
-        <nuxt-link class="big-links marg" to="/servicios">
-          <h5 class="link-tit">Servicios</h5>
-          <p class="link-sub link-item">Diseño Mecánico</p>
-          <p class="link-sub link-item">Diseño Eléctrico</p>
-          <p class="link-sub link-item">Manufactura Aditiva</p>
-          <p class="link-sub link-item">Ingenieria de Control</p>
-        </nuxt-link>
+          <div class="men-col flexi marg">
+            <nuxt-link to="/servicios" class="link-tit"><h5 class="link-tit">Servicios</h5></nuxt-link>
+              <p class="link-sub" v-if="servicios == undefined">Empty</p>
+              <nuxt-link class="link-item" v-else :to="'/servicios/'+ servicio.slug" v-for="servicio in servicios" v-if="servicio.categories == 18" v-bind:key="servicio.id"><p class="link-sub">{{servicio.title.rendered}}</p></nuxt-link>
+          </div>
         </div>
         <div class="men-col">
-        <nuxt-link class="big-links" to="/soluciones">
-          <h5 class="link-tit">Soluciones</h5>
-          <p class="link-sub link-item">Outsourcing de Personal</p>
-          <p class="link-sub link-item">Consultoría en Industria 4.0</p>
-          <p class="link-sub link-item">Consultoría en Motion Control</p>
-        </nuxt-link>
+          <div class="men-col flexi marg">
+            <nuxt-link to="/servicios" class="link-tit"><h5 class="link-tit">Soluciones</h5></nuxt-link>
+              <p class="link-sub" v-if="servicios == undefined">Empty</p>
+              <nuxt-link class="link-item" v-else :to="'/soluciones/'+ solucion.slug" v-for="solucion in servicios" v-if="solucion.categories == 19" v-bind:key="solucion.id"><p class="link-sub">{{solucion.title.rendered}}</p></nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -77,15 +74,18 @@ export default {
     data: function() {
       return {
         categorias: null,
-        marcas: null
+        marcas: null,
+        servicios: null
       }
     },
     beforeMount: async function() {
         try {
           var Category = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories?consumer_key=ck_e9c6d9731b8c0175383bd26c83a495508038d9bc&consumer_secret=cs_3e6da47350b9672250c45d708f7eb2ad15ce013f');
           var Brand = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wc/v3/products/tags?consumer_key=ck_e9c6d9731b8c0175383bd26c83a495508038d9bc&consumer_secret=cs_3e6da47350b9672250c45d708f7eb2ad15ce013f');
+          var Servicios = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?categories=18+19');
           this.categorias = Category.data;
           this.marcas = Brand.data;
+          this.servicios = Servicios.data;
         } catch (e) {
           this.isLoading = false;
           console.log(e);
@@ -327,19 +327,20 @@ html[data-scroll='0'] {
     .link-tit {
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 21px;
       padding-top: 5px;
       padding-bottom: 5px;
       color: #87888a;
     }
     .link-sub {
       font-style: normal;
-      font-weight: lighter;
+      //font-weight: lighter;
+      font-weight: normal;
       padding-top: 2px;
       padding-bottom: 2px;
       text-align: justify;
       color: black;
-      font-size: 12px;
+      font-size: 16px;
       line-height: 1.35;
     }
 }

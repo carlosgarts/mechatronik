@@ -6,6 +6,7 @@
         <carousel :perPageCustom="[[50, 1], [700, 2], [1000, 3]]" :paginationEnabled="true" :navigationEnabled="true" navigationNextLabel="&#10095" navigationPrevLabel="&#10094" paginationActiveColor="#65A3AE">
           <slide v-for="service in services" :key="service.id">
             <div class="card">
+              <nuxt-link :to="'/servicios/'+ service.slug">
               <div class="card-cover">
                 <img :src="service.featured_image_url">
               </div>
@@ -13,6 +14,7 @@
                 <h4><strong>{{service.title.rendered}}</strong></h4>
                 <p v-html="service.excerpt.rendered"></p>
               </div>
+              </nuxt-link>
             </div>
           </slide>
         </carousel>
@@ -52,14 +54,20 @@ export default {
   }
 
   .card {
+    transition: 0.5s;
     width: 95%;
     height: 100%;
     margin: 0 2.5%;
     border: 1px solid #CCCCCC;
+    a {
+      text-decoration: none;
+    }
     .card-cover {
       width: 100%;
       height: 250px;
+      overflow: hidden;
       img {
+        transition: transform 1s;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -69,12 +77,13 @@ export default {
     .card-text {
       text-align: left;
       margin: 30px;
+      margin-top: 37px;
       h4 {
         color: #65A3AE;
-        font-size: 18px;
+        font-size: 21px;
         line-height: 1.25rem;
         margin-top: 0;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
       }
       p {
         color: #87888a;
@@ -82,6 +91,15 @@ export default {
         text-align: justify;
       }
     }
+  }
+
+
+.card:hover {
+  .card-cover {
+    img {
+      transform: scaleX(105%) scaleY(105%);
+    }
+  }
   }
 
   #services-widget {

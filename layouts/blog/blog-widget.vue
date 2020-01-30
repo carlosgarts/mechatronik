@@ -45,6 +45,7 @@ export default {
 
   .section {
     display: block;
+    min-height: auto;
   }
 
   .magazin {
@@ -87,13 +88,13 @@ export default {
         margin: 0;
         font-size: 16px;
         @media (min-width: 800px) {
-          font-size: 21px;
+          font-size: 19px;
         }
       }
       p {
         font-size: 13px;
         @media (min-width: 800px) {
-          font-size: 21px;
+          font-size: 16px;
         }
       }
     }
@@ -211,7 +212,7 @@ export default {
     .cover {
       width: 100%;
       height: 100%;
-      max-height: 280px;
+      max-height: 310px;
       overflow: hidden;
       img {
         width: 100%;

@@ -58,6 +58,7 @@ export default {
 
   .section {
     display: block;
+    min-height: auto;
   }
 
   .product-selector {
@@ -149,13 +150,14 @@ export default {
       img {
         width: 100%;
         height: 100%;
+        max-height: 400px;
         position: static;
         object-fit: contain;
         @media (min-width: 800px) {
           //height: auto;
           position: relative;
           //top: 20px;
-          object-fit: cover;
+          //object-fit: cover;
         }
       }
     }
