@@ -62,9 +62,12 @@ export default {
 <style lang="scss" scoped>
   #blog-list {
     height: auto;
-    width: 100vw;
+    width: 90vw;
     align-self: flex-end;
     position: relative;
+    @media (min-width: 800px) {
+      width: 80vw;
+    }
     .parallax-background {
       width: 100%;
       position: absolute;
@@ -73,7 +76,6 @@ export default {
   }
 
   .post-grid {
-    margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     z-index: 5;
@@ -81,7 +83,7 @@ export default {
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     @media (min-width: 800px) {
-      margin: 60px;
+
     }
   }
 

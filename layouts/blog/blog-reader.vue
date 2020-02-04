@@ -79,16 +79,13 @@ export default {
   }
 
   .titulo {
-    margin-top: 150px;
     height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     @media (min-width: 1000px) {
-      margin-top: 140px;
     }
     h2 {
       color: white;
@@ -99,13 +96,18 @@ export default {
   }
 
   .content {
-    width: 65%;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 80px;
     padding-top: 20px;
     overflow: hidden;
+    @media (min-width: 800px) {
+      width: 65%;
+      margin-left: 17.5%;
+      margin-right: 17.5%;
+      padding: 80px;
+    }
     }
 </style>
