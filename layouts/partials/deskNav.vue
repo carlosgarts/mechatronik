@@ -28,7 +28,7 @@
         </div>
         <div class="men-col">
           <div class="men-col flexi marg">
-            <nuxt-link to="/servicios" class="link-tit"><h5 class="link-tit">Soluciones</h5></nuxt-link>
+            <nuxt-link to="/soluciones" class="link-tit"><h5 class="link-tit">Soluciones</h5></nuxt-link>
               <p class="link-sub" v-if="servicios == undefined">Empty</p>
               <nuxt-link class="link-item" v-else :to="'/soluciones/'+ solucion.slug" v-for="solucion in servicios" v-if="solucion.categories == 19" v-bind:key="solucion.id"><p class="link-sub">{{solucion.title.rendered}}</p></nuxt-link>
           </div>

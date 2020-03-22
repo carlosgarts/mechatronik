@@ -76,7 +76,7 @@ export default {
   }
 
   .titulo {
-    height: 60vh;
+    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

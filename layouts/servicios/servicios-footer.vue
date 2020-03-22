@@ -1,6 +1,13 @@
 <template>
   <div class="service-footer">
-    <h3>Si necesitas mas <br> mira nuestras <nuxt-link to="/soluciones">Soluciones</nuxt-link> </h3>
+    <div class="text">
+      <img src="@/assets/svg/robot-arm.svg" alt="soluciones">
+      <div>
+        <h4 class="p1">Mira nuestras soluciones</h4>
+        <p class="p2">Lleva tu empresa a nuevos niveles de productividad de manera sencilla, eficiente y rapida</p>
+      </div>
+    </div>
+    <nuxt-link to="/soluciones">Ver mas</nuxt-link>
   </div>
 </template>
 
@@ -15,18 +22,74 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
     z-index: 5;
     font-size: 18px;
-    height: 150px;
+    height: auto;
+    min-height: 150px;
     width: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
+    padding: 5%;
+    background-color: #65A3AE;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @media (min-width: 700px) {
+      flex-flow: row;
+    }
     @media (min-width: 1000px) {
       font-size: 25px;
-      height: 300px;
+      padding: 0 8%;
+      height: 150px;
+    }
+    h4, p {
+      color: white;
+    }
+    .p1 {
+      font-size: 27px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      text-align: center;
+      @media (min-width: 700px) {
+        text-align: left;
+      }
+    }
+    .p2 {
+      font-size: 18px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      text-align: center;
+      @media (min-width: 700px) {
+        text-align: left;
+      }
     }
     a {
-      color: #65A3AE;
+      transition: 0.5s;
+      color: white;
+      text-decoration: none;
+      border: 4px solid white;
+      padding: 9px 14px;
+      margin-bottom: 16px;
+      font-weight: bold;
+      margin: 15px 0;
+      &:hover {
+        background-color: white;
+        color: #65A3AE;
+      }
+    }
+    img {
+      max-height: 100px;
+      margin-right: 15px;
+    }
+    .text {
+      display: flex;
+      width: auto;
+      align-items: center;
+      flex-direction: column;
+      @media (min-width: 700px) {
+        flex-direction: row;
+        justify-content: center;
+
+      }
     }
   }
 </style>

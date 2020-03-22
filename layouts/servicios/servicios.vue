@@ -1,35 +1,47 @@
 <template>
     <div id="service-list">
-      <img class="parallax-background" v-rellax="{speed: -10, vertical: true, horizontal: false}" src="../../assets/images/Soluciones/bg-clear.png" alt="">
-      <div class="service-content" v-scroll-reveal.reset v-for="service in services">
-        <div class="text">
-          <div class="tbb">
-          <h2><strong>{{service.titulo}}</strong></h2>
-          </div>
-          <p v-html="service.descripcion"></p>
-        </div>
+      <!-- <img class="parallax-background" v-rellax="{speed: -10, vertical: true, horizontal: false}" src="../../assets/images/Soluciones/bg-clear.png" alt=""> -->
+      <nuxt-link class="service-content" :to="'/servicios/'+ service.slug" v-for="service in services">
         <div class="image">
-          <img :src="service.fotos">
+          <img :src="service.featured_image_url">
         </div>
-      </div>
+        <div class="text">
+          <div class="title">
+          <h2><strong>{{service.title.rendered}}</strong></h2>
+          </div>
+          <p v-html="service.excerpt.rendered"></p>
+        </div>
+      </nuxt-link>
     </div>
 
 </template>
 
 <script>
+import defaultValues from '~/assets/text/servicios.json'
 
 export default {
   data() {
     return {
-      services: [1,2,3,4],
+      services: defaultValues.data,
       isLoading: true
     }
   },
+  // mounted: async function() {
+  //     try {
+  //       var Services = await this.$axios.get('https://system.mechatronik-group.com/api/servicios');
+  //       this.services = Services.data.servicios;
+  //       this.isLoading = false;
+  //     } catch (e) {
+  //       this.isLoading = false;
+  //       console.log(e);
+  //     }
+  // },
   mounted: async function() {
       try {
-        var Services = await this.$axios.get('https://system.mechatronik-group.com/api/servicios');
-        this.services = Services.data.servicios;
+        var Services = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?categories=18');
+        this.services = Services.data;
         this.isLoading = false;
+        console.log(this.services);
       } catch (e) {
         this.isLoading = false;
         console.log(e);
@@ -40,10 +52,25 @@ export default {
 
 <style lang="scss" scoped>
   #service-list {
+    display: grid;
+    grid-template-columns: 1fr;
     height: auto;
-    width: 100vw;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     align-self: flex-end;
     position: relative;
+    @media (min-width: 700px) {
+      grid-template-columns: 47.5% 47.5%;
+      grid-column-gap: 5%;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    @media (min-width: 1000px) {
+      grid-template-columns: 31.6% 31.6% 31.6%;
+      grid-column-gap: 2.5%;
+    }
     .parallax-background {
       width: 100%;
       position: absolute;
@@ -51,33 +78,39 @@ export default {
     }
   }
   .service-content {
+    background-color: white;
+    border: 1px solid #CCCCCC;
     width: 100%;
-    min-height: 60vh;
-    display: grid;
-    grid-template-columns: 1fr;
+    //min-height: 60vh;
+    display: block;
     z-index: 5;
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    @media (min-width: 700px) {
-      grid-template-columns: 1fr 1fr;
-    }
+    margin-top: 25px;
+    -webkit-box-shadow: 13px 13px 23px -8px rgba(0,0,0,0.49);
+    -moz-box-shadow: 13px 13px 23px -8px rgba(0,0,0,0.49);
+    box-shadow: 13px 13px 23px -8px rgba(0,0,0,0.49);
     .text {
-      text-align: right;
+      position: absolute;
+      bottom: 0;
+      text-align: left;
       padding-left: 7.5%;
       padding-right: 7.5%;
       display: flex;
       flex-flow: column;
       justify-content: center;
-      align-items: flex-end;
-      .tbb {
+      align-items: flex-start;
+      background: rgb(101,163,174);
+      background: linear-gradient(0deg, rgba(101,163,174,0.9080766095500701) 37%, rgba(255,255,255,0) 100%);
+      .title {
         margin-left: 0;
         margin-right: 0;
         border-color: black;
         h2 {
           transition: 0.5s;
-          color: black;
           border-color: black;
+          //color: #65A3AE;
+          color: white;
+          line-height: 2rem;
           @media (max-width: 400px) {
             font-size: 30px;
           }
@@ -85,21 +118,25 @@ export default {
       }
       p {
         line-height: 1.5;
+        color: #87888a;
+        text-align: justify;
+        margin: 0;
+        height: 0;
+        overflow: hidden;
       }
     }
     .image {
-      height: 300px;
-      width: 85%;
+      min-height: 300px;
+      height: 30vh;
+      width: 100%;
       overflow: hidden;
       margin: auto;
-      margin-top: 20px;
-      @media (min-width: 700px) {
-        height: 85%;
-        width: 85%;
-        margin: auto auto;
-      }
+      // @media (min-width: 700px) {
+      //   width: 85%;
+      //   margin: auto auto;
+      // }
       img {
-        transition: transform 10s ease;
+        transition: transform 1s ease;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -109,20 +146,20 @@ export default {
       }
     }
   }
-  .service-content:nth-child(2n) {
-    .text {
-      text-align: left;
-      align-items: flex-start;
-      @media (min-width: 700px) {
-        grid-column: 2 / 3;
-      }
-    }
-    .image {
-      @media (min-width: 700px) {
-        grid-column: 1 / 2;
-        grid-row: 1;
-      }
-    }
-  }
+  // .service-content:nth-child(2n) {
+  //   .text {
+  //     text-align: left;
+  //     align-items: flex-start;
+  //     @media (min-width: 700px) {
+  //       grid-column: 2 / 3;
+  //     }
+  //   }
+  //   .image {
+  //     @media (min-width: 700px) {
+  //       grid-column: 1 / 2;
+  //       grid-row: 1;
+  //     }
+  //   }
+  // }
 
 </style>

@@ -4,12 +4,12 @@
       <div class="solution-content" v-scroll-reveal.reset v-for="solution in solutions">
         <div class="text">
           <div class="tbb">
-          <h2><strong>{{solution.titulo}}</strong></h2>
+          <h2><strong>{{solution.title.rendered}}</strong></h2>
           </div>
-          <p v-html="solution.descripcion"></p>
+          <p v-html="solution.excerpt.rendered"></p>
         </div>
         <div class="image">
-          <img :src="solution.fotos">
+          <img :src="solution.featured_image_url">
         </div>
       </div>
     </div>
@@ -17,18 +17,19 @@
 </template>
 
 <script>
+import defaultValues from '~/assets/text/soluciones.json'
 
 export default {
   data() {
     return {
-      solutions: [1,2,3,4],
+      solutions: defaultValues.data,
       isLoading: true
     }
   },
   mounted: async function() {
       try {
-        var Solutions = await this.$axios.get('https://system.mechatronik-group.com/api/soluciones');
-        this.solutions = Solutions.data.soluciones;
+        var Solutions = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?categories=19');
+        this.solutions = Solutions.data;
         this.isLoading = false;
       } catch (e) {
         this.isLoading = false;
