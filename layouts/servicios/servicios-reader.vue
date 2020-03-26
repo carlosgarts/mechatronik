@@ -2,11 +2,14 @@
   <div id="post-reader">
     <loading v-if="isLoading == true"/>
     <div class="post" v-for="post in posts" v-else>
-      <div class="titulo" v-bind:style="{ backgroundImage: 'url(' + post.featured_image_url + ')' }">
+      <!-- <div class="titulo" v-bind:style="{ backgroundImage: 'url(' + post.featured_image_url + ')' }">
         <h2>{{ post.title.rendered }}</h2>
-      </div>
+      </div> -->
       <div class="content" >
+        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/servicios">Servicios</a> &#10095 {{post.title.rendered}}</p>
+        <h1 class="service-title">{{post.title.rendered}}</h1>
         <div class="format" v-html="post.content.rendered"></div>
+        <solser modo="servicios2" />
       </div>
     </div>
   </div>
@@ -15,10 +18,12 @@
 <script>
 import loading from '../partials/loading.vue'
 import axios from 'axios'
+import solser from '../partials/widgets/soluciones-servicios.vue'
 
 export default {
   components: {
-    loading
+    loading,
+    solser
   },
   data() {
     return {
@@ -95,13 +100,31 @@ export default {
   }
 
   .content {
-    width: 65%;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 80px;
+    padding: 0;
     padding-top: 20px;
-    overflow: hidden;
+    //overflow: hidden;
+    @media (min-width: 800px) {
+      padding: 80px
+    }
+      .nav-history {
+        margin: 0;
+        //margin-top: 25px;
+      }
+    }
+
+    .service-title {
+      transition: 0.5s;
+      text-align: left;
+      margin: 30px 0;
+      color: #2d373c;
+      font-size: 1.8rem;
+      @media (min-width: 800px) {
+        font-size: 3rem;
+      }
     }
 </style>

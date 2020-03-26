@@ -23,14 +23,18 @@
           <div class="men-col flexi marg">
             <nuxt-link to="/servicios" class="link-tit"><h5 class="link-tit">Servicios</h5></nuxt-link>
               <p class="link-sub" v-if="servicios == undefined">Empty</p>
-              <nuxt-link class="link-item" v-else :to="'/servicios/'+ servicio.slug" v-for="servicio in servicios" v-if="servicio.categories == 18" v-bind:key="servicio.id"><p class="link-sub">{{servicio.title.rendered}}</p></nuxt-link>
+              <div v-else>
+                <nuxt-link class="link-item" :to="'/servicios/'+ servicio.slug" v-for="servicio in servicios" v-if="servicio.categories == 18" v-bind:key="servicio.id"><p class="link-sub">{{servicio.title.rendered}}</p></nuxt-link>
+              </div>
           </div>
         </div>
         <div class="men-col">
           <div class="men-col flexi marg">
             <nuxt-link to="/soluciones" class="link-tit"><h5 class="link-tit">Soluciones</h5></nuxt-link>
               <p class="link-sub" v-if="servicios == undefined">Empty</p>
-              <nuxt-link class="link-item" v-else :to="'/soluciones/'+ solucion.slug" v-for="solucion in servicios" v-if="solucion.categories == 19" v-bind:key="solucion.id"><p class="link-sub">{{solucion.title.rendered}}</p></nuxt-link>
+              <div v-else >
+                <nuxt-link class="link-item" :to="'/soluciones/'+ solucion.slug" v-for="solucion in servicios" v-if="solucion.categories == 19" v-bind:key="solucion.id"><p class="link-sub">{{solucion.title.rendered}}</p></nuxt-link>
+              </div>
           </div>
         </div>
       </div>
@@ -123,9 +127,10 @@ export default {
  color: #050505;
  height: 70px;
  padding-right: 25px;
- -webkit-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
- -moz-box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
- box-shadow: 0px 14px 15px 0px rgba(0,0,0,0.34);
+ // -webkit-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+ // -moz-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+ // box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+ border-bottom: 2px solid #dfe6ed;
  @media (min-width: 1000px) {
    display: block;
  }
@@ -178,6 +183,7 @@ html[data-scroll='0'] {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    border-bottom: none;
     a {
       color: white;
     }

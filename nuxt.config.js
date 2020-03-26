@@ -36,7 +36,7 @@ export default {
     { src: '~/plugins/vue-carousel.js', ssr: false },
     { src: '~/plugins/vue-spinners.js', ssr: false },
     { src: '~/plugins/vue-scroll-reveal.js', ssr: false },
-    { src: '~/plugins/vue-social-sharing.js', ssr: false },
+    { src: '~/plugins/vue-social-sharing.js', ssr: true },
     { src: 'node_modules/vue-rellax/lib/nuxt-plugin', ssr: false },
     { src: '~plugins/vue-scrollto.js'}
   ],
@@ -51,6 +51,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    'nuxt-fontawesome',
   ],
   /*
   ** Axios module configuration

@@ -6,10 +6,10 @@
         <h2>{{ post.title.rendered }}</h2>
       </div>
       <div class="content" >
-        <div class="social">
-
-        </div>
         <div class="format" v-html="post.content.rendered"></div>
+        <div class="side">
+          <sidebar :titular="post.title.rendered"/>
+        </div>
       </div>
     </div>
   </div>
@@ -18,10 +18,12 @@
 <script>
 import loading from '../partials/loading.vue'
 import axios from 'axios'
+import sidebar from '../partials/sidebar.vue'
 
 export default {
   components: {
-    loading
+    loading,
+    sidebar
   },
   data() {
     return {
@@ -96,17 +98,22 @@ export default {
   }
 
   .content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 25px;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 80px;
     padding-top: 20px;
     overflow: hidden;
     @media (min-width: 800px) {
-      width: 65%;
-      margin-left: 17.5%;
-      margin-right: 17.5%;
+      grid-template-columns: 70% 30%;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
       padding: 80px;
     }
     }

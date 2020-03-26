@@ -17,7 +17,7 @@
         <h2>Contact Us</h2>
         <ul>
           <li><img class="icon" src="@/assets/images/SVG/mail.svg">email: info@mechatronik-group.com</li>
-          <li><img class="icon" src="@/assets/images/SVG/call.svg">tel. +51 1 (81) 59 98 01 98</li>
+          <!-- <li><img class="icon" src="@/assets/images/SVG/call.svg">tel. +51 1 (81) 59 98 01 98</li> -->
           <li><img class="icon" src="@/assets/images/SVG/call.svg">cel. +52 1 (81) 20 40 28 15</li>
           <li><img class="icon" src="@/assets/images/SVG/location.svg"><div><a href="https://goo.gl/maps/dqL6NEvXCiKuQKMa9">Mechatronik Group | Ave. Roble No. 660 Piso 3 Col. Valle del Campestre | San Pedro Garza Garcia, N.L. Mexico | CP. 66265</a></div> </li>
         </ul>
