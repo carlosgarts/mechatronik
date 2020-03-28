@@ -25,6 +25,9 @@ export default {
         font-size: 1rem;
       }
     }
+    img {
+      width: 100%;
+    }
   }
 
   .servicios2 {
@@ -66,6 +69,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 25px;
+    margin-bottom: 80px;
     @media(min-width: 800px) {
       grid-template-columns: 1fr 1fr;
     }
@@ -87,6 +91,9 @@ export default {
         @media(min-width: 800px) {
           font-size: 1.625rem;
         }
+        &.medium-important-title {
+          color: white;
+        }
       }
     }
     img {
@@ -94,13 +101,25 @@ export default {
       height: 100%;
       object-fit: cover;
     }
+  }
+  .color-background {
+    width: 140%;
+    margin: 80px -20%;
+    padding: 5% 20%;
+    background: #65A3AE;
+    background: -webkit-linear-gradient(to right, #005578, #65A3AE);
+    background: linear-gradient(to right, #005578, #65A3AE);
+    color: white;
+    .medium-important-title, .important-title {
+      color: white;
+      text-align: left;
+    }
     li {
       margin-bottom: 10px;
       list-style: none;
       position: relative;
       strong {
         color: #ffb900;
-
       }
     }
     li::before {
@@ -117,20 +136,20 @@ export default {
       top: -.4em;
     }
   }
-  .color-background {
-    width: 140%;
-    margin: 50px -20%;
-    padding: 3% 20%;
-    background: #65A3AE;
-    background: -webkit-linear-gradient(to right, #005578, #65A3AE);
-    background: linear-gradient(to right, #005578, #65A3AE);
-    color: white;
-  }
   .important-title {
     transition: 0.5s;
     font-size: 1.8rem;
+    margin-top: 0;
     @media(min-width: 800px) {
       font-size: 3rem;
+    }
+  }
+  .medium-important-title {
+    transition: 0.5s;
+    font-size: 1.8rem;
+    margin-top: 0;
+    @media(min-width: 800px) {
+      font-size: 1.8rem;
     }
   }
   .grad-title {
