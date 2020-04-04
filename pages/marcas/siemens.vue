@@ -9,7 +9,7 @@
         por ser capaces de girar 360 grados, es decir, una rotación completa.
         Su funcionamiento es similar al de un motor convencional,
         pero con las características de porder controlar su posición y velocidad de giro en un momento dado.</p>
-      <relacionados :categoria="20" cantidad="8"/>
+      <relacionados :categoria="37" cantidad="8"/>
       <nuxt-link class="brand-title rigth" to="/categorias/servomotors">Ver Más &#10095 </nuxt-link>
       <!-- <hr> -->
     </marcacontent>
