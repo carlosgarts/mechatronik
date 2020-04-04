@@ -38,11 +38,11 @@
       <div class="product--list">
         <div class="list--content">
           <h2 class="sub-h2">Catálogo</h2>
-          <div class="select-box">
+          <div class="select-box" v-if="paginatedData != undefined">
               <div class="lister">
                 <nuxt-link :to="'/productos/'+ producto.slug" class="prod-card" v-for="producto in paginatedData" :key="pageNumber" >
                   <div class="card-content">
-                    <img :src="producto.images[0].src" alt="product image">
+                    <img :src="producto.images[0].src" v-if="producto.images[0].src != undefined" alt="product image">
                     <h3>{{producto.name}}</h3>
                     <h4>{{producto.acf.modelo}}</h4>
                     <div  class="card-description" v-html="producto.short_description"></div>
@@ -55,6 +55,7 @@
                 <a class="next" @click="nextPage()" v-bind:class="{ unactive: (pageNumber >= pageCount -1)}">&#10095;</a>
               </div>
           </div>
+          <loading v-if="productos == undefined"/>
         </div>
       </div>
     </div>

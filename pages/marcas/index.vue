@@ -1,15 +1,21 @@
 <template>
   <div class="container">
-    <display/>
+    <marcasheader/>
+    <marcas/>
+    <marcasfooter/>
   </div>
 </template>
 
 <script>
-import display from '~/layouts/products/searcher.vue'
+import marcasheader from '~/layouts/marcas/marcas-header.vue'
+import marcas from '~/layouts/marcas/marcas.vue'
+import marcasfooter from '~/layouts/marcas/marcas-footer.vue'
 
 export default {
   components: {
-    Selector
+    marcasheader,
+    marcas,
+    marcasfooter
   }
 }
 </script>

@@ -21,6 +21,6 @@ export default {
 <style lang="scss" scoped>
   .container {
     //padding-top: 100px;
-    background-color: #f0f6f7;
+    //background-color: #f0f6f7;
   }
 </style>

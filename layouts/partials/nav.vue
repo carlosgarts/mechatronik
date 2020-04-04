@@ -94,7 +94,7 @@ export default {
   overflow: hidden;
   width: 100%;
   background-color: white;
-  
+
 }
 
 //html:not([data-scroll='0']) {

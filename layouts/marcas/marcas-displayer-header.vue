@@ -1,31 +1,23 @@
 <template>
   <div class="section">
-    <div class="title--bar">
+    <div class="title--bar" :style="{ backgroundImage: 'url(' + imagen + ')' }">
       <div class="gradiente"></div>
       <div class="title">
-        <h2><strong>SOLUCIONES</strong></h2>
+        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/marcas">marcas</a> &#10095 {{titulo}}</p>
+        <h2><strong>{{titulo}}</strong></h2>
+        <p><slot></slot></p>
       </div>
     </div>
-    <div class="sub-title">
-      <div class="pre">
-        <h4>Nuestras soluciones</h4>
-        <h3 class="item-title">
-          <img class="dot-shape" src="@/assets/svg/mechatronik-adorno.svg" alt="">
-          Optimizadas en rendimiento y valor.
-        </h3>
-      </div>
-      <div class="excerpt">
-        <p>Además de nuestros servicios, podemos ofrecerle nuestras soluciones, en caso de que no cuente con el equipo técnico adecuado, Mechatronik
-          le ofrece la ingeniera y recursos necesarios para alcanzar soluciones rápidas y efectivas para sus problemas, comuníquese con nosotros a través de
-          nuestros medios de contacto para recibir guías y cotizaciones.
-        </p>
-      </div>
-    </div>
+
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    titulo: String,
+    imagen: String
+  }
 }
 </script>
 
@@ -33,13 +25,14 @@ export default {
 .section {
   min-height: 300px;
   display: block;
+  width: 100%;
 }
 
 .title--bar {
   display: block;
   position: relative;
   width: 100%;
-  background: url('../../assets/images/soluciones-servicios/sol1.jpg') no-repeat;
+  //background: url('../../assets/images/soluciones-servicios/sol1.jpg') no-repeat;
   //background: -webkit-linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%));  /* Chrome 10-25, Safari 5.1-6 */
   //background: linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
@@ -60,8 +53,10 @@ export default {
     height: 100%;
     //background: -webkit-linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%));  /* Chrome 10-25, Safari 5.1-6 */
     //background: linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(90deg, rgba(101,163,174,1) 0%, rgba(100,179,244,0.3338469176733193) 100%);
-    //opacity: 0.5;
+    text-align: center;
+    background: -webkit-linear-gradient(to right, rgba(#005578, 100%), rgba(#65A3AE, 100%));
+    background: linear-gradient(to right, rgba(#005578, 100%), rgba(#65A3AE, 100%));
+    opacity: 0.75;
   }
   p {
     color: white;
@@ -87,6 +82,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
    //  background: -webkit-linear-gradient(#eee, #333);
    // -webkit-background-clip: text;
    // -webkit-text-fill-color: transparent;
@@ -95,6 +91,12 @@ export default {
       margin-bottom: 0;
       margin-left: 5%;
       margin-right: 5%;
+    }
+    .nav-history {
+      margin-bottom: 0;
+      a {
+        color: gold;
+      }
     }
     h2 {
       font-size: calc(32px + (70 - 32) * ((100vw - 300px) / (1600 - 300)));
@@ -125,15 +127,8 @@ export default {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
-  @media (min-width: 1000px) {
-    flex-direction: row;
-  }
   .pre {
     width: 100%;
-    @media (min-width: 1000px) {
-      width: 50%;
-      border-right: 1px gray solid;
-    }
     h4 {
       color: #65A3AE;
       margin-top: 7px;
@@ -168,10 +163,6 @@ export default {
   }
   .excerpt {
     width: 100%;
-    @media (min-width: 1000px) {
-      width: calc(50% - 25px);
-      margin-left: 25px;
-    }
     p {
       text-align: justify;
       line-height: 1.5;

@@ -1,15 +1,21 @@
 <template>
   <div class="container">
-    <display/>
+    <categoriesHeader/>
+    <categories/>
+    <categoriesFooter/>
   </div>
 </template>
 
 <script>
-import display from '~/layouts/products/searcher.vue'
+import categoriesHeader from '~/layouts/products/categorias-header.vue'
+import categories from '~/layouts/products/categories.vue'
+import categoriesFooter from '~/layouts/products/categorias-footer.vue'
 
 export default {
   components: {
-    Selector
+    categoriesHeader,
+    categories,
+    categoriesFooter
   }
 }
 </script>

@@ -78,19 +78,17 @@ export default {
     }
   }
   .service-content {
-    background-color: white;
+    background-color: rgba(204, 204, 204, 0.4);;
+    text-decoration: none;
     border: 1px solid #CCCCCC;
     width: 100%;
-    //min-height: 60vh;
     display: block;
     z-index: 5;
     position: relative;
     margin-top: 25px;
-    -webkit-box-shadow: 13px 13px 23px -8px rgba(0,0,0,0.49);
-    -moz-box-shadow: 13px 13px 23px -8px rgba(0,0,0,0.49);
-    box-shadow: 13px 13px 23px -8px rgba(0,0,0,0.49);
+    border: 1px solid rgba(204, 204, 204, 0.4);
     .text {
-      position: absolute;
+      //position: absolute;
       bottom: 0;
       text-align: left;
       padding-left: 7.5%;
@@ -99,8 +97,8 @@ export default {
       flex-flow: column;
       justify-content: center;
       align-items: flex-start;
-      background: rgb(101,163,174);
-      background: linear-gradient(0deg, rgba(101,163,174,0.9080766095500701) 37%, rgba(255,255,255,0) 100%);
+      //background: rgb(101,163,174);
+      //background: linear-gradient(0deg, rgba(101,163,174,0.9080766095500701) 37%, rgba(255,255,255,0) 100%);
       .title {
         margin-left: 0;
         margin-right: 0;
@@ -109,13 +107,13 @@ export default {
           transition: 0.5s;
           border-color: black;
           //color: #65A3AE;
-          color: white;
+          color: black;
           line-height: 2rem;
           @media (max-width: 400px) {
             font-size: 30px;
+              }
+            }
           }
-        }
-      }
       p {
         line-height: 1.5;
         color: #87888a;

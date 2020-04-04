@@ -3,7 +3,7 @@
     <div class="text">
       <img src="@/assets/svg/robot-arm.svg" alt="soluciones">
       <div>
-        <h4 class="p1">Mire nuestras soluciones</h4>
+        <h4 class="p1">Visite nuestras soluciones</h4>
         <p class="p2">Lleve su empresa a nuevos niveles de productividad de manera sencilla, eficiente y rapida</p>
       </div>
     </div>

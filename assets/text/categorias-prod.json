@@ -1,0 +1,194 @@
+[
+    {
+        "id": 42,
+        "name": "Actuators",
+        "slug": "actuators",
+        "parent": 0,
+        "description": "Los actuadores lineales, son una excelente opción para sustituir cilindros neumáticos en aplicaciones donde las ventajas de un servomotor son importantes. Utilizando nuestros actuadores podemos construir sistemas desde dos ejes, con un gran número de configuraciones diferentes para diversos tipos de aplicaciones.",
+        "display": "default",
+        "image": {
+            "id": 1451,
+            "date_created": "2020-03-26T04:18:40",
+            "date_created_gmt": "2020-03-26T04:18:40",
+            "date_modified": "2020-03-26T04:18:40",
+            "date_modified_gmt": "2020-03-26T04:18:40",
+            "src": "https://blog.mechatronik-group.com/wp-content/uploads/2020/03/story-06-product-EGC@2x.png",
+            "name": "story-06-product-EGC@2x",
+            "alt": ""
+        },
+        "menu_order": 2,
+        "count": 0,
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories/42"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories"
+                }
+            ]
+        }
+    },
+    {
+        "id": 36,
+        "name": "Couplings",
+        "slug": "couplings",
+        "parent": 0,
+        "description": "Los acoplamientos son elementos de máquina que sirven para prolongar líneas de transmisión de ejes o conectar tramos diferentes. En modelos de acoplamientos más avanzados y modernos, estos dispositivos de acople también cumplen con la función de proteger su sistema y el mismo mecanismo de sujeción contra cargas y fuerzas excesivas.",
+        "display": "subcategories",
+        "image": {
+            "id": 515,
+            "date_created": "2020-01-24T00:30:14",
+            "date_created_gmt": "2020-01-24T00:30:14",
+            "date_modified": "2020-01-24T00:30:14",
+            "date_modified_gmt": "2020-01-24T00:30:14",
+            "src": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/bild_01.jpg",
+            "name": "bild_01",
+            "alt": ""
+        },
+        "menu_order": 3,
+        "count": 2,
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories/36"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories"
+                }
+            ]
+        }
+    },
+    {
+        "id": 40,
+        "name": "Grippers",
+        "slug": "grippers",
+        "parent": 0,
+        "description": "Desarrollamos soluciones de agarre innovadoras para tareas de automatización exigentes, que establecen nuevos estándares en términos de tecnología y tecnología en el contexto de la Industria 4.0 y la Fábrica inteligente.",
+        "display": "default",
+        "image": {
+            "id": 770,
+            "date_created": "2020-02-04T17:48:17",
+            "date_created_gmt": "2020-02-04T17:48:17",
+            "date_modified": "2020-02-04T17:48:17",
+            "date_modified_gmt": "2020-02-04T17:48:17",
+            "src": "https://blog.mechatronik-group.com/wp-content/uploads/2020/02/product-picture.jpg",
+            "name": "product-picture",
+            "alt": ""
+        },
+        "menu_order": 5,
+        "count": 0,
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories/40"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories"
+                }
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "name": "Planetary Gearbox",
+        "slug": "planetary-gearbox",
+        "parent": 0,
+        "description": "La caja de engranes planetarios se utilizan con frecuencia junto con dichos servomotores para: equilibrar las condiciones de carga inercial observadas durante las secuencia de ciclo de velocidad, al disminuir la velocidad del motor, al aumentar el par, y al mismo tiempo proporcionar una interfaz mecánica robusta para las poleas, levas, tambores y otros componentes de transmisión mecánica.\r\n\r\nEn realidad, la combinación de servomotor y caja de cambios se convierte en uno de los conjuntos básicos \"mecatrónicos\".",
+        "display": "products",
+        "image": {
+            "id": 419,
+            "date_created": "2020-01-22T01:35:37",
+            "date_created_gmt": "2020-01-22T01:35:37",
+            "date_modified": "2020-01-22T01:35:37",
+            "date_modified_gmt": "2020-01-22T01:35:37",
+            "src": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/PLHE_02_RGB_JPEG.jpg",
+            "name": "PLHE_02_RGB_JPEG",
+            "alt": ""
+        },
+        "menu_order": 1,
+        "count": 16,
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories/20"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories"
+                }
+            ]
+        }
+    },
+    {
+        "id": 38,
+        "name": "Screw jack system",
+        "slug": "screw-jack-system",
+        "parent": 0,
+        "description": "Screw Jack Systems... como alternativa real a los sistemas hidráulicos. Alta precisión en operaciones de elevación, sincronización, descenso, oscilación o posicionamiento.\r\n\r\n!Una solución completa de mano de un solo proveedor!",
+        "display": "subcategories",
+        "image": {
+            "id": 523,
+            "date_created": "2020-01-24T01:05:41",
+            "date_created_gmt": "2020-01-24T01:05:41",
+            "date_modified": "2020-01-24T01:05:41",
+            "date_modified_gmt": "2020-01-24T01:05:41",
+            "src": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/ze-10kn-r-trapezoidal-screw-20x4-1-e1579912312687.png",
+            "name": "ze-10kn-r-trapezoidal-screw-20&#215;4",
+            "alt": ""
+        },
+        "menu_order": 6,
+        "count": 3,
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories/38"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories"
+                }
+            ]
+        }
+    },
+    {
+        "id": 37,
+        "name": "Servomotors",
+        "slug": "servomotors",
+        "parent": 0,
+        "description": "Ya sea síncrono o asíncrono, con o sin reductores, cuando se trata de seleccionar el motor óptimo para su aplicación de control de movimiento, Siemens tiene la selección de motores más amplia del mundo, que también cubre motores integrados y husillos de motor. Además, cada motor Siemens para control de movimiento está perfectamente adaptado para funcionar con nuestra familia de convertidores de frecuencia SINAMICS.",
+        "display": "subcategories",
+        "image": {
+            "id": 492,
+            "date_created": "2020-01-22T22:21:15",
+            "date_created_gmt": "2020-01-22T22:21:15",
+            "date_modified": "2020-01-22T22:21:15",
+            "date_modified_gmt": "2020-01-22T22:21:15",
+            "src": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/simens1.jpg",
+            "name": "simens1",
+            "alt": ""
+        },
+        "menu_order": 4,
+        "count": 4,
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories/37"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories"
+                }
+            ]
+        }
+    }
+]

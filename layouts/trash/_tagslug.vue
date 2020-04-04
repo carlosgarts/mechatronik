@@ -1,3 +1,4 @@
+<!-- el antiguo visor dinamico de marcas antes de que migrara a paginas estaticas -->
 <template>
   <div class="container">
     <display v-if="tagId != null " :Modo='3' :searcher='tagName' :tagId='tagId' :tagName='tagName' :key='tagId'/>
@@ -6,7 +7,6 @@
 
 <script>
 import display from '~/layouts/products/searcher.vue'
-
 export default {
   components: {
     display

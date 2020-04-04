@@ -1,16 +1,29 @@
 <template>
-    <div id="solution-list">
+    <div id="service-list">
       <!-- <img class="parallax-background" v-rellax="{speed: -10, vertical: true, horizontal: false}" src="../../assets/images/Soluciones/bg-clear.png" alt=""> -->
-      <!-- v-scroll-reveal.reset -->
-      <nuxt-link class="solution-content" :to="'/soluciones/'+ solution.slug" v-for="solution in solutions">
+      <nuxt-link class="service-content" to="/marcas/neugart">
         <div class="image">
-          <img :src="solution.featured_image_url">
+          <img src="@/assets/images/marcas/neugart.png">
         </div>
-        <div class="text">
+        <!-- <div class="text">
           <div class="title">
-          <h2><strong>{{solution.title.rendered}}</strong></h2>
+          <h2>Neugart</h2>
           </div>
-          <p v-html="solution.excerpt.rendered"></p>
+        </div> -->
+      </nuxt-link>
+      <nuxt-link class="service-content" to="/marcas/rw">
+        <div class="image">
+          <img src="@/assets/images/marcas/RW_logo.svg">
+        </div>
+      </nuxt-link>
+      <nuxt-link class="service-content" to="/marcas/siemens">
+        <div class="image">
+          <img src="@/assets/images/marcas/siemens.png">
+        </div>
+      </nuxt-link>
+      <nuxt-link class="service-content" to="/marcas/zimm">
+        <div class="image">
+          <img src="@/assets/images/marcas/zimm.png">
         </div>
       </nuxt-link>
     </div>
@@ -18,30 +31,18 @@
 </template>
 
 <script>
-import defaultValues from '~/assets/text/soluciones.json'
+import defaultValues from '~/assets/text/categorias-prod.json'
 
 export default {
   data() {
     return {
-      solutions: defaultValues.data,
-      isLoading: true
     }
-  },
-  mounted: async function() {
-      try {
-        var Solutions = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?categories=19');
-        this.solutions = Solutions.data;
-        this.isLoading = false;
-      } catch (e) {
-        this.isLoading = false;
-        console.log(e);
-      }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  #solution-list {
+  #service-list {
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
@@ -66,29 +67,31 @@ export default {
       position: absolute;
       z-index: 1;
     }
+    a {
+      text-decoration: none;
+    }
   }
-  .solution-content {
-    background-color: rgba(204, 204, 204, 0.4);;
-    text-decoration: none;
-    border: 1px solid #CCCCCC;
+  .service-content {
+    transition: 0.5s;
+    border: 1px solid rgba(#CCCCCC, 0.4);
     width: 100%;
+    //min-height: 60vh;
     display: block;
     z-index: 5;
-    position: relative;
+    //background: rgba(#CCCCCC, 0.4);
     margin-top: 25px;
-    border: 1px solid rgba(204, 204, 204, 0.4);
+    &:hover {
+      background-color: rgba(#CCCCCC, 0.4);
+    }
     .text {
-      //position: absolute;
       bottom: 0;
       text-align: left;
-      padding-left: 7.5%;
-      padding-right: 7.5%;
+      padding-left: 5%;
+      padding-right: 5%;
       display: flex;
       flex-flow: column;
       justify-content: center;
       align-items: flex-start;
-      //background: rgb(101,163,174);
-      //background: linear-gradient(0deg, rgba(101,163,174,0.9080766095500701) 37%, rgba(255,255,255,0) 100%);
       .title {
         margin-left: 0;
         margin-right: 0;
@@ -98,12 +101,13 @@ export default {
           border-color: black;
           //color: #65A3AE;
           color: black;
-          line-height: 2rem;
+          line-height: 1.7rem;
+          text-decoration: none;
           @media (max-width: 400px) {
             font-size: 30px;
-              }
-            }
           }
+        }
+      }
       p {
         line-height: 1.5;
         color: #87888a;
@@ -114,11 +118,13 @@ export default {
       }
     }
     .image {
-      min-height: 300px;
-      height: 30vh;
-      width: 100%;
+      min-height: 250px;
+      height: 20vh;
+      width: 95%;
       overflow: hidden;
       margin: auto;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
       // @media (min-width: 700px) {
       //   width: 85%;
       //   margin: auto auto;
@@ -127,14 +133,11 @@ export default {
         transition: transform 1s ease;
         width: 100%;
         height: 100%;
-        object-fit: cover;
-      }
-      img:hover {
-        transform: scale(1.3);
+        object-fit: contain;
       }
     }
   }
-  // .solution-content:nth-child(2n) {
+  // .service-content:nth-child(2n) {
   //   .text {
   //     text-align: left;
   //     align-items: flex-start;

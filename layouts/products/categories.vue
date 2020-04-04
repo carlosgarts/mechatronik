@@ -1,16 +1,15 @@
 <template>
-    <div id="solution-list">
+    <div id="service-list">
       <!-- <img class="parallax-background" v-rellax="{speed: -10, vertical: true, horizontal: false}" src="../../assets/images/Soluciones/bg-clear.png" alt=""> -->
-      <!-- v-scroll-reveal.reset -->
-      <nuxt-link class="solution-content" :to="'/soluciones/'+ solution.slug" v-for="solution in solutions">
+      <nuxt-link class="service-content" :to="'/categorias/'+ categorie.slug" v-for="categorie in categories">
         <div class="image">
-          <img :src="solution.featured_image_url">
+          <img :src="categorie.image.src">
         </div>
         <div class="text">
           <div class="title">
-          <h2><strong>{{solution.title.rendered}}</strong></h2>
+          <h2>{{categorie.name}}</h2>
           </div>
-          <p v-html="solution.excerpt.rendered"></p>
+          <p v-html="categorie.description"></p>
         </div>
       </nuxt-link>
     </div>
@@ -18,20 +17,31 @@
 </template>
 
 <script>
-import defaultValues from '~/assets/text/soluciones.json'
+import defaultValues from '~/assets/text/categorias-prod.json'
 
 export default {
   data() {
     return {
-      solutions: defaultValues.data,
+      categories: defaultValues.data,
       isLoading: true
     }
   },
+  // mounted: async function() {
+  //     try {
+  //       var Services = await this.$axios.get('https://system.mechatronik-group.com/api/servicios');
+  //       this.services = Services.data.servicios;
+  //       this.isLoading = false;
+  //     } catch (e) {
+  //       this.isLoading = false;
+  //       console.log(e);
+  //     }
+  // },
   mounted: async function() {
       try {
-        var Solutions = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?categories=19');
-        this.solutions = Solutions.data;
+        var Categories = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wc/v3/products/categories?consumer_key=ck_e9c6d9731b8c0175383bd26c83a495508038d9bc&consumer_secret=cs_3e6da47350b9672250c45d708f7eb2ad15ce013f');
+        this.categories = Categories.data;
         this.isLoading = false;
+        console.log(this.categories);
       } catch (e) {
         this.isLoading = false;
         console.log(e);
@@ -41,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  #solution-list {
+  #service-list {
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
@@ -66,29 +76,27 @@ export default {
       position: absolute;
       z-index: 1;
     }
+    a {
+      text-decoration: none;
+    }
   }
-  .solution-content {
-    background-color: rgba(204, 204, 204, 0.4);;
-    text-decoration: none;
-    border: 1px solid #CCCCCC;
+  .service-content {
+    border: 1px solid rgba(#CCCCCC, 0.4);
     width: 100%;
+    //min-height: 60vh;
     display: block;
     z-index: 5;
-    position: relative;
+    background: rgba(#CCCCCC, 0.4);
     margin-top: 25px;
-    border: 1px solid rgba(204, 204, 204, 0.4);
     .text {
-      //position: absolute;
       bottom: 0;
       text-align: left;
-      padding-left: 7.5%;
-      padding-right: 7.5%;
+      padding-left: 5%;
+      padding-right: 5%;
       display: flex;
       flex-flow: column;
       justify-content: center;
       align-items: flex-start;
-      //background: rgb(101,163,174);
-      //background: linear-gradient(0deg, rgba(101,163,174,0.9080766095500701) 37%, rgba(255,255,255,0) 100%);
       .title {
         margin-left: 0;
         margin-right: 0;
@@ -98,12 +106,13 @@ export default {
           border-color: black;
           //color: #65A3AE;
           color: black;
-          line-height: 2rem;
+          line-height: 1.7rem;
+          text-decoration: none;
           @media (max-width: 400px) {
             font-size: 30px;
-              }
-            }
           }
+        }
+      }
       p {
         line-height: 1.5;
         color: #87888a;
@@ -114,8 +123,8 @@ export default {
       }
     }
     .image {
-      min-height: 300px;
-      height: 30vh;
+      min-height: 250px;
+      height: 20vh;
       width: 100%;
       overflow: hidden;
       margin: auto;
@@ -134,7 +143,7 @@ export default {
       }
     }
   }
-  // .solution-content:nth-child(2n) {
+  // .service-content:nth-child(2n) {
   //   .text {
   //     text-align: left;
   //     align-items: flex-start;

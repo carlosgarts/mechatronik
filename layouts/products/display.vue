@@ -1,14 +1,10 @@
 <template>
-  <div>
+  <div class="product-displayer">
     <div class="section">
       <div class="product--display">
+        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/productos">Productos</a> &#10095 {{producto.name}}</p>
         <div class="frame">
           <div class="product">
-            <div class="info">
-              <h1>{{producto.name}}</h1>
-              <h4 v-if="producto.acf != null">{{producto.acf.modelo}}</h4>
-              <p v-html="producto.description"></p>
-            </div>
             <div class="image-displayer">
               <carousel class="carrousel" :perPage="1" :paginationEnabled="true" paginationActiveColor="#65A3AE">
                 <slide class="slide" v-for="foto in producto.images" v-bind:key="producto.id">
@@ -16,17 +12,74 @@
                 </slide>
               </carousel>
             </div>
+            <div class="info">
+              <h1>{{producto.name}}</h1>
+              <h4 v-if="producto.acf != null">{{producto.acf.modelo}}</h4>
+              <p v-html="producto.short_description"></p>
+              <div class="complement-section">
+                <div class="product--accordion">
+
+                  <button class="accordion ac1" v-bind:class="{ active: acDes }" v-on:click="acDes = !acDes">Descripción</button>
+                  <div class="panel left" v-bind:class="{ active: acDes }">
+                    <p v-if="producto.acf != null" v-html="producto.description"></p>
+                  </div>
+
+                  <button class="accordion" v-bind:class="{ active: acEs }" v-on:click="acEs = !acEs">Especificaciones técnicas</button>
+                  <div class="panel" v-bind:class="{ active: acEs }">
+                    <div class="especificacion" v-for="(n) in especificaciones.length">
+                      <div class="divisor">
+                        <div>
+                          <label>{{especificaciones[n-1]}}:</label>
+                        </div>
+                        <div>
+                          {{detalles[n-1]}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="accordion" v-bind:class="{ active: acAp }" v-on:click="acAp = !acAp">Aplicaciones </button>
+                  <div class="panel" v-bind:class="{ active: acAp }">
+                    <p v-if="producto.acf != null" v-html="producto.acf.aplicaciones"></p>
+                  </div>
+
+                  <button class="accordion ac3" v-bind:class="{ active: acBro }" v-on:click="acBro = !acBro">Información técnica</button>
+                  <div class="panel" v-bind:class="{ active: acBro }">
+                    <p> <a v-if="producto.acf != null" :href="producto.acf.manual" target="_blank">Descargar Manual</a> </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="producto-relacionados" v-if="producto.categories != undefined">
+          <!-- <relacionados :categoria="producto.categories.id" /> -->
+          <h2>Productos relacionados</h2>
+          <!-- <relacionados :categoria="36" /> -->
+          <relacionados :categoria="producto.categories[0].id" />
         </div>
       </div>
     </div>
-    <div class="complement-section">
+    <!-- <div class="complement-section">
       <div class="product--accordion">
 
-        <button class="accordion ac1" v-bind:class="{ active: acEs }" v-on:click="acEs = !acEs">Especificaciones técnicas</button>
+        <button class="accordion ac1" v-bind:class="{ active: acDes }" v-on:click="acDes = !acDes">Descripción</button>
+        <div class="panel" v-bind:class="{ active: acDes }">
+          <p v-if="producto.acf != null" v-html="producto.description"></p>
+        </div>
+
+        <button class="accordion" v-bind:class="{ active: acEs }" v-on:click="acEs = !acEs">Especificaciones técnicas</button>
         <div class="panel" v-bind:class="{ active: acEs }">
           <div class="especificacion" v-for="(n) in especificaciones.length">
-            <label>{{especificaciones[n-1]}}:</label> {{detalles[n-1]}}
+            <div class="divisor">
+              <div>
+                <label>{{especificaciones[n-1]}}:</label>
+              </div>
+              <div>
+                {{detalles[n-1]}}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -41,19 +94,24 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
+import relacionados from '../partials/widgets/productos.vue'
 
 export default {
+  components: {
+    relacionados
+  },
   data: function () {
     return {
       producto: {},
       especificaciones: [],
       detalles: [],
       acEs: false,
+      acDes: false,
       acAp: false,
       acBro: false,
       isLoading: true
@@ -88,10 +146,37 @@ export default {
 <style lang="scss" scoped>
 
 .section {
-
+  text-align: left;
   @media (min-width: 1000px) {
 
   }
+}
+
+.left {
+  text-align: justify;
+}
+
+.product-displayer {
+  padding: 40px 0;
+}
+
+.producto-relacionados {
+  h2 {
+    font-size: calc(35px + (50 - 35) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'OpenSans', Fallback, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+.nav-history {
+}
+
+.divisor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8px 8px;
 }
 
 .complement-section {
@@ -103,7 +188,7 @@ export default {
 }
 
 .product--display {
-  width: 80%;
+  width: 90%;
 }
 
 .frame {
@@ -114,13 +199,14 @@ export default {
 .product {
   width: 100%;
   display: grid;
-  grid-template-columns: 100%;;
+  grid-template-columns: 100%;
+  line-height: 1.5;
   @media (min-width: 1000px) {
     grid-template-columns: 50% 50%;
   }
   .info {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-flow: column;
     text-align: justify;
@@ -224,8 +310,10 @@ export default {
 }
 
 .product--accordion {
-  width: 85%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: 25px;
+  width: 100%;
+  border: 1px lightgray solid;
+  //filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -259,15 +347,7 @@ export default {
    }
 }
 
-.ac1 {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
 
-.ac3 {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {

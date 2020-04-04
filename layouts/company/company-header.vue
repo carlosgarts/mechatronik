@@ -1,10 +1,19 @@
 <template>
   <div class="section">
     <div class="title--bar">
-      <div class="tbb">
-        <h2>Acerca <strong>de Mechatronik</strong></h2>
+      <div class="gradiente"></div>
+      <div class="title">
+        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 Compañia</p>
+        <h2><strong>NOSOTROS</strong></h2>
       </div>
-      <p>Somos una compañía mexicana dedicada al diseño e integración de soluciones para la industria. Ofrecemos un enfoque de innovación, calidad y rentabilidad a largo plazo, combinado con un excelente servicio al cliente, productos superiores y una vasta experiencia que le dará el mejor valor posible en la industria.</p>
+    </div>
+    <div class="sub-title">
+      <div class="excerpt">
+        <p>Somos una compañía mexicana dedicada al diseño e integración de
+          soluciones para la industria. Ofrecemos un enfoque de innovación,
+          calidad y rentabilidad a largo plazo, combinado con un excelente servicio al cliente,
+          productos superiores y una vasta experiencia que le dará el mejor valor posible en la industria.</p>
+      </div>
     </div>
   </div>
 </template>
@@ -17,21 +26,38 @@ export default {
 <style lang="scss" scoped>
 .section {
   min-height: 300px;
+  display: block;
 }
 
 .title--bar {
   display: block;
+  position: relative;
   width: 100%;
-  background: url('../../assets/images/Compañia/fondo-1.jpg') no-repeat;
+  //background: url('../../assets/images/soluciones-servicios/sol1.jpg') no-repeat;
+  //background: -webkit-linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%));  /* Chrome 10-25, Safari 5.1-6 */
+  //background: linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
   height: auto;
   display: flex;
-  flex-flow: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: center;
+  flex-flow: column;
   @media (min-width: 1000px) {
-    height: 50vh;
+    height: 30vh;
+  }
+  .gradiente {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    //background: -webkit-linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%));  /* Chrome 10-25, Safari 5.1-6 */
+    //background: linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    background: -webkit-linear-gradient(to right, #005578, #65A3AE);
+    background: linear-gradient(to right, #005578, #65A3AE);
+    //opacity: 0.5;
   }
   p {
     color: white;
@@ -40,25 +66,107 @@ export default {
     margin-right: 10%;
     text-align: left;
     margin-bottom: 50px;
+    z-index: 5;
     @media (min-width: 1000px) {
       margin-left: 5%;
       margin-right: 5%;
     }
   }
-  .tbb {
+  .title {
+    color: white;
     margin-top: 10%;
+    margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 10%;
+    z-index: 5;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+   //  background: -webkit-linear-gradient(#eee, #333);
+   // -webkit-background-clip: text;
+   // -webkit-text-fill-color: transparent;
     @media (min-width: 1000px) {
       margin-top: 0;
+      margin-bottom: 0;
       margin-left: 5%;
       margin-right: 5%;
     }
+    .nav-history {
+      margin-bottom: 0;
+      a {
+        color: gold;
+      }
+    }
     h2 {
       font-size: calc(32px + (70 - 32) * ((100vw - 300px) / (1600 - 300)));
-      font-family: Raleway;
       font-style: normal;
       font-weight: 400;
+      margin-bottom: 20px;
+      // &:after {
+      //   content: '';
+      //   display: block;
+      //   margin-top: 20px;
+      //   background-color: white;
+      //   height: 1px;
+      //   width: 50%;
+      // }
+    }
+  }
+}
+
+.sub-title {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .pre {
+    width: 100%;
+    h4 {
+      color: #65A3AE;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      padding-left: 50px;
+      @media (min-width: 480px) {
+        padding-left: 70px;
+      }
+    }
+    h3{
+      transition: 0.5s;
+      position: relative;
+      font-size: 28px;
+      text-align: left;
+      padding-left: 50px;
+      color: black;
+      word-break: normal;
+      @media (min-width: 480px) {
+        font-size: 45px;
+        padding-left: 70px;
+      }
+    }
+    .dot-shape {
+      position: absolute;
+      left: 0;
+      height: 35px;
+      margin-top: 10px;
+      @media (min-width: 480px) {
+        height: 50px;
+      }
+    }
+  }
+  .excerpt {
+    width: 100%;
+    p {
+      text-align: justify;
+      line-height: 1.5;
     }
   }
 }
