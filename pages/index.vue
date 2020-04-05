@@ -9,7 +9,18 @@
     <div class="margin-container">
       <blogWidget/>
       <productWidget/>
+    </div>
+    <div class="margin-container">
       <serviciosWidget/>
+    </div>
+    <div class="full-container color">
+      <solucionesWidget/>
+    </div>
+    <div class="margin-container">
+      <exitosWidget/>
+    </div>
+    <div class="full-container bw">
+      <marcasWidget/>
     </div>
     <!-- <cifras/> -->
     <!-- <processIntro/> -->
@@ -26,7 +37,10 @@ import intro from '~/layouts/home/intro.vue'
 import productWidget from '~/layouts/products/products-widget.vue'
 import blogWidget from '~/layouts/blog/blog-widget.vue'
 import serviciosWidget from '~/layouts/servicios/servicios-widget.vue'
+import solucionesWidget from '~/layouts/soluciones/soluciones-widget.vue'
 import sliderIntro from '~/layouts/home/slider.vue'
+import exitosWidget from '~/layouts/exitos/exitos-widget.vue'
+import marcasWidget from '~/layouts/marcas/marcas-widget.vue'
 // import cifras from '~/layouts/home/cifras.vue'
 // import processIntro from '~/layouts/home/process.vue'
 // import mail from '~/layouts/home/mail.vue'
@@ -42,7 +56,10 @@ export default {
     productWidget,
     blogWidget,
     sliderIntro,
-    serviciosWidget
+    serviciosWidget,
+    solucionesWidget,
+    exitosWidget,
+    marcasWidget
     // bannerB,
     // cifras,
     // processIntro,
@@ -101,6 +118,22 @@ export default {
     max-width: 1200px;
     @media (min-width: 900px) {
       width: 80%;
+    }
+  }
+  .full-container {
+    width: 100%;
+    padding: 50px 5%;
+    @media (min-width: 900px) {
+      padding: 25px 10%;
+    }
+    &.color {
+      background: #65A3AE;
+      background: -webkit-linear-gradient(to right, #005578, #65A3AE);
+      background: linear-gradient(to right, #005578, #65A3AE);
+    }
+    &.bw {
+      margin-top: 30px;
+      background: rgba(gray, 0.2);
     }
   }
 </style>
