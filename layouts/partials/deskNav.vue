@@ -123,6 +123,8 @@ export default {
  border-bottom: 2px solid #dfe6ed;
  @media (min-width: 1000px) {
    display: block;
+   padding-right: 10%;
+   padding-left: 10%;
  }
  a {
   transition: 0.5s;

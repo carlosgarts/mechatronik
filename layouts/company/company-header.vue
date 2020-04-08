@@ -7,14 +7,6 @@
         <h2><strong>NOSOTROS</strong></h2>
       </div>
     </div>
-    <div class="sub-title">
-      <div class="excerpt">
-        <p>Somos una compañía mexicana dedicada al diseño e integración de
-          soluciones para la industria. Ofrecemos un enfoque de innovación,
-          calidad y rentabilidad a largo plazo, combinado con un excelente servicio al cliente,
-          productos superiores y una vasta experiencia que le dará el mejor valor posible en la industria.</p>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -27,6 +19,7 @@ export default {
 .section {
   min-height: 300px;
   display: block;
+  width: 100%;
 }
 
 .title--bar {

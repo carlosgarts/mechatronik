@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div id="mision--vision">
-      <img class="parallax-background" v-rellax="{speed: -10, vertical: true, horizontal: false}" src="../../assets/images/Soluciones/bg-clear.png" alt="">
+      <!-- <img class="parallax-background" v-rellax="{speed: -10, vertical: true, horizontal: false}" src="../../assets/images/Soluciones/bg-clear.png" alt=""> -->
       <div class="content" v-scroll-reveal.reset>
         <contenido/>
       </div>
@@ -21,8 +21,12 @@ export default {
 <style lang="scss" scoped>
 .section {
   // background-image: url('../../assets/images/Compañia/fondo-2.jpg');
+  width: 90%;
   background-color: white;
   align-items: flex-start;
+  @media (min-width: 800px) {
+    width: 80%;
+  }
 }
 #mision--vision {
   width: 100%;

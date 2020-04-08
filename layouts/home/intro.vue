@@ -137,4 +137,7 @@ z-index: 3;
 //background: linear-gradient(104.98deg, rgba(101, 163, 117, 0.6) 20.58%, rgba(196, 196, 196, 0.35) 100%);
 background: linear-gradient(104.98deg, rgba(0, 0, 0, 0.5) 20.58%, rgba(0, 0, 0, 0.5) 100%);
 }
+
+// background: linear-gradient(to right,rgba(80,190,190,0.7) 0,rgba(0,153,153,0.7) 50%,rgba(0,153,176,0.7) 83%,rgba(0,153,203,0.7) 100%);
+
 </style>

@@ -106,7 +106,7 @@ export default {
     margin-right: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 80px;
+    padding: 0;
     padding-top: 20px;
     overflow: hidden;
     @media (min-width: 800px) {
