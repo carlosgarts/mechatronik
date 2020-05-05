@@ -4,7 +4,7 @@
     <div class="preludio">
       <div class="una-columna">
         <div class="identidad">
-          <img class="neugart-background" src="@/assets/RECURSOS GRAFICOS\otros\zimm-bg.png">
+          <img class="neugart-background" src="@/assets/images/recursos/zimm-bg.png">
           <img class="neugart-logo" src="@/assets/images/marcas/zimm.png">
         </div>
       </div>

@@ -4,7 +4,7 @@
     <div class="preludio">
       <div class="una-columna">
         <div class="identidad">
-          <img class="neugart-background" src="@/assets/RECURSOS GRAFICOS\otros\neugart-background.png">
+          <img class="neugart-background" src="@/assets/images/recursos/neugart-background.png">
           <img class="neugart-logo" src="@/assets/images/marcas/siemens.png">
         </div>
       </div>
