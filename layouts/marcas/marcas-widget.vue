@@ -2,6 +2,9 @@
   <div class="section">
     <div id="marcas-widget">
       <div class="marcas-list">
+        <nuxt-link class="brand" to="/marcas/festo">
+          <img src="@/assets/images/marcas/festo.png" alt="Festo">
+        </nuxt-link>
         <nuxt-link class="brand" to="/marcas/neugart">
           <img src="@/assets/images/marcas/neugart.png" alt="Neugart">
         </nuxt-link>
@@ -13,6 +16,9 @@
         </nuxt-link>
         <nuxt-link class="brand" to="/marcas/rw">
           <img src="@/assets/images/marcas/RW_logo.svg" alt="RW">
+        </nuxt-link>
+        <nuxt-link class="brand" to="/marcas/weiss-robotics">
+          <img src="@/assets/images/marcas/weiss.png" alt="Weiss Robotics">
         </nuxt-link>
       </div>
     </div>
@@ -43,10 +49,11 @@ export default {
     flex-wrap: wrap;
     justify-content: space-around;
     .brand {
-      width: 20%;
+      width: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 15px;
       img {
         transition: 0.5s;
         width: 100%;
@@ -54,6 +61,10 @@ export default {
         &:hover {
           filter: grayscale(0);
         }
+      }
+      @media (min-width: 800px) {
+        width: 13%;
+        margin: 0;
       }
     }
   }

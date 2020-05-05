@@ -86,9 +86,14 @@ export default {
       }
     }
     img {
+      transition: transform 0.5s;
       width: 100%;
       height: 200px;
       object-fit: cover;
+      overflow: hidden;
+      &:hover {
+          transform: scale(110% 110%);
+        }
     }
   }
 
@@ -109,6 +114,7 @@ export default {
       align-items: center;
     }
     .wp-block-column {
+      overflow: hidden;
       h3 {
         transition: 0.5s;
         text-align: left;
@@ -124,9 +130,13 @@ export default {
       }
     }
     img {
+      transition: transform 0.5s;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      &:hover {
+        transform: scale(110%, 110%);
+      }
     }
   }
   .color-background {

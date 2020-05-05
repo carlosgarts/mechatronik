@@ -3,11 +3,11 @@
     <div class="title--bar">
       <div class="gradiente"></div>
       <div class="title">
-        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 Marcas</p>
+        <div class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 Marcas</div>
         <h2><strong>NUESTRAS MARCAS</strong></h2>
       </div>
     </div>
-    
+
   </div>
 </template>
 

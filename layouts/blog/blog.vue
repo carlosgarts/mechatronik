@@ -6,6 +6,7 @@
         <div class="posts" v-scroll-reveal.reset v-for="post in posts" :key="post.id">
           <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.slug, id: post.id} }">
           <div class="image">
+            <div class="foreground"></div>
             <img :src="post.featured_image_url">
           </div>
           <div class="text">
@@ -88,22 +89,40 @@ export default {
   }
 
   .posts {
-    grid-column: span 4;
+    grid-column: span 2;
     width: 100%;
+    background-color: #ebf0f5;
     a {
       text-decoration: none;
       color: black;
       display: grid;
-      grid-template-columns: 180px 1fr;
+      grid-template-columns: 1fr;
       @media (min-width: 930px) {
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 1fr;
       }
     }
     .image {
       width: 100%;
+      height: 200px;
+      position: relative;
       overflow: hidden;
+      &:hover {
+        img {
+            transform: scale(110%, 110%);
+        }
+      }
+      .foreground {
+        display:block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.5);
+        left: 0;
+        top: 0;
+        z-index: 15;
+      }
       img {
-        transition: transform 3s ease;
+        transition: transform 1s ease;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -112,6 +131,7 @@ export default {
     .text {
       margin: 25px;
       margin-bottom: 9px;
+      z-index: 20;
     }
   }
   .posts:nth-child(1) {

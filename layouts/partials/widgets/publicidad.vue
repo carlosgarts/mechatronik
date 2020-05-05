@@ -20,7 +20,7 @@ export default {
   },
   mounted: async function() {
       try {
-        var Product = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wc/v3/products?consumer_key=ck_e9c6d9731b8c0175383bd26c83a495508038d9bc&consumer_secret=cs_3e6da47350b9672250c45d708f7eb2ad15ce013f&featured=true&per_page=3');
+        var Product = await this.$axios.get('https://blog.mechatronik-group.com/wp-json/wc/v3/products?consumer_key=ck_e9c6d9731b8c0175383bd26c83a495508038d9bc&consumer_secret=cs_3e6da47350b9672250c45d708f7eb2ad15ce013f&featured=true&per_page=4');
         this.destacados = Product.data;
       } catch (e) {
         console.log(e);
@@ -33,6 +33,10 @@ export default {
   ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
     li {
       margin-top: 15px;
       margin-bottom: 15px;

@@ -5,7 +5,7 @@
       <div class="product--header">
         <div class="header--content by-category" v-if="Modo == 2">
           <!-- navegacion -->
-          <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/categorias/">Categorias</a> &#10095 {{categoriaNombre}}</p>
+          <div class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/categorias/">Categorias</a> &#10095 {{categoriaNombre}}</div>
           <!-- navegacion -->
           <div class="product-displayer" v-if="categoriaNombre != null" :key="selectedCategory">
             <div class="category-text">
@@ -19,8 +19,8 @@
         </div>
         <div class="header--content" v-else>
           <!-- navegacion -->
-          <p v-if="Modo == 3" class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/marcas/">Marcas</a> &#10095 Productos</p>
-          <p v-if="Modo == 1" class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 Productos</p>
+          <div v-if="Modo == 3" class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/marcas/">Marcas</a> &#10095 Productos</div>
+          <div v-if="Modo == 1" class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 Productos</div>
           <!-- navegacion -->
           <h2>Productos Mechatronik</h2>
           <p>

@@ -6,7 +6,7 @@
         <h2>{{ post.title.rendered }}</h2>
       </div> -->
       <div class="content" >
-        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/soluciones">Soluciones</a> &#10095 {{post.title.rendered}}</p>
+        <div class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/soluciones">Soluciones</a> &#10095 {{post.title.rendered}}</div>
         <h1 class="service-title">{{post.title.rendered}}</h1>
         <div class="format" v-html="post.content.rendered"></div>
         <solser modo="servicios2" />

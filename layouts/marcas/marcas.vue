@@ -26,6 +26,16 @@
           <img src="@/assets/images/marcas/zimm.png">
         </div>
       </nuxt-link>
+      <nuxt-link class="service-content" to="/marcas/festo">
+        <div class="image">
+          <img src="@/assets/images/marcas/festo.png">
+        </div>
+      </nuxt-link>
+      <nuxt-link class="service-content" to="/marcas/weiss-robotics">
+        <div class="image">
+          <img src="@/assets/images/marcas/weiss.png">
+        </div>
+      </nuxt-link>
     </div>
 
 </template>

@@ -1,14 +1,15 @@
 <template>
   <div class="section">
-    <div class="title--bar" :style="{ backgroundImage: 'url(' + imagen + ')' }">
-      <div class="gradiente"></div>
-      <div class="title">
-        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/marcas">marcas</a> &#10095 {{titulo}}</p>
+    <!-- <div class="title--bar" :style="{ backgroundImage: 'url(' + imagen + ')' }"> -->
+    <div class="title--bar">
+      <!-- <div class="gradiente"></div> -->
+      <!-- <div class="title">
+        <div class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/marcas">marcas</a> &#10095 {{titulo}}</div>
         <h2><strong>{{titulo}}</strong></h2>
         <p><slot></slot></p>
-      </div>
+      </div> -->
     </div>
-
+    <div class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/marcas">marcas</a> &#10095 {{titulo}}</div>
   </div>
 </template>
 
@@ -23,9 +24,11 @@ export default {
 
 <style lang="scss" scoped>
 .section {
-  min-height: 300px;
+  min-height:100px;
+  height: 100px;
   display: block;
   width: 100%;
+  z-index: 15;
 }
 
 .title--bar {
@@ -37,13 +40,13 @@ export default {
   //background: linear-gradient(to right, rgba(#64b3f4, 80%), rgba(#c2e59c, 10%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
-  height: auto;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   @media (min-width: 1000px) {
-    height: 40vh;
+    //height: 40vh;
   }
   .gradiente {
     display: block;

@@ -1,7 +1,7 @@
 <template>
     <div class="title--bar">
       <div class="title--content">
-        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 Blog</p>
+        <div class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 Blog</div>
         <h2>Entradas Recientes</h2>
       </div>
     </div>
@@ -23,7 +23,7 @@ export default {
   background-size: cover;
   background-attachment: fixed;
   height: auto;
-  
+
 }
 
 .title--content {

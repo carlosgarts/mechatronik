@@ -3,6 +3,7 @@
     <div id="tester">
 
     </div>
+    <!-- <sliderIntro/> -->
     <!-- {{item.scrollHeight}} -->
     <intro/>
     <!-- <bannerB/> -->

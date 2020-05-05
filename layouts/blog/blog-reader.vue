@@ -90,17 +90,24 @@ export default {
     @media (min-width: 1000px) {
     }
     h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: white;
       text-align: center;
       font-size: calc(32px + (55 - 32) * ((100vw - 300px) / (1600 - 300)));
-      max-width: 80%;
+      width: 100%;
+      height: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+      background-color: rgba(black, 0.5);
     }
   }
 
   .content {
     display: grid;
     grid-template-columns: 100%;
-    grid-column-gap: 25px;
+    grid-column-gap: 70px;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -110,7 +117,7 @@ export default {
     padding-top: 20px;
     overflow: hidden;
     @media (min-width: 800px) {
-      grid-template-columns: 70% 30%;
+      grid-template-columns: calc(70% - 70px)  30%;
       width: 80%;
       margin-left: 10%;
       margin-right: 10%;

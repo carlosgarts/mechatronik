@@ -2,7 +2,7 @@
   <div class="product-displayer">
     <div class="section">
       <div class="product--display">
-        <p class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/productos">Productos</a> &#10095 {{producto.name}}</p>
+        <div class="nav-history"><a href="https://mechatronik-group.com/">Inicio</a> &#10095 <a href="https://mechatronik-group.com/productos">Productos</a> &#10095 {{producto.name}}</div>
         <div class="frame">
           <div class="product">
             <div class="image-displayer">

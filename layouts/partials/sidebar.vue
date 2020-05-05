@@ -11,7 +11,7 @@
       <buscador/>
     </div> -->
     <!-- publicidad -->
-
+    <h3>Productos Destacados</h3>
     <div class="widget">
       <publicidad/>
     </div>

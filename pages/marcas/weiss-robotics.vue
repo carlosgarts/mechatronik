@@ -1,46 +1,38 @@
 <template>
   <div class="container">
-    <marcatitulo titulo="Siemens" imagen="https://blog.mechatronik-group.com/wp-content/uploads/2020/04/p_d011_xx_00751p.png"></marcatitulo>
+    <marcatitulo titulo="Weiss Robotics" imagen="https://blog.mechatronik-group.com/wp-content/uploads/2020/04/neugart.png"></marcatitulo>
     <div class="preludio">
       <div class="una-columna">
         <div class="identidad">
-          <img class="neugart-background" src="@/assets/RECURSOS GRAFICOS\otros\neugart-background.png">
-          <img class="neugart-logo" src="@/assets/images/marcas/siemens.png">
+          <!-- <img class="neugart-background" src="@/assets/RECURSOS GRAFICOS\otros\neugart-background.png"> -->
+          <img class="neugart-logo" src="@/assets/images/marcas/weiss.png">
         </div>
       </div>
       <div class="doble-columna">
         <div class="acerca">
-          <p>Siemens está convirtiendo las ideas en innovaciones ganadoras que
-            establecen nuevos estándares. Un ejemplo actual es la transición a
-            una nueva combinación de energía: los nuevos métodos de simulación
-            muestran cómo esto puede convertirse en una realidad y por qué los
-            enfoques anteriores deben reconsiderarse.
-            <br>
-            <br>
-            Ya sea síncrono o asíncrono, con o sin reductores, cuando se trata de
-            seleccionar el motor óptimo para su aplicación de control de movimiento,
-            Siemens tiene la selección de motores más amplia del mundo, que también
-            cubre motores integrados y husillos de motor. Además, cada motor Siemens
-            para control de movimiento está perfectamente adaptado para funcionar
-            con nuestra familia de convertidores de frecuencia
+          <p>Fundada en 2008 como una startup, hoy somos el especialista líder en
+            sistemas de agarre mecatrónico. Como empresa familiar administrada por el propietario,
+            desarrollamos soluciones de agarre innovadoras para tareas de automatización exigentes
+            en nuestra sede en Ludwigsburg, Alemania, estableciendo nuevos estándares tanto cualitativa
+            como tecnológicamente en el contexto de la Industria 4.0 y la Fábrica inteligente.
           </p>
-          <img class="clear" src="https://blog.mechatronik-group.com/wp-content/uploads/2020/01/simens1.jpg" alt="Servomotor">
+          <img class="clear" src="https://blog.mechatronik-group.com/wp-content/uploads/2020/02/product-picture.jpg" alt="Servomotor">
         </div>
         <div class="acerca">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/CsMDvpBfttc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/HgcfaYy2O4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
     <marcacontent>
-      <nuxt-link class="brand-title" to="/categorias/servomotors">
-        <h2>Servomotores</h2>
+      <nuxt-link class="brand-title" to="/categorias/grippers">
+        <h2>Grippers</h2>
       </nuxt-link>
-      <p class="brand-paragraph">Los servomotores de rotación continua se caracterizan
-        por ser capaces de girar 360 grados, es decir, una rotación completa.
-        Su funcionamiento es similar al de un motor convencional,
-        pero con las características de porder controlar su posición y velocidad de giro en un momento dado.</p>
-      <relacionados categoria="37" cantidad="8"/>
-      <nuxt-link class="brand-title rigth" to="/categorias/servomotors">Ver Más &#10095 </nuxt-link>
+      <p class="brand-paragraph">Desarrollamos soluciones de agarre innovadoras
+        para tareas de automatización exigentes, que establecen nuevos estándares
+        en términos de tecnología y tecnología en el contexto de la Industria 4.0 y
+        la Fábrica inteligente. </p>
+      <relacionados categoria="40" cantidad="8"/>
+      <nuxt-link class="brand-title rigth" to="/categorias/grippers">Ver Más &#10095 </nuxt-link>
       <!-- <hr> -->
     </marcacontent>
   </div>
