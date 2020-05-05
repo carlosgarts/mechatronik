@@ -34,9 +34,12 @@ export default {
 
   .doble-columna {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 50px;
     margin: 30px;
+    @media (min-width: 1150px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .una-columna {

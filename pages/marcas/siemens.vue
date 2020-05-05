@@ -101,9 +101,12 @@ export default {
 
   .doble-columna {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 50px;
     margin: 30px;
+    @media (min-width: 1150px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .una-columna {
@@ -138,14 +141,21 @@ export default {
     justify-content: center;
     align-items:center;
     position: relative;
+    width: 100%;
     p {
       text-align: justify;
     }
     .clear {
       display: block;
       height: 100%;
+      width: 100%;
+      object-fit: contain;
       position: absolute;
       opacity: 0.2;
     }
+  }
+
+  iframe {
+    width: 100%;
   }
 </style>
