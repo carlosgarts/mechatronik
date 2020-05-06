@@ -53,7 +53,9 @@ export default {
   },
   computed: {
     SocialUrl: function () {
-      return 'https://www.mechatronik-group.com/' + this.$route.fullPath
+      var direccion = 'https://www.mechatronik-group.com';
+      direccion = direccion.concat(this.$route.path);
+      return direccion;
     }
   }
 }

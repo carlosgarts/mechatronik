@@ -26,7 +26,8 @@ export default {
   ** Global CSS
   */
   css: [
-    'normalize.css/normalize.css'
+    'normalize.css/normalize.css',
+    'vue-agile/dist/VueAgile.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -38,6 +39,7 @@ export default {
     { src: '~/plugins/vue-scroll-reveal.js', ssr: false },
     { src: '~/plugins/vue-social-sharing.js', ssr: true },
     { src: 'node_modules/vue-rellax/lib/nuxt-plugin', ssr: false },
+    { src: './plugins/vue-agile.js', mode: 'client' },
     { src: '~plugins/vue-scrollto.js'}
   ],
   /*

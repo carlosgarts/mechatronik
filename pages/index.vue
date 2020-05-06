@@ -5,7 +5,8 @@
     </div>
     <!-- <sliderIntro/> -->
     <!-- {{item.scrollHeight}} -->
-    <intro/>
+    <introslider/>
+    <!-- <intro/> -->
     <!-- <bannerB/> -->
     <div class="margin-container">
       <blogWidget/>
@@ -34,6 +35,7 @@
 
 <script>
 import intro from '~/layouts/home/intro.vue'
+import introslider from '~/layouts/home/sliderintro.vue'
 // import bannerB from '~/layouts/home/banner.vue'
 import productWidget from '~/layouts/products/products-widget.vue'
 import blogWidget from '~/layouts/blog/blog-widget.vue'
@@ -53,6 +55,7 @@ import marcasWidget from '~/layouts/marcas/marcas-widget.vue'
 
 export default {
   components: {
+    introslider,
     intro,
     productWidget,
     blogWidget,

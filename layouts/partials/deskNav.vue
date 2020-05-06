@@ -1,6 +1,6 @@
 <template>
   <div class="desk">
-   <nuxt-link to="/" id="desk-logo"><img class="logo" src="@/assets/images/identity/MECHATRONIK-WEB-LOGO-COLOR.png" alt="Mechatronik"> </nuxt-link>
+   <nuxt-link to="/" id="desk-logo"><img class="logo" src="@/assets/images/identity/logo.svg" alt="Mechatronik"> </nuxt-link>
    <!-- <a href="#">Español &#9660</a> -->
    <nuxt-link class="desk-link" to="/compañia">COMPAÑIA</nuxt-link>
    <!-- <nuxt-link to="/soluciones">SOLUCIONES</nuxt-link> -->

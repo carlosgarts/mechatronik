@@ -1,7 +1,7 @@
 {
-  "name": "mechatronik",
+  "name": "Mechatronik",
   "version": "1.0.0",
-  "description": "mechatronik mexico",
+  "description": "Especializados en motion control, ofrecemos una amplia selección de servos, grippers, couplings, actuadores, screw jack systems, couplings, etc. estamos establecidos en México y ofrecemos apoyo total relacionado a nuestros productos y a ingeniería mecánica y de software.",
   "author": "Carlos",
   "private": true,
   "scripts": {
@@ -18,6 +18,7 @@
     "normalize.css": "^8.0.1",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
+    "vue-agile": "^1.1.3",
     "vue-carousel": "^0.18.0",
     "vue-countup-v2": "^4.0.0",
     "vue-notification": "^1.3.16",

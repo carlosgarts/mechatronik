@@ -1,0 +1,1132 @@
+[
+    {
+        "id": 1845,
+        "date": "2020-04-05T21:28:23",
+        "date_gmt": "2020-04-05T21:28:23",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=1845"
+        },
+        "modified": "2020-04-23T04:59:43",
+        "modified_gmt": "2020-04-23T04:59:43",
+        "slug": "ejes-de-accionamiento-servo-controlado",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/ejes-de-accionamiento-servo-controlado/",
+        "title": {
+            "rendered": "Desarrollo de ingeniería especializada en la fabricación de máquinaria del alambre."
+        },
+        "content": {
+            "rendered": "\n<p>Una de las industrias que mayor rendimiento tiene en el mercado, es la industria metalmecánica, la fabricación de alambre a lo largo del tiempo ha adquirido muchas áreas de investigación y desarrollo, ya que el desarrollo de este producto tiene que ser diseñado y fabricado bajo ciertos estándares de calidad para cumplir con los requisitos más exigentes del entorno en el que son aplicados. </p>\n\n\n\n<p>Dentro del desarrollo de innovación, es importante alcanzar un nivel alto en el desarrollo de Ingeniería mecánica, desde la etapa de conceptualización, hasta el diseño computarizado, pasando por planos de fabricación con tolerancias mínimas para su fabricación, manteniendo una cultura de calidad en cada uno de sus procesos.</p>\n\n\n\n<p>Uno\nde los retos más grandes en un proyecto de automatización, es definir\ncorrectamente los componentes. En Mechatronik-Lösungen nos basamos en software\nde cálculo para el diseño de accionamientos completos, estas herramientas nos\nayudan a dimensionar la aplicación para su análisis, optimización, selección y\nvalidación de su sistema de control. En solo unos minutos, se puede\nconfigurar la combinación adecuada de motor y caja de cambios en función de los\ndatos de aplicación ingresados. </p>\n\n\n\n<p>Por\nlo tanto, su aplicación se vuelve rentable y energéticamente eficiente. </p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Una de las industrias que mayor rendimiento tiene en el mercado, es la industria metalmecánica, la fabricación de alambre a lo largo del tiempo ha adquirido muchas áreas de investigación y desarrollo, ya que el desarrollo de este producto tiene [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2248,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            43
+        ],
+        "tags": [
+            30
+        ],
+        "jetpack_featured_media_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/04/Caso1.jpg",
+        "acf": [],
+        "featured_image_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/04/Caso1.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/1845"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=1845"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 3,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/1845/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2240,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/1845/revisions/2240"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media/2248"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=1845"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=1845"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=1845"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 704,
+        "date": "2020-02-01T21:17:22",
+        "date_gmt": "2020-02-01T21:17:22",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=704"
+        },
+        "modified": "2020-04-23T04:59:51",
+        "modified_gmt": "2020-04-23T04:59:51",
+        "slug": "automation-systems-3",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/automation-systems-3/",
+        "title": {
+            "rendered": "Automation systems"
+        },
+        "content": {
+            "rendered": "\n<div class=\"wp-block-columns\">\n<div class=\"wp-block-column\">\n<figure class=\"wp-block-image size-large\"><img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/04/automation-systems-1-1024x676.jpg\" alt=\"\" class=\"wp-image-2110\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/04/automation-systems-1-1024x676.jpg 1024w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/automation-systems-1-300x198.jpg 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/automation-systems-1-768x507.jpg 768w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/automation-systems-1-600x396.jpg 600w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/automation-systems-1.jpg 1198w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column\">\n<h3>Integrated Systems from a Single Source  </h3>\n\n\n\n<p> </p>\n\n\n\n<p>Our approach adapts to the specific needs of each client and the sector where their business is carried out. We have a wide range of specialized services, extensive experience in Automation Engineering and large differential capacity to integrate new technologies, which allows us to implement high-value improvements and accelerate results with a visible impact on the business.</p>\n\n\n\n<p>Mechatronik Lösungen develops systems customized solutions for operations and processes with highly dynamic movements and maximum precision.</p>\n\n\n\n<p> We offer our design expertise throughout the entire development cycle, from requirements definition through to systems integration and validation. Designing solutions with optimal power density and high reliability, our engineers are experienced in developing a highly dynamic motion control system </p>\n\n\n\n<p></p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-group color-background\"><div class=\"wp-block-group__inner-container\">\n<h3 class=\"important-title\">Automation systems: </h3>\n\n\n\n<ul><li><strong>Máquinas especiales e ingeniería</strong>   </li></ul>\n</div></div>\n\n\n\n<h3><span style=\"color: #65a3ae;\">Integrated Systems from a </span><span style=\"color: #808080;\">Single Source</span>&nbsp;</h3>\n\n\n\n<p></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Integrated Systems from a Single Source&nbsp;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            19
+        ],
+        "tags": [
+            31
+        ],
+        "jetpack_featured_media_url": "",
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/704"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=704"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 7,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/704/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2111,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/704/revisions/2111"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=704"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=704"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=704"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 690,
+        "date": "2020-02-01T07:15:44",
+        "date_gmt": "2020-02-01T07:15:44",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=690"
+        },
+        "modified": "2020-04-05T23:12:12",
+        "modified_gmt": "2020-04-05T23:12:12",
+        "slug": "assembly-and-test-station",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/assembly-and-test-station/",
+        "title": {
+            "rendered": "Assembly and test station"
+        },
+        "content": {
+            "rendered": "\n<div class=\"wp-block-columns\">\n<div class=\"wp-block-column\">\n<figure class=\"wp-block-image size-large\"><img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/04/WEISS_App_Freudenberg_Bild3_02.jpg\" alt=\"\" class=\"wp-image-1852\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/04/WEISS_App_Freudenberg_Bild3_02.jpg 980w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/WEISS_App_Freudenberg_Bild3_02-300x201.jpg 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/WEISS_App_Freudenberg_Bild3_02-768x513.jpg 768w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/WEISS_App_Freudenberg_Bild3_02-600x401.jpg 600w\" sizes=\"(max-width: 980px) 100vw, 980px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column\">\n<h3>El sistema ideal para cada tarea: sistemas de automatización </h3>\n\n\n\n<p>Las demandas de las máquinas y plantas modernas están creciendo constantemente en todas las industrias. Con los sistemas de automatización, puede cubrir todos los requisitos mientras se beneficia de la máxima eficiencia, flexibilidad y rentabilidad.</p>\n</div>\n</div>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            19
+        ],
+        "tags": [
+            30
+        ],
+        "jetpack_featured_media_url": "",
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/690"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=690"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 4,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/690/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 1853,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/690/revisions/1853"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=690"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=690"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=690"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 529,
+        "date": "2020-01-24T01:20:59",
+        "date_gmt": "2020-01-24T01:20:59",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=529"
+        },
+        "modified": "2020-04-24T00:08:43",
+        "modified_gmt": "2020-04-24T00:08:43",
+        "slug": "industry-4-0-consulting",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/industry-4-0-consulting/",
+        "title": {
+            "rendered": "Industry 4.0 Consulting"
+        },
+        "content": {
+            "rendered": "\n<div class=\"wp-block-columns\">\n<div class=\"wp-block-column\">\n<figure class=\"wp-block-image size-large\"><img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/03/7534-01-mcs-visual-teaserversion.jpg\" alt=\"\" class=\"wp-image-1549\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/03/7534-01-mcs-visual-teaserversion.jpg 640w, https://blog.mechatronik-group.com/wp-content/uploads/2020/03/7534-01-mcs-visual-teaserversion-300x168.jpg 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/03/7534-01-mcs-visual-teaserversion-600x337.jpg 600w\" sizes=\"(max-width: 640px) 100vw, 640px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column\">\n<h3> Una revolución está cambiando la industria tal como la conocemos</h3>\n\n\n\n<p>Una transformación que está brindando grandes oportunidades: la llamada Industria 4.0.</p>\n\n\n\n<p>Nuestro ADN, va mas allá de ofrecer una solución fiable y optimizada. En Mechatronik-Lösungen le proporcionamos una definición clara de Industria 4.0 adaptada a su empresa específica. La Industria 4.0 NO se trata de tecnologías específicas, sino de cómo elegirlas, usarlas y unirlas para un contexto y una industria específicos. Por esta razón, desarrollar o comprar un sistema que utilice incluso las tecnologías más modernas para satisfacer solo las necesidades actuales NO lo ayudará a aprovechar las oportunidades de la revolución de la Industria 4.0.</p>\n\n\n\n<p></p>\n</div>\n</div>\n\n\n\n<h2> Desarrollo en tecnologías Industria 4.0 </h2>\n\n\n\n<p> La metodología de la Industria 4.0 implica la utilización de diferentes tecnologías, principalmente digitales, que ofrecen soluciones a desafíos futuros como una mayor productividad y eficiencia, una toma de decisiones mejor y más rápida, personalización masiva de nuevos productos, mayor transparencia, menores costos. Las tecnologías clave son: </p>\n\n\n\n<div class=\"three-items\">\n        <div class=\"item\">\n                    <h3>Simulation</h3>\n            </div>\n        <div class=\"item\">\n                   <h3>Additive Manufacturing</h3>          \n        </div>\n        <div class=\"item\">\n                    <h3>Cloud Computing</h3> \n                  </div>\n      </div>\n\n<div class=\"three-items\">\n        <div class=\"item\">\n                    <h3>Virtual and Augmented Reality</h3>\n            </div>\n        <div class=\"item\">\n                   <h3>Horizontal and Vertical Integration</h3>          \n        </div>\n        <div class=\"item\">\n                    <h3>Cybersecurity</h3> \n                  </div>\n      </div>\n\n<div class=\"three-items\">\n        <div class=\"item\">\n                    <h3>Internet of Things</h3>\n            </div>\n        <div class=\"item\">\n                   <h3>Big Data Analytics</h3>          \n        </div>\n        <div class=\"item\">\n                    <h3>Autonomous robots</h3> \n                  </div>\n      </div>\n\n\n\n<h5 class=\"has-text-align-center grad-title\">Construyendo sistemas innovadores para el futuro de tu empresa</h5>\n\n\n\n<div class=\"three-items\">\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/03/csm_MOTEK_NEUGART-011_4e0be68990.jpg\" alt=\"image\">\n          <h3>Analizar y evaluar la disponibilidad tecnológica de los sistemas operativos de su empresa</h3>\n          <p>Le ayudamos a comprender exactamente donde se encuentran desde un punto de vista tecnológico. \n            Traemos a su atención sus partes más débiles y menos flexibles, aquellos que podrían poner a su empresa en riesgo de \n            interrupción en el futuro cercano. </p>\n        </div>\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/03/csm_Neugart-Motek-Booth-4_83878597ab.jpg\" alt=\"image\">\n          <h3>Innove su mercado</h3>\n          <p>En Mechatronik Lösungen no vendemos soluciones que pretenden decirle como debe administrar u operar su negocio. \n            Si tiene una visión sobre como quiere hacerlo, donde debe fortalecerse y ser más competitivo o cuales son sus \n            puntos más débiles que debe cubrir, el equipo de consultoría Industry 4.0 se basará en esta visión y creará \n            rápidamente una tecnología adecuada a su infraestructura y su visión </p>\n        </div>\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/03/7837-03_Wasser_Visual_180205-1_sRGB2.jpg\" alt=\"image\">\n          <h3>Digitalizar su negocio de forma sostenible</h3>\n          <p>La mayoría de las empresas que encontramos en nuestro negocio cotidiano apenas han completado \n            ( o incluso comenzado) una transición a la industria 3.0. Para llegar a un estado en el que su empresa pueda adaptarse a \n            los cambios disruptivos, primero debe digitalizar e integrar completamente sus sistemas comerciales. \n            No se trata solo de integrarse, si no también de como se implementa esa integración.</p>\n        </div>\n      </div>\n\n\n\n<div style=\"height:100px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Una revolución está cambiando la industria tal como la conocemos Una transformación que está brindando grandes oportunidades: la llamada Industria 4.0. Nuestro ADN, va mas allá de ofrecer una solución fiable y optimizada. En Mechatronik-Lösungen le proporcionamos una definición clara [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 244,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            18
+        ],
+        "tags": [
+            44
+        ],
+        "jetpack_featured_media_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/EKdTn28X0AAlcXV.jpg",
+        "acf": [],
+        "featured_image_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/EKdTn28X0AAlcXV.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/529"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=529"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 156,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/529/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2236,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/529/revisions/2236"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media/244"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=529"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=529"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=529"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 352,
+        "date": "2020-01-19T02:26:32",
+        "date_gmt": "2020-01-19T02:26:32",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=352"
+        },
+        "modified": "2020-04-24T04:21:49",
+        "modified_gmt": "2020-04-24T04:21:49",
+        "slug": "mechanical-design-engineering",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/mechanical-design-engineering/",
+        "title": {
+            "rendered": "Mechanical design engineering"
+        },
+        "content": {
+            "rendered": "\n<div class=\"wp-block-columns\">\n<div class=\"wp-block-column\">\n<figure class=\"wp-block-image size-large\"><img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/Mechanical-design-engineering.jpg\" alt=\"\" class=\"wp-image-2080\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/Mechanical-design-engineering.jpg 898w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/Mechanical-design-engineering-300x198.jpg 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/Mechanical-design-engineering-768x506.jpg 768w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/Mechanical-design-engineering-600x396.jpg 600w\" sizes=\"(max-width: 898px) 100vw, 898px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column\">\n<h3> En diseño de ingeniería, el conocimiento técnico y la experiencia son pieza clave en el desarrollo de proyectos de innovación </h3>\n\n\n\n<p> Estamos poniendo aún más énfasis en nuestro éxito en el desarrollo no  solo de máquinas individuales, sino de soluciones completas, todas de  una sola fuente, para poder ofrecer a nuestros clientes un mayor valor  agregado. El desarrollo de productos en Mechatronik Lösungen comienza  con la idea inicial y se extiende hasta el lanzamiento al mercado del  producto. La realización está asegurada por la gestión profesional de  proyectos e informes y la comunicación constante con el cliente. </p>\n\n\n\n<p>Hoy sin duda las tecnologías se están volviendo más inteligentes, más capaces y más productivas, gracias a la transformación digital, los servo sistemas han alcanzado un punto de inflexión y la implementación de algunas empresas han dado paso a una penetracion más amplia en el mercado.</p>\n\n\n\n<p><br>Las aplicaciones de Motion control requieren equipos especializados en su implementación, tal como el diseño de máquinas, aplicar conocimiento interdisciplinario y lidiar con cuestiones de aplicación práctica es tarea de todos los días. Estamos a tus órdenes para hacer su visión realidad, transformando el proceso y desarrollo con soluciones de alto impacto en el diseño, simulación y puesta en marcha</p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-group color-background\"><div class=\"wp-block-group__inner-container\">\n<h2> Desarrollo de Ingeniería mecánica</h2>\n\n\n\n<p>El tiempo de inactividad de la máquina debido a un bloqueo es el peor de los casos con el que todos los constructores de máquinas y operadores de sistemas están familiarizados. Para mantener la máxima productividad, se deben adquirir nuevos componentes, y cada minuto cuenta. </p>\n\n\n\n<ul><li><strong>Concepción, modelado y simulación</strong></li><li><strong>Construcción detallada hasta la producción del dibujo.</strong></li><li><strong>Desarrollo y producción de montajes y máquinas.</strong></li><li><strong>Prototipado</strong></li></ul>\n</div></div>\n\n\n\n<h3 class=\"grad-title\"> Breaking down the barries to innovation</h3>\n\n\n\n<div class=\"three-items\">\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/03/concepción.jpg\" alt=\"image\">\n          <h3>Concepción del modelado</h3>\n          <p>Las nuevas tecnologías están impulsando cambios acelerados en el diseño, la ingeniería y la fabricación de máquinas. En particular, la incorporación de tecnologías de simulación en el proceso de diseño ha sido un avance significativo. La incorporación de tecnologías de simulación nos permite democratizar la simulación para permitir que los ingenieros realicen mejoras tempranas en sus diseños sin abandonar el entorno de diseño. </p>\n        </div>\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/04/Modelado.jpg\" alt=\"image\">\n          <h3>Modelado</h3>\n          <p>Las nuevas tecnologías están impulsando cambios acelerados en el diseño, la ingeniería y la fabricación de máquinas. En particular, la incorporación de tecnologías de simulación en el proceso de diseño ha sido un avance significativo. La incorporación de tecnologías de simulación nos permite democratizar la simulación para permitir que los ingenieros realicen mejoras tempranas en sus diseños sin abandonar el entorno de diseño.</p>\n        </div>\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/04/Simulacion.jpg\" alt=\"image\">\n          <h3>Simulación</h3>\n          <p>Las nuevas tecnologías están impulsando cambios acelerados en el diseño, la ingeniería y la fabricación de máquinas. En particular, la incorporación de tecnologías de simulación en el proceso de diseño ha sido un avance significativo. Estas tecnologías nos permite democratizar la simulación para permitir que los ingenieros realicen mejoras tempranas en sus diseños sin abandonar el entorno de diseño.</p>\n        </div>\n      </div>\n\n\n\n<p></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>En diseño de ingeniería, el conocimiento técnico y la experiencia son pieza clave en el desarrollo de proyectos de innovación Estamos poniendo aún más énfasis en nuestro éxito en el desarrollo no solo de máquinas individuales, sino de soluciones completas, [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 675,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            18
+        ],
+        "tags": [
+            31
+        ],
+        "jetpack_featured_media_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/14-1.jpg",
+        "acf": [],
+        "featured_image_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/14-1.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/352"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=352"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 119,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/352/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2273,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/352/revisions/2273"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media/675"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=352"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=352"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=352"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 349,
+        "date": "2020-01-19T02:23:21",
+        "date_gmt": "2020-01-19T02:23:21",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=349"
+        },
+        "modified": "2020-04-24T00:05:20",
+        "modified_gmt": "2020-04-24T00:05:20",
+        "slug": "software-development",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/software-development/",
+        "title": {
+            "rendered": "Software Development"
+        },
+        "content": {
+            "rendered": "\n<div class=\"wp-block-columns\">\n<div class=\"wp-block-column\">\n<figure class=\"wp-block-image size-large\"><img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/7112-simatic-safety-fb4-0866-160414-1-teaser-1024x575.jpg\" alt=\"\" class=\"wp-image-1707\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/7112-simatic-safety-fb4-0866-160414-1-teaser-1024x575.jpg 1024w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/7112-simatic-safety-fb4-0866-160414-1-teaser-300x169.jpg 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/7112-simatic-safety-fb4-0866-160414-1-teaser-768x431.jpg 768w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/7112-simatic-safety-fb4-0866-160414-1-teaser-600x337.jpg 600w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/7112-simatic-safety-fb4-0866-160414-1-teaser.jpg 1125w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column\">\n<h3> Nuestros años de experiencia nos permiten proporcionarle un sistema de control potente </h3>\n\n\n\n<p>Mechatronik-Lösungen aprovecha las últimas herramientas de programación incluyendo TIA Portal y Simotion Scout. Nuestro desarrollo siempre se adapta a las necesidades del cliente. Nuestra información está completamente documentada y podemos proporcionar el traspaso y/o capacitación donde sea necesario para que los clientes puedan apoyarse y desarrollar sus propias máquinas a largo plazo.</p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-group color-background\"><div class=\"wp-block-group__inner-container\">\n<h2> Acelere su Ingeniería </h2>\n\n\n\n<ul><li><strong> Configuración y documentación que cumplen con los estándares para cumplir con las normas de seguridad, medioambientales y de compatibilidad. </strong></li><li><strong> Diseño de sistema lógico.</strong></li><li><strong> Montaje y conexionado de tableros de control </strong></li></ul>\n</div></div>\n\n\n\n<div class=\"three-items\">\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/A.jpg\" alt=\"image\">\n          <h3>TIA Portal</h3>\n          <p>Las tecnologías innovadoras hacen que las máquinas sean cada vez más potentes. Pero sin una programación adecuada serían inútiles. Con el Totally Integrated Automation Portal (TIA Portal), la ingeniería y la programación se vuelven más fáciles y eficientes. </p>\n        </div>\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/C.jpg\" alt=\"image\">\n          <h3>LabVIEW</h3>\n          <p>Los productos de NI resuelven retos de ingeniería en una amplia variedad de industrias. NI acelera el éxito de la ingeniería proporcionándole una plataforma abierta centrada en software que aprovecha el hardware modular y un amplio ecosistema.</p>\n        </div>\n        <div class=\"item\">\n          <img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/B.jpg\" alt=\"image\">\n          <h3>Visual Studio</h3>\n          <p>Microsoft Visual Studio es un entorno de desarrollo integrado  el cual es compatible con múltiples lenguajes de programación, tales como C++, C#, Visual Basic .NET, F#, Java, Python, Ruby y PHP, al igual que entornos de desarrollo web, como ASP.NET MVC, las cuales ofrecen acceso a tecnologías clave para simplificar el desarrollo de aplicaciones web ASP y Servicios Web XML.</p>\n        </div>\n      </div>\n\n\n\n<div style=\"height:314px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Nuestros años de experiencia nos permiten proporcionarle un sistema de control potente Mechatronik-Lösungen aprovecha las últimas herramientas de programación incluyendo TIA Portal y Simotion Scout. Nuestro desarrollo siempre se adapta a las necesidades del cliente. Nuestra información está completamente documentada [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 115,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            18
+        ],
+        "tags": [
+            32
+        ],
+        "jetpack_featured_media_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/7560-tia-produktportfolio-teaser.jpg",
+        "acf": [],
+        "featured_image_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/7560-tia-produktportfolio-teaser.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/349"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=349"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 66,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/349/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2326,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/349/revisions/2326"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media/115"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=349"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=349"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=349"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 346,
+        "date": "2020-01-19T02:19:49",
+        "date_gmt": "2020-01-19T02:19:49",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=346"
+        },
+        "modified": "2020-04-24T00:02:23",
+        "modified_gmt": "2020-04-24T00:02:23",
+        "slug": "electrical-services",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/electrical-services/",
+        "title": {
+            "rendered": "Electrical services"
+        },
+        "content": {
+            "rendered": "\n<div class=\"wp-block-columns\">\n<div class=\"wp-block-column\">\n<figure class=\"wp-block-image size-large\"><img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/03/siemens-industrial-automation-image-1024x576.jpg\" alt=\"\" class=\"wp-image-1730\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/03/siemens-industrial-automation-image-1024x576.jpg 1024w, https://blog.mechatronik-group.com/wp-content/uploads/2020/03/siemens-industrial-automation-image-300x169.jpg 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/03/siemens-industrial-automation-image-768x432.jpg 768w, https://blog.mechatronik-group.com/wp-content/uploads/2020/03/siemens-industrial-automation-image-600x337.jpg 600w, https://blog.mechatronik-group.com/wp-content/uploads/2020/03/siemens-industrial-automation-image.jpg 1140w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column\">\n<h3> Ofrecemos servicios adicionales para complementar nuestros productos, apoyándolo en cada paso, asegurando el éxito, a tiempo, según las especificaciones. </h3>\n\n\n\n<p>Nos vemos como un proveedor de servicios, siempre luchando por desarrollar y darnos cuenta de la mejor solución posible para la planificación y ejecución del proyecto planificado, y si es posible superar sus expectativas.</p>\n\n\n\n<p>Proporcionamos una solución de fuente única para paneles de control industriales personalizados que incluye diseño, ensamblaje y pruebas de aceptación de calidad total.</p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-group color-background\"><div class=\"wp-block-group__inner-container\">\n<h2>Servicios eléctricos</h2>\n\n\n\n<ul><li><strong> Configuración y documentación que cumplen con los estándares para cumplir con las normas de seguridad, medioambientales y de compatibilidad. </strong></li><li><strong> Diseño de sistema lógico.</strong></li><li><strong> Montaje y conexionado de tableros de control </strong></li></ul>\n</div></div>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Ofrecemos servicios adicionales para complementar nuestros productos, apoyándolo en cada paso, asegurando el éxito, a tiempo, según las especificaciones. Nos vemos como un proveedor de servicios, siempre luchando por desarrollar y darnos cuenta de la mejor solución posible para la [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 682,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            18
+        ],
+        "tags": [
+            33
+        ],
+        "jetpack_featured_media_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/60739460_1139422269574435_337768789202495233_n.jpg",
+        "acf": [],
+        "featured_image_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/60739460_1139422269574435_337768789202495233_n.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/346"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=346"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 16,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/346/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2324,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/346/revisions/2324"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media/682"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=346"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=346"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=346"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 196,
+        "date": "2020-01-15T19:07:54",
+        "date_gmt": "2020-01-15T19:07:54",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=196"
+        },
+        "modified": "2020-04-23T17:59:49",
+        "modified_gmt": "2020-04-23T17:59:49",
+        "slug": "powerful-solutions-for-rack-and-pinion-drives",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/powerful-solutions-for-rack-and-pinion-drives/",
+        "title": {
+            "rendered": "Powerful solutions for rack and pinion drives"
+        },
+        "content": {
+            "rendered": "<p>Neugart está ampliando su cartera de cajas de engranajes planetarios, especialmente para unidades de cremallera y piñón, con una opción adicional para un piñón montado de su producción interna.</p>\n<p>Hay dos tipos específicos de piñones disponibles: el piñón PK1 está montado en el eje de salida acanalado de la caja de engranajes, por lo que la conexión segura que se requiere se proporciona mediante dentado interno de acuerdo con DIN 5480. El piñón PM1, por otro lado, es diseñado para cajas de engranajes con un eje de salida de brida, y está equipado con una interfaz mecánica que está estandarizada de acuerdo con EN ISO 9409-1. Ambos tipos están disponibles con un corte helicoidal, y el PK1 también está disponible con un corte recto. Los piñones también están disponibles en cuatro módulos diferentes y con diferentes números de dientes.</p>\n<p>La opción de piñón también se puede combinar con un total de ocho series de cajas de cambios: incluida una caja de cambios planetaria coaxial con un eje de salida (PLHE) y una brida de salida (PFHE) de la línea Economy, que incluye cajas de cambios estándar duraderas y potentes con un precio excepcional /relación calidad. Dos cajas de engranajes planetarios coaxiales con eje de salida (PSN y PLN) o brida de salida (PSFN y PLFN) y cajas de engranajes planetarios de ángulo recto (WPLN y WPSFN) están disponibles en la línea de precisión, que representa la precisión sobresaliente de las cajas de engranajes de precisión.</p>\n<p>Estas numerosas opciones de combinación de piñón / caja de engranajes planetarios aseguran que no solo se pueda encontrar una solución para una amplia gama de aplicaciones, sino también para varias, lo que significa que la rigidez torsional de las cajas de engranajes con bridas es mayor que la de las cajas de engranajes con un eje de salida. Si la situación del espacio de construcción es el criterio decisivo, el constructor puede usar la caja de engranajes corta con la brida de salida o las cajas de engranajes de precisión en ángulo recto. Si la precisión es el factor decisivo, el constructor puede optar por la mayor precisión y rigidez torsional de las cajas de engranajes de precisión. Por otro lado, las cajas de cambios económicas son una solución que es financieramente más atractiva para aplicaciones estándar.</p>\n<p><!--more--></p>\n\n\n<h2 class=\"has-text-color\" style=\"color:#4d7a80\">Planetary gearboxes with mounted pinion </h2>\n\n\n\n<figure class=\"wp-block-image size-large\"><img src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/04/csm_Ritzel_News_05_45833603bb.png\" alt=\"\" class=\"wp-image-2275\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/04/csm_Ritzel_News_05_45833603bb.png 800w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/csm_Ritzel_News_05_45833603bb-300x188.png 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/csm_Ritzel_News_05_45833603bb-768x480.png 768w, https://blog.mechatronik-group.com/wp-content/uploads/2020/04/csm_Ritzel_News_05_45833603bb-600x375.png 600w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></figure>\n\n\n\n<div style=\"height:100px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Neugart está ampliando su cartera de cajas de engranajes planetarios, especialmente para unidades de cremallera y piñón, con una opción adicional para un piñón montado de su producción interna. Hay dos tipos específicos de piñones disponibles: el piñón PK1 está [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2280,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            17
+        ],
+        "tags": [],
+        "jetpack_featured_media_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/csm_Ritzel_News_01_2ae05da658.png",
+        "acf": [],
+        "featured_image_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/csm_Ritzel_News_01_2ae05da658.png",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/196"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=196"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 114,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/196/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2282,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/196/revisions/2282"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media/2280"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=196"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=196"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=196"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 194,
+        "date": "2020-01-14T23:28:43",
+        "date_gmt": "2020-01-14T23:28:43",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=194"
+        },
+        "modified": "2020-04-23T18:04:31",
+        "modified_gmt": "2020-04-23T18:04:31",
+        "slug": "sizing-diseno-de-accionamientos-2",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/sizing-diseno-de-accionamientos-2/",
+        "title": {
+            "rendered": "Sizing: Diseño de accionamientos"
+        },
+        "content": {
+            "rendered": "<h1 style=\"text-align: left;\"><span style=\"color: #808080;\">¿Por qué calcular los componentes de una aplicación servo?</span></h1>\n<p><!--more--></p>\n<p style=\"text-align: left;\"><span style=\"color: #808080;\">El control de movimiento es un elemento clave de muchas máquinas industriales y un tema multifacético; la demanda de funciones más seguras está en constante crecimiento y la eficiencia energética se ha convertido en un elemento predominante. </span><span style=\"color: #808080;\">El aumento en el número total de motores por máquina está exigiendo más software de soporte (y mejor), así como innovaciones que reducen el tiempo necesario para la instalación y puesta en marcha. </span></p>\n<p style=\"text-align: left;\"><span style=\"color: #808080;\">Hay muchos componentes especializados que cumplen funciones especificas en un sistema moderno de control de movimiento. Hay piezas electrónicas, como el controlador principal, hay componentes mecánicos, motores, actuadores lineales, sin embargo un componente que a veces se puede pasar por alto es la caja de cambios en un servomotor. En comparación con otros tipos de cajas de cambios, los que se usan en los servos son bastantes únicos debido a las demandas específicas que se les imponen. </span></p>\n<p style=\"text-align: left;\"><span style=\"color: #808080;\">Una caja de cambios necesita lidiar con altas velocidades de entrada, tener un amplio rango de operación, proporcionar un par adecuado para la aplicación, ser lo suficientemente robusto como para manejar el uso continuo y repetitivo, y tener poca holgura de engranaje. </span><span style=\"color: #808080;\">El tipo especifico de caja de engranes a utilizar depende de la aplicación y los requisitos de espacio, el omitir un cálculo en este tipo de proyectos u otras alternativas de selección, sin bases ingenieriles, pueden llevar al fracaso de la aplicación.</span></p>\n<p> </p>\n<h3 style=\"text-align: center;\"><span style=\"color: #808080;\">Nuestro software de dimensionamiento permite el análisis del tren de accionamiento completo (aplicación + transformación + caja de cambios + motor) </span></h3>\n<h3> </h3>\n<p> </p>\n<p><img class=\"wp-image-54 size-full aligncenter\" src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/sps18_neugart_small_42-1.jpg\" alt=\"\" width=\"800\" height=\"500\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/sps18_neugart_small_42-1.jpg 800w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/sps18_neugart_small_42-1-300x188.jpg 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/sps18_neugart_small_42-1-768x480.jpg 768w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n<h3 style=\"text-align: left;\"><span style=\"color: #808080;\">     Software probado para la optimización del sistema de accionamiento</span></h3>\n<p><!--more--></p>\n<p> </p>\n<p style=\"text-align: left;\"><span style=\"color: #808080;\">Los cálculos precisos se ven facilitados por aplicaciones estándar predefinidas como correas, husillos, mesas giratorios y unidades de piñón y cremallera. La consideración de los principales factores de influencia y los parámetros específicos del cliente dan como resultado un diseño confiable y eficiente, así como la optimización del sistema de accionamiento. </span><span style=\"color: #808080;\">Si agrega todas las diferentes series y modelos, nuestra gama de productos comprende mas de 50,000 variantes. </span></p>\n<p style=\"text-align: left;\"><span style=\"color: #808080;\">Nuestro equipo puede ayudarlo a identificar o desarrollar el producto óptimo para su aplicación. </span><span style=\"color: #808080;\">También podemos ayudarlo con la conceptualización 3D del diseño mecánico de su aplicación, reduciendo el riesgo y dando la seguridad de que nuestra propuesta es la mejor, brindando una consultoría mucho mas eficiente.</span></p>\n\n\n<p></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>¿Por qué calcular los componentes de una aplicación servo?</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 75,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "templates/template-cover.php",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            17
+        ],
+        "tags": [],
+        "jetpack_featured_media_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/csm_motek18_neugart_small_43_5c6cfdbd69.jpg",
+        "acf": [],
+        "featured_image_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/csm_motek18_neugart_small_43_5c6cfdbd69.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/194"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=194"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 33,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/194/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2283,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/194/revisions/2283"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media/75"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=194"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=194"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=194"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 192,
+        "date": "2020-01-14T23:28:08",
+        "date_gmt": "2020-01-14T23:28:08",
+        "guid": {
+            "rendered": "https://blog.mechatronik-group.com/?p=192"
+        },
+        "modified": "2020-01-24T05:51:41",
+        "modified_gmt": "2020-01-24T05:51:41",
+        "slug": "what-is-machine-design",
+        "status": "publish",
+        "type": "post",
+        "link": "https://blog.mechatronik-group.com/what-is-machine-design/",
+        "title": {
+            "rendered": "What is Machine Design?"
+        },
+        "content": {
+            "rendered": "<h1 style=\"text-align: left;\"><span style=\"color: #808080;\"><strong>En diseño de ingeniería, el conocimiento técnico y la experiencia son una pieza clave en el desarrollo de proyectos y desarrollo de innovación.</strong></span></h1>\n<p style=\"text-align: left;\"><span style=\"color: #808080;\">Hoy sin duda las tecnologías de Motion control se están volviendo más inteligentes, más capaces y más productivas, gracias a la transformación digital, los servo sistemas han alcanzado un punto de inflexión y la implementación de algunas empresas han dado paso a una penetracion más amplia en el mercado.</span></p>\n<p style=\"text-align: left;\"><span style=\"color: #808080;\"><br />\nLas aplicaciones de Motion control requieren equipos especializados en su implementación, tal como el diseño de máquinas, aplicar conocimiento interdisciplinario y lidiar con cuestiones de aplicación práctica es tarea de todos los días. Estamos a tus órdenes para hacer su vision realidad, transformado el proceso y desarrollo con soluciones de alto impacto en el diseño, simulación y puesta en marcha</span></p>\n<p>&nbsp;</p>\n<p><img class=\"wp-image-168 size-large\" title=\"nico y la experiencia son una pieza clave en el desarrollo de proyectos y desarrollo de innovación.\" src=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/nxcam1-1024x640.jpg\" alt=\"\" width=\"580\" height=\"363\" srcset=\"https://blog.mechatronik-group.com/wp-content/uploads/2020/01/nxcam1-1024x640.jpg 1024w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/nxcam1-300x188.jpg 300w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/nxcam1-768x480.jpg 768w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/nxcam1-1536x960.jpg 1536w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/nxcam1-1200x750.jpg 1200w, https://blog.mechatronik-group.com/wp-content/uploads/2020/01/nxcam1.jpg 1920w\" sizes=\"(max-width: 580px) 100vw, 580px\" /></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>En diseño de ingeniería, el conocimiento técnico y la experiencia son una pieza clave en el desarrollo de proyectos y desarrollo de innovación. Hoy sin duda las tecnologías de Motion control se están volviendo más inteligentes, más capaces y más [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 170,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": ""
+        },
+        "categories": [
+            17
+        ],
+        "tags": [],
+        "jetpack_featured_media_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/slide2.jpg",
+        "acf": [],
+        "featured_image_url": "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/slide2.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/192"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/comments?post=192"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 5,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/192/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 573,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/posts/192/revisions/573"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media/170"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/media?parent=192"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/categories?post=192"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://blog.mechatronik-group.com/wp-json/wp/v2/tags?post=192"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]

@@ -1,17 +1,17 @@
 <template>
   <div id="post-reader">
     <loading v-if="isLoading == true"/>
-    <div class="post" v-for="post in posts" v-else>
+    <content class="post" v-for="post in posts" v-else>
       <div class="titulo" v-bind:style="{ backgroundImage: 'url(' + post.featured_image_url + ')' }">
         <h2>{{ post.title.rendered }}</h2>
       </div>
       <div class="content" >
         <div class="format" v-html="post.content.rendered"></div>
         <div class="side">
-          <sidebar :titular="post.title.rendered"/>
+          <sidebar v-if="isLoading == false" :titular="post.title.rendered"/>
         </div>
       </div>
-    </div>
+    </content>
   </div>
 </template>
 
@@ -19,6 +19,10 @@
 import loading from '../partials/loading.vue'
 import axios from 'axios'
 import sidebar from '../partials/sidebar.vue'
+import blogpost from '../../assets/text/posts.json'
+
+// var foundData = blogpost.filter(d => d.slug === this.$route.params.slug);
+// console.log(foundData);
 
 export default {
   components: {
@@ -27,14 +31,15 @@ export default {
   },
   data() {
     return {
-      posts: [],
-      isLoading: true
+      posts: blogpost.filter(d => d.slug === this.$route.params.slug),
+      isLoading: false
     }
   },
   mounted: async function() {
       try {
         const slug = this.$route.params.slug;
         var consulta;
+        this.isLoading = true;
         consulta = 'https://blog.mechatronik-group.com/wp-json/wp/v2/posts?slug=';
         consulta = consulta.concat(slug);
         console.log(consulta);

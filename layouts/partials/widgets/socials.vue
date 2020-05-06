@@ -6,6 +6,7 @@
                       quote="Mechatronik Group, automatizacion y motion control"
                       hashtags="Mechatronik,automation,motion-control,automatizacion,tecnologia"
                       twitter-user="Mechatronik"
+                      network-tag="content"
                       inline-template>
     <div class="social-list">
       <network network="facebook">
