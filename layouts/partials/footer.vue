@@ -11,9 +11,9 @@
           largas trayectoria de desplazamiento o cambios rápidos de velocidad. -->
         </p>
         <div class="social-block">
-          <a class="social" href="https://www.instagram.com/mechatronik_group/"><img src="@/assets/images/SVG/instagram.svg"></a>
-          <a class="social" href="https://www.youtube.com/channel/UCe2vgrkb6UAQSezAuz28sUQ/"><img src="@/assets/images/SVG/youtube.svg"></a>
-          <a class="social" href="https://www.linkedin.com/company/33520557"><img src="@/assets/images/SVG/linkedin.svg"></a>
+          <a class="social" href="https://www.instagram.com/mechatronik_group/"><img src="@/assets/images/SVG/instagram.svg" alt="social link"></a>
+          <a class="social" href="https://www.youtube.com/channel/UCe2vgrkb6UAQSezAuz28sUQ/"><img src="@/assets/images/SVG/youtube.svg" alt="social link"></a>
+          <a class="social" href="https://www.linkedin.com/company/33520557"><img src="@/assets/images/SVG/linkedin.svg" alt="social link"></a>
         </div>
       </div>
       <div class="column" >

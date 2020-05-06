@@ -1,6 +1,6 @@
 <template>
 <div class="mobile">
-   <nuxt-link to="/" id="mob-logo"><img class="logo" src="@/assets/images/identity/MECHATRONIK-WEB-LOGO-COLOR.png" alt="Mechatronik"> </nuxt-link>
+   <nuxt-link to="/" id="mob-logo"><img class="logo" src="@/assets/images/identity/logo.svg" alt="Mechatronik"> </nuxt-link>
    <div class="dropdown">
      <button class="dropbtn" v-on:click="is_toggled = !is_toggled">
        <svg id="hamburger" v-bind:class="{ toggled: is_toggled }" ishome version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -25,37 +25,37 @@
          <div class="row" @click="is_toggled = false">
            <nuxt-link to="/marcas">
              <h3>MARCAS</h3>
-             <p>
+             <!-- <p>
                Our leading Industrial Innovation platform and solutions
                turn possibility into a reality.
-             </p>
+             </p> -->
            </nuxt-link>
          </div>
          <div class="row" @click="is_toggled = false">
            <nuxt-link to="/categorias">
              <h3>PRODUCTOS</h3>
-             <p>
+             <!-- <p>
                Our leading Industrial Innovation platform and solutions
                turn possibility into a reality.
-             </p>
+             </p> -->
            </nuxt-link>
          </div>
          <div class="row" @click="is_toggled = false">
            <nuxt-link to="/soluciones">
              <h3>SOLUCIONES</h3>
-             <p>Experiencia Insudtrial & Aplicaciones</p>
+             <!-- <p>Experiencia Insudtrial & Aplicaciones</p> -->
            </nuxt-link>
          </div>
          <div class="row" @click="is_toggled = false">
           <nuxt-link to="/servicios">
              <h3>SERVICIOS</h3>
-               <p>Diseño Mecánico y otras</p>
+               <!-- <p>Diseño Mecánico y otras</p> -->
           </nuxt-link>
          </div>
          <div class="row nbb" @click="is_toggled = false">
           <nuxt-link to="/compañia">
              <h3>COMPAÑIA</h3>
-               <p>Quienes somos </p>
+               <!-- <p>Quienes somos </p> -->
           </nuxt-link>
          </div>
      </div>
@@ -283,7 +283,7 @@ html[data-scroll='0'] {
 .row {
  float: left;
  width: 100%;
- padding: 10px;
+ padding: 10px 0;
  border-bottom: 1px solid #65A3AE;
  //height: 250px;
  &.nbb {

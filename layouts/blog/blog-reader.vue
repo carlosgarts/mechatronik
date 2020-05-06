@@ -29,6 +29,13 @@ export default {
     loading,
     sidebar
   },
+  // asyncData(context) {
+  // return context.$axios
+  //   .get('https://blog.mechatronik-group.com/wp-json/wp/v2/posts?slug=powerful-solutions-for-rack-and-pinion-drives')
+  //   .then((res) => {
+  //     return { blogposts: res.data }
+  //   })
+  // },
   data() {
     return {
       posts: blogpost.filter(d => d.slug === this.$route.params.slug),
@@ -40,9 +47,9 @@ export default {
         const slug = this.$route.params.slug;
         var consulta;
         this.isLoading = true;
+        console.log(this.blogposts);
         consulta = 'https://blog.mechatronik-group.com/wp-json/wp/v2/posts?slug=';
         consulta = consulta.concat(slug);
-        console.log(consulta);
         var Post = await this.$axios.get(consulta);
         this.posts = Post.data;
         this.isLoading = false;

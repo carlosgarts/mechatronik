@@ -5,12 +5,14 @@
           <div class="video-wrapper wrapper">
             <div class="screen">
               <div class="content">
-                <h2>Aliados ante todo</h2>
-                <p>Mechatronik es ingenieria, es tecnologia y es su aliado para cualquier proyecto o reto presente en su empresa,
-                  estamos especializados en una variedad de servicios desde electricos hasta de manufacturacion de productos
-                  relacionados a motion control.
+                <h2>Solidez para el futuro</h2>
+                <p>Mediante nuestros gearboxes, grippers, servos, couplings y
+                  demas componentes que ofrecemos, su proyecto de motion control
+                  queda blindado ante el futuro, con tecnologia tan fiable como
+                  la de Siemens, Neugart y mas, respaldados por el soporte e
+                  ingenieria de Mechatronik.
                 </p>
-              <a class="link" href="#">Ver mas &#10095</a>
+              <a class="link" href="https://mechatronik-group.com/categorias">Ver mas &#10095</a>
               </div>
             </div>
             <video autoplay muted loop id="back--video">
@@ -22,7 +24,7 @@
               <div class="content">
                 <h2>{{slide.title}}</h2>
                 <p>{{slide.description}}</p>
-              <a class="link" href="#">Ver mas &#10095</a>
+              <a class="link" href="https://mechatronik-group.com/servicios">Ver mas &#10095</a>
               </div>
             </div>
             <img src="https://blog.mechatronik-group.com/wp-content/uploads/2020/01/14-1.jpg" />
@@ -43,29 +45,14 @@ export default {
         infinite: true,
         slidesToShow: 1,
         dots: true,
-        autoplay: false,
+        autoplay: true,
         mobileFirst: true,
         fade: true,
         autoplaySpeed: 10000
       },
       slides: [
         {
-          title: "Solidez para el futuro", //Control sobre las variables del futuro
-          description: "Mediante nuestros gearboxes, grippers, servos, couplings y demas componentes que ofrecemos, su proyecto de motion control queda blindado ante el futuro, con tecnologia tan fiable como la de Siemens, Neugart y mas, respaldados por el soporte e ingenieria de Mechatronik.",
-          imagen: "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/14-1.jpg"
-        },
-        {
           title: "Aliados ante todo",
-          description: "Mechatronik es ingenieria, es tecnologia y es su aliado para cualquier proyecto o reto presente en su empresa, estamos especializados en una variedad de servicios desde electricos hasta de manufacturacion de productos relacionados a motion control.",
-          imagen: "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/14-1.jpg"
-        },
-        {
-          title: "Blog",
-          description: "Mechatronik es ingenieria, es tecnologia y es su aliado para cualquier proyecto o reto presente en su empresa, estamos especializados en una variedad de servicios desde electricos hasta de manufacturacion de productos relacionados a motion control.",
-          imagen: "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/14-1.jpg"
-        },
-        {
-          title: "Soluciones",
           description: "Mechatronik es ingenieria, es tecnologia y es su aliado para cualquier proyecto o reto presente en su empresa, estamos especializados en una variedad de servicios desde electricos hasta de manufacturacion de productos relacionados a motion control.",
           imagen: "https://blog.mechatronik-group.com/wp-content/uploads/2020/01/14-1.jpg"
         }
@@ -90,32 +77,42 @@ export default {
   top: 0;
   right: 0;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
+  @media (min-width: 600px) {
+    justify-content: flex-start;
+    align-items: center;
+  }
   .content {
     display: block;
     max-width: 550px;
-    width: 90%;
+    width: 100%;
     height: auto;
     background: rgb(0,85,120);
     background: linear-gradient(90deg, rgba(0,85,120,0.7) 0%, rgba(101,163,174,0.7) 100%);
     text-align: left;
     color: white;
     padding: 35px 35px;
-    margin-left: 5%;
-    margin-top: 5%;
     @media (min-width: 600px) {
       width: 80%;
       margin-left: 10%;
+      margin-top: 5%;
     }
     h2 {
-      font-size: 50px;
+      font-size: 25px;
       margin-top: 0;
       font-weight: lighter;
+      @media (min-width: 600px) {
+        font-size: 50px;
+      }
     }
     p {
       margin: 0;
       line-height: 1.5;
       margin-bottom: 15px;
+      font-size: 12px;
+      @media (min-width: 600px) {
+        font-size: 16px;
+      }
     }
     .link {
       display: block;
@@ -127,6 +124,10 @@ export default {
       border: 1px solid #ffb900;
       padding: 9px 14px;
       margin-top: 15px;
+      font-size: 12px;
+      @media (min-width: 600px) {
+        font-size: 16px;
+      }
       &:hover {
         background-color: #ffb900;
         color: rgb(0,85,120);
@@ -185,13 +186,18 @@ export default {
       border: 1px solid #fff;
       cursor: pointer;
       display: block;
-      height: 15px;
+
       font-size: 0;
       line-height: 0;
       margin: 0;
       padding: 0;
       transition-duration: .3s;
-      width: 15px;
+      width: 10px;
+      height: 10px;
+      @media (min-width: 600px) {
+        width: 15px;
+        height: 15px;
+      }
     }
 
     &--current,

@@ -49,11 +49,19 @@ export default {
     flex-wrap: wrap;
     justify-content: space-around;
     .brand {
-      width: 30%;
+      width: 70%;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 15px;
+      margin: 25px;
+      @media (min-width: 600px) {
+        width: 30%;
+        margin: 15px;
+      }
+      @media (min-width: 800px) {
+        width: 13%;
+        margin: 15px;
+      }
       img {
         transition: 0.5s;
         width: 100%;
@@ -61,10 +69,6 @@ export default {
         &:hover {
           filter: grayscale(0);
         }
-      }
-      @media (min-width: 800px) {
-        width: 13%;
-        margin: 0;
       }
     }
   }
