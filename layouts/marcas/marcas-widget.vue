@@ -1,7 +1,40 @@
 <template>
   <div class="section">
     <div id="marcas-widget">
-      <div class="marcas-list">
+      <carousel class="marcas-list" :perPageCustom="[[50, 1], [600, 3], [1000, 6]]" :navigationEnabled="true" :paginationEnabled="false" navigationNextLabel="&#10095" navigationPrevLabel="&#10094">
+        <slide>
+          <nuxt-link class="brand" to="/marcas/festo">
+            <img src="@/assets/images/marcas/festo.png" alt="Festo">
+          </nuxt-link>
+        </slide>
+        <slide>
+          <nuxt-link class="brand" to="/marcas/neugart">
+            <img src="@/assets/images/marcas/neugart.png" alt="Neugart">
+          </nuxt-link>
+        </slide>
+        <slide>
+          <nuxt-link class="brand" to="/marcas/siemens">
+            <img src="@/assets/images/marcas/siemens.png" alt="Siemens">
+          </nuxt-link>
+        </slide>
+        <slide>
+          <nuxt-link class="brand" to="/marcas/zimm">
+            <img src="@/assets/images/marcas/zimm.png" alt="Zimm">
+          </nuxt-link>
+        </slide>
+        <slide>
+          <nuxt-link class="brand" to="/marcas/rw">
+            <img src="@/assets/images/marcas/RW_logo.svg" alt="RW">
+          </nuxt-link>
+        </slide>
+        <slide>
+          <nuxt-link class="brand" to="/marcas/weiss-robotics">
+            <img src="@/assets/images/marcas/weiss.png" alt="Weiss Robotics">
+          </nuxt-link>
+        </slide>
+      </carousel>
+
+      <!-- <div class="marcas-list">
         <nuxt-link class="brand" to="/marcas/festo">
           <img src="@/assets/images/marcas/festo.png" alt="Festo">
         </nuxt-link>
@@ -20,7 +53,7 @@
         <nuxt-link class="brand" to="/marcas/weiss-robotics">
           <img src="@/assets/images/marcas/weiss.png" alt="Weiss Robotics">
         </nuxt-link>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -49,22 +82,17 @@ export default {
     flex-wrap: wrap;
     justify-content: space-around;
     .brand {
-      width: 70%;
+      height: 100%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 25px;
-      @media (min-width: 600px) {
-        width: 30%;
-        margin: 15px;
-      }
-      @media (min-width: 800px) {
-        width: 13%;
-        margin: 15px;
-      }
+      padding: 15px;
+
+
       img {
         transition: 0.5s;
-        width: 100%;
+        width: 70%;
         filter: grayscale(1);
         &:hover {
           filter: grayscale(0);
