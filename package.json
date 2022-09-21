@@ -27,7 +27,7 @@
     "vue-scrollto": "^2.15.0",
     "vue-social-sharing": "^2.4.7",
     "vue-spinners": "^1.0.2",
-    "vuetify": "^2.0.0"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@mdi/font": "^4.5.95",
